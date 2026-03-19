@@ -8,21 +8,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <stdint.h>
 
 #define SYSCLK      72000000L  // SYSCLK frequency in Hz
 #define BAUDRATE      115200L  // Baud rate of UART in bps
 #define SARCLK 18000000L
 #define VDD 4.684 // The measured value of VDD in volts
 
+// 
 #define PCA_0_FREQ 38000L
-
-
 
 #define MAIN_OUT    P0_1 // Updated in the main program
 #define PCA_OUT_0   P0_7
-
-
-
 
 #define LCD_RS P1_7
 // #define LCD_RW Px_x // Not used in this code.  Connect to GND
@@ -136,41 +133,6 @@ char _c51_external_startup (void)
 	return 0;
 }
 
-void ir_sequence () {
-	
-
-}
-
-// this fcn is always happening --> therefore the pca will keep triggering in the background (if it runs depends on ir_send's val) 
-
-void PCA_ISR (void) interrupt INTERRUPT_PCA0
-{
-	unsigned int j;
-	
-	SFRPAGE=0x0;
-	
-	if (CCF0)
-	{
-		
-		j=(PCA0CPH0*0x100+PCA0CPL0)+(SYSCLK/(2L*PCA_0_FREQ));
-		PCA0CPL0=j%0x100; //Always write low byte first!
-		PCA0CPH0=j/0x100;
-		CCF0=0;
-
-		if (ir_send == 1){
-			PCA_OUT_0=!PCA_OUT_0; // if the IR send is 1 --> turn on the pin 
-		}
-
-		else {
-			PCA_OUT_0 = 0; // if the IR send is 0 --> turn off the pin even if the interrupt is generated 
-		}
-	}
-
-
-	CF=0;
-}
-
-
 void InitADC (void)
 {
 	SFRPAGE = 0x00;
@@ -249,10 +211,6 @@ unsigned int ADC_at_Pin(unsigned char pin)
 float Volts_at_Pin(unsigned char pin)
 {
 	 return ((ADC_at_Pin(pin)*VDD)/16383.0);
-}
-
-int fourteen_to_eight(int val){
-	return ((val*255.0)/16383.0);
 }
 
 // Uses Timer3 to delay <us> micro-seconds. 
@@ -391,36 +349,96 @@ void int_to_stringprinty(int lin, int y)
  	LCDprint(buffer, lin, 1); // print buffer to LCD
 }
 
-void int_to_bin(int input, int* binary, int bit_count, int buff_choice) {
-    if (buff_choice){
-		for (int i = 0; i < bit_count; i++) {
-        binary_x[i] = (integer & (1U << (n - i - 1))) ? '1' : '0';
+// -------------------------IR Functions-------------------------------
+
+// converts fourteen bit to eight bit 
+int fourteen_to_eight(int val){
+	return ((val*255.0)/16383.0);
+}
+
+// this fcn is always happening --> therefore the pca will keep triggering in the background (if it runs depends on ir_send's val) 
+void PCA_ISR (void) interrupt INTERRUPT_PCA0
+{
+	unsigned int j;
+	
+	SFRPAGE=0x0;
+	
+	if (CCF0)
+	{
+		
+		j=(PCA0CPH0*0x100+PCA0CPL0)+(SYSCLK/(2L*PCA_0_FREQ));
+		PCA0CPL0=j%0x100; //Always write low byte first!
+		PCA0CPH0=j/0x100;
+		CCF0=0;
+
+		if (ir_send == 1){
+			PCA_OUT_0=!PCA_OUT_0; // if the IR send is 1 --> turn on the pin 
+		}
+
+		else {
+			PCA_OUT_0 = 0; // if the IR send is 0 --> turn off the pin even if the interrupt is generated 
 		}
 	}
-	else {
-	for (int i = 0; i < bit_count; i++) {
-        binary[i] = (integer & (1U << (n - i - 1))) ? '1' : '0';
+	CF=0;
+}
 
+// start sequence 
+// sends 3 1s and 2 0s --> 11100 
+int start_transmit (int start_bit){
+	if (start_bit){
+		int i;
+
+		for (i = 0;i<3;i++){ 
+			ir_send = 1;
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(1690);
+		}
+
+		for (i=0;i<2; i++){
+			ir_send = 1; 
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+		}
+		return 0; 
 	}
+	else {
+		return -1;
 	}
 }
 
+// parses 8 bits and sends IR accordingly
+void transmit_byte(uint8_t input, int len){
 
+	int i; 
+	for (i = len; i >= 0; i--){
+		if ((input >> i) & 1) {			// this shifts the first bit to the right and ands it with 1 --> if this is one, this means the bit is supposed to be a one  
+			ir_send = 1; 
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(1690);
+		}
+		else {				// if its a zero, then its sends zero sequence 
+			ir_send = 1; 
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(560);
+		}
 
-
+	} 
+}
 
 //----- MAIN -----
 void main (void) 
 {
-	int button;
+	int button; // not sure what this will do for now
+	int start_now;
 	int x_pos, y_pos; 
 	int real_x, real_y;
-	int eight_bitx, eight_bity;
-	xdata int binary_x [8]; 
-	xdata int binary_y [8]; 
-	int buff_choice = 0; 
-
-	
+	uint8_t eight_bitx;
+	uint8_t eight_bity;	
+	uint8_t end_sequence = 26;
 	
 	TIMER0_Init(); // Initialize timer 0
 	LCD_4BIT(); // Configure LCD in 4 bit mode
@@ -451,19 +469,41 @@ void main (void)
 		else
 			real_y = y_pos;
 		
-		//create packet 
+// -------------------IR CODE HERE------------------------------- 
 		
 
-		// 1. Convert x/y pos from full 14 bits to 8 bits
-		eight_bitx = fourteen_to_eight(real_y);
-		eight_bity = fourteen_to_eight(real_x);
+		// 1. Convert x/y pos from full 14 bits to 8 bits 
+		if ((eight_bitx = fourteen_to_eight(real_x)) < 0) {
+			printf("Error - x conversion to 8 bits failed");		// these lowkey don't work cause it wont ever be negative
 
-		// 2. Convert these values into binary and store into buffer 
-		int_to_bin(eight_bitx,  );
-		int_to_bin(eight_bity, !buff_choice);
+		}
+		else if (!(eight_bity = fourteen_to_eight(real_y)) < 0) {
+			printf("Error - y conversion to 8 bits failed");
+		}
+		else{
+			start_now = 1; 
+		}
+		// 2. Transmit the bits 
+		if (start_transmit(start_now) != 0){ // start sequence
+			printf("Error - start sequence unsuccessful");
+		}
+		
+		transmit_byte(eight_bitx, 7);		// xpos
 
+		transmit_byte(eight_bity, 7); 		// ypos
 
+		transmit_byte(button, 0);   		// len set to zero to follow fcn "functionality"
 
+		transmit_byte(end_sequence, 8); 	// end sequence
+
+		// 3. Stop Bit
+		ir_send = 1;						// final stop bit 
+		Timer3us(560);
+		ir_send = 0;
+		
+		// 4. 
+		waitms(50); 						// waiting before sending another pulse
+		
 		int_to_stringprintx(1, real_x);
 		int_to_stringprinty(2, real_y);	
 		
