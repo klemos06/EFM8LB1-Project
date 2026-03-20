@@ -120,7 +120,7 @@ char _c51_external_startup (void)
 	PCA0H=0;
 	PCA0MD=0b_0000_1000; // Configure PCA.  System CLK is the frequency input for the PCA
 	// Enable all PCS modules comparators and to generate interrupts
-	PCA0CPM0=PCA0CPM1=PCA0CPM2=PCA0CPM3=PCA0CPM4=0b_0100_1001; // ECOM|MAT|ECCF;
+	PCA0CPM0=0b_0100_1001; // ECOM|MAT|ECCF;
 	// The frequency for PCA channel 0
 	PCA0CPL0=(SYSCLK/(2*PCA_0_FREQ))%0x100; //Always write low byte first!
 	PCA0CPH0=(SYSCLK/(2*PCA_0_FREQ))/0x100;
@@ -444,6 +444,7 @@ void main (void)
 	LCD_4BIT(); // Configure LCD in 4 bit mode
 	InitADC(); // Initialize the ADC
 	InitPinADC(2,6); // Initialize pin 2.6 as analog
+	InitPinADC(2,5); // Initialize pin 2.5 as analog
 
 
 	while(1) {
