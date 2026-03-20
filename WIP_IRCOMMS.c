@@ -443,8 +443,8 @@ void main (void)
 	TIMER0_Init(); // Initialize timer 0
 	LCD_4BIT(); // Configure LCD in 4 bit mode
 	InitADC(); // Initialize the ADC
-	InitPinADC(2,6); // Initialize pin 2.6 as analog
 	InitPinADC(2,5); // Initialize pin 2.5 as analog
+	InitPinADC(2,6); // Initialize pin 2.6 as analog
 
 
 	while(1) {
