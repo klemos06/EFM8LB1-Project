@@ -16,7 +16,7 @@
 #define VDD 4.684 // The measured value of VDD in volts
 
 // 
-#define PCA_0_FREQ 38000L
+#define PCA_0_FREQ 44500L
 
 #define MAIN_OUT    P0_1 // Updated in the main program
 #define PCA_OUT_0   P0_7
@@ -391,15 +391,73 @@ int start_transmit (int start_bit){
 		for (i = 0;i<3;i++){ 
 			ir_send = 1;
 			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
 			ir_send = 0;
-			Timer3us(1690);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
 		}
 
 		for (i=0;i<2; i++){
 			ir_send = 1; 
 			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
 			ir_send = 0;
 			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			
+		}
+		return 0; 
+	}
+	else {
+		return -1;
+	}
+}
+
+int end_transmit (int end_bit){			// 10000
+	if (end_bit){
+		int i;
+
+		for (i = 0;i<1;i++){ 
+			ir_send = 1;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+
+		for (i=0;i<4; i++){
+			ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			
 		}
 		return 0; 
 	}
@@ -409,20 +467,37 @@ int start_transmit (int start_bit){
 }
 
 // parses 8 bits and sends IR accordingly
-void transmit_byte(uint8_t input, int len){
+void transmit_byte(uint8_t input){
 
 	int i; 
-	for (i = len; i >= 0; i--){
+	for (i = 7; i >= 0; i--){
 		if ((input >> i) & 1) {			// this shifts the first bit to the right and ands it with 1 --> if this is one, this means the bit is supposed to be a one  
 			ir_send = 1; 
 			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);				// 2240 us high
+			Timer3us(560);
 			ir_send = 0; 
-			Timer3us(1690);
+			Timer3us(560);				// 4480 us low 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			
 		}
 		else {				// if its a zero, then its sends zero sequence 
 			ir_send = 1; 
+			Timer3us(560);			// 2240 us high and low 
+			Timer3us(560);
+			Timer3us(560);
 			Timer3us(560);
 			ir_send = 0; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
 			Timer3us(560);
 		}
 
@@ -433,12 +508,11 @@ void transmit_byte(uint8_t input, int len){
 void main (void) 
 {
 	int button; // not sure what this will do for now
-	int start_now;
 	int x_pos, y_pos; 
 	int real_x, real_y;
 	uint8_t eight_bitx;
 	uint8_t eight_bity;	
-	uint8_t end_sequence = 26;
+	uint8_t end_sequence = 0;
 	
 	TIMER0_Init(); // Initialize timer 0
 	LCD_4BIT(); // Configure LCD in 4 bit mode
@@ -473,7 +547,7 @@ void main (void)
 // -------------------IR CODE HERE------------------------------- 
 		
 
-		// 1. Convert x/y pos from full 14 bits to 8 bits 
+	/*	// 1. Convert x/y pos from full 14 bits to 8 bits 
 		if ((eight_bitx = fourteen_to_eight(real_x)) < 0) {
 			printf("Error - x conversion to 8 bits failed");		// these lowkey don't work cause it wont ever be negative
 
@@ -484,16 +558,21 @@ void main (void)
 		else{
 			start_now = 1; 
 		}
+		
 		// 2. Transmit the bits 
 		if (start_transmit(start_now) != 0){ // start sequence
 			printf("Error - start sequence unsuccessful");
 		}
-		
-		transmit_byte(eight_bitx, 7);		// xpos
+		*/
+		eight_bitx = real_x;
+		eight_bity = fourteen_to_eight(real_y);
+		/*
+		start_now = 1;
+		//transmit_byte(eight_bitx, 7);		// xpos
 
-		transmit_byte(eight_bity, 7); 		// ypos
+		//transmit_byte(eight_bity, 7); 		// ypos
 
-		transmit_byte(button, 0);   		// len set to zero to follow fcn "functionality"
+		//transmit_byte(button, 0);   		// len set to zero to follow fcn "functionality"
 
 		transmit_byte(end_sequence, 8); 	// end sequence
 
@@ -504,17 +583,8 @@ void main (void)
 		
 		// 4. 
 		waitms(50); 						// waiting before sending another pulse
-		
-		int_to_stringprintx(1, real_x);
-		int_to_stringprinty(2, real_y);	
-		
-		printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
-		
-	//	x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
-	//	float_to_stringprintx(1, x_pos);
-		
-	//	y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
-	//	float_to_stringprinty(2, y_pos);
+		*/
+	
 		
 		// use an adc pin to read x and y positions
 		
@@ -523,5 +593,28 @@ void main (void)
 		// Solder onto protoboard
 	
 	
+
+	start_transmit(1);
+	transmit_byte(eight_bitx);
+	transmit_byte(eight_bity);
+	end_transmit(1);
+	
+	ir_send =1;
+	Timer3us(560);
+	Timer3us(560);
+	ir_send = 0; 
+	
+	waitms(100); 
+	
+		int_to_stringprintx(1, real_x);
+		int_to_stringprinty(2, real_y);	
+		
+		printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
+		
+		x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
+		float_to_stringprintx(1, x_pos);
+		
+		y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
+		float_to_stringprinty(2, y_pos);
 	}
 }
