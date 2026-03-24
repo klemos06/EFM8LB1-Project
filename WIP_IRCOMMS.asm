@@ -1,7 +1,7 @@
 ;--------------------------------------------------------
 ; File Created by C51
 ; Version 1.0.0 #1170 (Feb 16 2022) (MSVC)
-; This file was generated Mon Mar 23 23:22:59 2026
+; This file was generated Tue Mar 24 14:10:49 2026
 ;--------------------------------------------------------
 $name WIP_IRCOMMS
 $optc51 --model-small
@@ -683,7 +683,7 @@ L002004?:
 ;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:123: PCA0CPM0=0b_0100_1001; // ECOM|MAT|ECCF;
 	mov	_PCA0CPM0,#0x49
 ;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:125: PCA0CPL0=(SYSCLK/(2*PCA_0_FREQ))%0x100; //Always write low byte first!
-	mov	_PCA0CPL0,#0x28
+	mov	_PCA0CPL0,#0xB3
 ;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:126: PCA0CPH0=(SYSCLK/(2*PCA_0_FREQ))/0x100;
 	mov	_PCA0CPH0,#0x03
 ;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:128: CR=1; // Enable PCA counter
@@ -1468,7 +1468,7 @@ _PCA_ISR:
 	subb	a,acc
 	mov	r4,a
 	mov	r5,a
-	mov	a,#0x28
+	mov	a,#0xB3
 	add	a,r2
 	mov	r2,a
 	mov	a,#0x03
@@ -2171,54 +2171,84 @@ L025005?:
 	mov	ar2,r6
 	mov	ar3,r7
 L025006?:
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:567: eight_bitx = real_x;
-	mov	_main_eight_bitx_1_128,_main_real_x_1_128
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:568: eight_bity = fourteen_to_eight(real_y);
-	mov	dpl,r2
-	mov	dph,r3
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:569: eight_bitx = (uint8_t)(real_x>>6);
+	mov	r0,_main_real_x_1_128
+	mov	a,(_main_real_x_1_128 + 1)
+	mov	c,acc.7
+	xch	a,r0
+	rlc	a
+	xch	a,r0
+	rlc	a
+	mov	c,acc.7
+	xch	a,r0
+	rlc	a
+	xch	a,r0
+	rlc	a
+	xch	a,r0
+	anl	a,#0x03
+	jnb	acc.1,L025017?
+	orl	a,#0xfc
+L025017?:
+	mov	_main_eight_bitx_1_128,r0
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:570: eight_bity = (uint8_t)(real_y>>6);
+	mov	ar1,r2
+	mov	a,r3
+	mov	c,acc.7
+	xch	a,r1
+	rlc	a
+	xch	a,r1
+	rlc	a
+	mov	c,acc.7
+	xch	a,r1
+	rlc	a
+	xch	a,r1
+	rlc	a
+	xch	a,r1
+	anl	a,#0x03
+	jnb	acc.1,L025018?
+	orl	a,#0xfc
+L025018?:
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:599: start_transmit(1);
+	mov	dptr,#0x0001
 	push	ar2
 	push	ar3
-	lcall	_fourteen_to_eight
-	mov	r1,dpl
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:597: start_transmit(1);
-	mov	dptr,#0x0001
 	push	ar1
 	lcall	_start_transmit
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:598: transmit_byte(eight_bitx);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:600: transmit_byte(eight_bitx);
 	mov	dpl,_main_eight_bitx_1_128
 	lcall	_transmit_byte
 	pop	ar1
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:599: transmit_byte(eight_bity);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:601: transmit_byte(eight_bity);
 	mov	dpl,r1
 	lcall	_transmit_byte
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:600: end_transmit(1);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:602: end_transmit(1);
 	mov	dptr,#0x0001
 	lcall	_end_transmit
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:602: ir_send =1;
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:604: ir_send =1;
 	mov	_ir_send,#0x01
 	clr	a
 	mov	(_ir_send + 1),a
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:603: Timer3us(560);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:605: Timer3us(560);
 	mov	dpl,#0x30
 	lcall	_Timer3us
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:604: Timer3us(560);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:606: Timer3us(560);
 	mov	dpl,#0x30
 	lcall	_Timer3us
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:605: ir_send = 0; 
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:607: ir_send = 0; 
 	clr	a
 	mov	_ir_send,a
 	mov	(_ir_send + 1),a
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:607: waitms(100); 
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:609: waitms(100); 
 	mov	dptr,#0x0064
 	lcall	_waitms
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:609: int_to_stringprintx(1, real_x);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:611: int_to_stringprintx(1, real_x);
 	mov	_int_to_stringprintx_PARM_2,_main_real_x_1_128
 	mov	(_int_to_stringprintx_PARM_2 + 1),(_main_real_x_1_128 + 1)
 	mov	dptr,#0x0001
 	lcall	_int_to_stringprintx
 	pop	ar3
 	pop	ar2
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:610: int_to_stringprinty(2, real_y);	
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:612: int_to_stringprinty(2, real_y);	
 	mov	_int_to_stringprinty_PARM_2,r2
 	mov	(_int_to_stringprinty_PARM_2 + 1),r3
 	mov	dptr,#0x0002
@@ -2227,7 +2257,7 @@ L025006?:
 	lcall	_int_to_stringprinty
 	pop	ar3
 	pop	ar2
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:612: printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:614: printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
 	push	_main_button_1_128
 	push	(_main_button_1_128 + 1)
 	push	ar2
@@ -2244,11 +2274,11 @@ L025006?:
 	mov	a,sp
 	add	a,#0xf7
 	mov	sp,a
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:614: x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:616: x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
 	mov	dpl,#0x13
 	lcall	_Volts_at_Pin
 	lcall	___fs2sint
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:615: float_to_stringprintx(1, x_pos);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:617: float_to_stringprintx(1, x_pos);
 	lcall	___sint2fs
 	mov	_float_to_stringprintx_PARM_2,dpl
 	mov	(_float_to_stringprintx_PARM_2 + 1),dph
@@ -2256,11 +2286,11 @@ L025006?:
 	mov	(_float_to_stringprintx_PARM_2 + 3),a
 	mov	dptr,#0x0001
 	lcall	_float_to_stringprintx
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:617: y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:619: y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
 	mov	dpl,#0x12
 	lcall	_Volts_at_Pin
 	lcall	___fs2sint
-;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:618: float_to_stringprinty(2, y_pos);
+;	C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:620: float_to_stringprinty(2, y_pos);
 	lcall	___sint2fs
 	mov	_float_to_stringprinty_PARM_2,dpl
 	mov	(_float_to_stringprinty_PARM_2 + 1),dph

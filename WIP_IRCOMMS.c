@@ -16,7 +16,7 @@
 #define VDD 4.684 // The measured value of VDD in volts
 
 // 
-#define PCA_0_FREQ 44500L
+#define PCA_0_FREQ 38000L // this has been working ~37 kHz
 
 #define MAIN_OUT    P0_1 // Updated in the main program
 #define PCA_OUT_0   P0_7
@@ -564,8 +564,10 @@ void main (void)
 			printf("Error - start sequence unsuccessful");
 		}
 		*/
-		eight_bitx = real_x;
-		eight_bity = fourteen_to_eight(real_y);
+		
+		// map 14 to 8 bits
+		eight_bitx = (uint8_t)(real_x>>6);
+		eight_bity = (uint8_t)(real_y>>6);
 		/*
 		start_now = 1;
 		//transmit_byte(eight_bitx, 7);		// xpos
@@ -593,7 +595,7 @@ void main (void)
 		// Solder onto protoboard
 	
 	
-
+// this stuff works more - no more conversion to 8 bits 
 	start_transmit(1);
 	transmit_byte(eight_bitx);
 	transmit_byte(eight_bity);

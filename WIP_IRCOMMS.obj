@@ -25,7 +25,7 @@ R_IXSEG,xdata,0000,NO
 R_ISEG,idata,0000,NO
 R_HOME,code,0000,NO
 R_XINIT,code,0000,NO
-R_CSEG,code,0962,NO
+R_CSEG,code,0987,NO
 </SEGMENTS>
 
 <LOCALS>
@@ -52,6 +52,8 @@ L024014?,R_CSEG,0645,0000
 L021005?,R_CSEG,0471,0000
 _main_real_x_1_128,R_DSEG,0023,0002
 L021002?,R_CSEG,046F,0000
+L025018?,R_CSEG,08CB,0000
+L025017?,R_CSEG,08B2,0000
 L025016?,R_CSEG,0806,0000
 L025015?,R_CSEG,0756,0000
 L022008?,R_CSEG,0500,0000
@@ -218,7 +220,7 @@ D2 99
 75 FA 00
 75 D9 08
 75 DA 49
-75 FB 28
+75 FB B3
 75 FC 03
 D2 DE
 43 E6 10
@@ -686,7 +688,7 @@ FB
 95 E0
 FC
 FD
-74 28
+74 B3
 2A
 FA
 74 03
@@ -1195,14 +1197,42 @@ AB 83
 80 rel2(L025006?;)
 8E 02
 8F 03
-85 data8(_main_real_x_1_128;) data8(_main_eight_bitx_1_128;)
-8A 82
-8B 83
+A8 data8(_main_real_x_1_128;)
+E5 data8(_main_real_x_1_128;0x0001;+;)
+A2 E7
+C8
+33
+C8
+33
+A2 E7
+C8
+33
+C8
+33
+C8
+54 03
+30 E1 rel3(L025017?;)
+44 FC
+88 data8(_main_eight_bitx_1_128;)
+8A 01
+EB
+A2 E7
+C9
+33
+C9
+33
+A2 E7
+C9
+33
+C9
+33
+C9
+54 03
+30 E1 rel3(L025018?;)
+44 FC
+90 00 01
 C0 02
 C0 03
-12 addr16(_fourteen_to_eight;)  
-A9 82
-90 00 01
 C0 01
 12 addr16(_start_transmit;)  
 85 data8(_main_eight_bitx_1_128;) 82
