@@ -90,6 +90,13 @@ done:
 /* -- Main --------------------------------------------------------------- */
 int main(void)
 {
+
+	int x_temp, y_temp;
+	int k, j, keep;
+	int scaled_x;
+	int scaled_y;
+	
+	
     int i;
     uint32_t prev_word = 0xFFFFFFFF;
     uint32_t frame_num = 0;
@@ -128,8 +135,8 @@ int main(void)
         for (i = 0; i < DATA_BITS; i++){
         	
         	data[i] = ((word >> (DATA_BITS - 1 - i)) & 1);
-        	printf("%d", data[i]);
-        	printf("\r\n");
+        //	printf("%d", data[i]);
+        //	printf("\r\n");
             printf("%d", (word >> (DATA_BITS - 1 - i)) & 1);
             }
         printf("\r\n");
@@ -149,5 +156,54 @@ int main(void)
         printf("\r\n\r\n");
 
         prev_word = word;
+        
+        
+     // DATA PARSING
+     
+        // Check start sequence
+		if (data[0] && data[1] && data[2] && !data[3] && !data[4]) {
+			// Continue parsing if valid start sequence
+			k = 12; // set initial buffer position
+			j = 0;
+			// Convert x bits
+			while (k > 4) {
+				x_temp += data[k] << j; // convert x value into decimal
+				k--;
+				j++;
+			}
+			// Convert y bits
+			k = 20;
+			j = 0;
+			while (k > 12) {
+				y_temp += data[k] << j; // convert y value into decimal
+				k--;
+				j++;
+			}
+			
+			// Check end sequence (THIS WILL BE OUR CHECKSUM IN THE FINAL PRODUCT
+			if(data[21] && !data[22] && !data[23] && !data[24] && !data[25]) {
+				keep = 1; // Keep if valid
+			}
+			
+			
+			else {
+				keep = 0; // Else don't keep
+			}
+			
+			
+			if(keep) {
+				scaled_x = (x_temp/90.0) *100.0 -50; // scale x from -50 to 50
+				scaled_y = (y_temp/90.0) *-100.0 +50; // scale y from -50 to 50 (flip to account for inverse joystick readings)
+			}
+			
+	
+		printf("scaled x: %d, scaled y: %d\n", scaled_x, scaled_y);
+			
+		}
+		
+		// Skip if invalid start sequence
+	//	printf("invalid start");
+	        
+	        
     }
 }
