@@ -4,9 +4,49 @@
 #define SCL P0_0 
 #define SDA P0_1 
 #define OLED_ADDR 0x78
+#define button1	 P2_4
+#define button2	 P2_5
+#define SYSCLK      72000000L
+
+#define mode1 P1_3
+#define mode2 P1_1
+
 
 // Full screen buffer (128x64 / 8)
 unsigned char xdata screen_buffer[1024];
+
+
+void Timer3us(unsigned char us)
+{
+	unsigned char i;               // usec counter
+	
+	// The input for Timer 3 is selected as SYSCLK by setting T3ML (bit 6) of CKCON0:
+	CKCON0|=0b_0100_0000;
+	
+	TMR3RL = (-(SYSCLK)/1000000L); // Set Timer3 to overflow in 1us.
+	TMR3 = TMR3RL;                 // Initialize Timer3 for first overflow
+	
+	TMR3CN0 = 0x04;                 // Sart Timer3 and clear overflow flag
+	for (i = 0; i < us; i++)       // Count <us> overflows
+	{
+		while (!(TMR3CN0 & 0x80));  // Wait for overflow
+		TMR3CN0 &= ~(0x80);         // Clear overflow indicator
+	}
+	TMR3CN0 = 0 ;                   // Stop Timer3 and clear overflow flag
+}
+
+void waitms (unsigned int ms)
+{
+	unsigned int j;
+	for(j=ms; j!=0; j--)
+	{
+		Timer3us(249);
+		Timer3us(249);
+		Timer3us(249);
+		Timer3us(250);
+	}
+}
+
 
 // ================= I2C =================
 void I2C_Delay(void) {
@@ -106,12 +146,17 @@ void ClearBuffer(void) {
     }
 }
 
-void SetPixel(uint8_t x, uint8_t y) {
+void SetPixel(uint8_t x, uint8_t y, int on) {
 	//find which row to go on
     uint16_t index = x + (y / 8) * 128;
     
     //turn on pixel at that byte
+    if(on){
     screen_buffer[index] |= (1 << (y % 8));
+    }
+    else{
+    	 screen_buffer[index] &= (1 << (y % 8));
+    }
 }
 
 // Draw 5x7 character
@@ -122,7 +167,7 @@ void DrawChar(uint8_t x, uint8_t y, const uint8_t *ch) {
         uint8_t col = ch[i];
         for (j = 0; j < 8; j++) {
             if (col & (1 << j)) {
-                SetPixel(x + i, y + j); // turns on bit
+                SetPixel(x + i, y + j,1); // turns on bit
             }
         }
     }
@@ -141,7 +186,7 @@ void DrawLine(int x0, int y0, int x1, int y1) {
 
     int i;
     for (i = 0; i <= steps; i++) {
-        SetPixel((uint8_t)x, (uint8_t)y);
+        SetPixel((uint8_t)x, (uint8_t)y,1);
         x += x_inc;
         y += y_inc;
     }
@@ -153,7 +198,7 @@ void DrawCircle(int xc, int yc, int r) {
     for (x = -r; x <= r; x++) {
         for (y = -r; y <= r; y++) {
             if (x*x + y*y <= r*r) {
-                SetPixel(xc + x, yc + y);
+                SetPixel(xc + x, yc + y,1);
             }
         }
     }
@@ -212,9 +257,14 @@ void DrawFilledRect(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2) {
     uint8_t x, y;
     for (x = x1; x <= x2; x++) {
         for (y = y1; y <= y2; y++) {
-            SetPixel(x, y);
+            SetPixel(x, y,1);
         }
     }
+}
+
+void ClearPixel(uint8_t x, uint8_t y) {
+    uint16_t index = x + (y / 8) * 128;
+    screen_buffer[index] &= ~(1 << (y % 8));
 }
 
 // Manual mapping (simple + safe)
@@ -255,23 +305,66 @@ void Init_MCU(void) {
     P0MDOUT = 0x00;
     XBR2 = 0x40;
 }
+   int rect_x=0;
+   int flag1=1;
+   int flag2=0;
 
 // ================= MAIN =================
 void main(void) {
     Init_MCU();
     OLED_Init();
-    OLED_ClearDisplay();
+    OLED_ClearDisplay();  
+    
 
     while (1) {
         ClearBuffer();
 
+	if(mode1==0){
+		flag1=1;
+		flag2=0;
+		waitms(50);
+	}
+	if(mode2==0){
+		flag2=1;
+		flag1=0;
+		waitms(50);
+	
+	}
+	
+	if(flag1){
         DrawString(10, 10, "PATH 1");
         DrawString(50, 10, "PATH 2");
         DrawString(90, 10, "PATH 3");
         
         //DrawCircle(64,32,10);
-       // DrawLine(10,20,45,20); 
-        DrawFilledRect(50,20,85,23);       
+       // DrawLine(10,20,45,20);
+       
+       if(button1==0){
+       	rect_x+=40;
+       	waitms(50);
+       }
+       if(button2==0){
+       	rect_x-=40;
+       	waitms(50);
+       }
+       
+       if(rect_x>128||rect_x+43>128){
+       	rect_x=80;
+       }
+       
+       if(rect_x<0){
+       	 rect_x=0;
+       }
+        
+        DrawFilledRect(rect_x,20,rect_x+40,23);       
         OLED_Update();
+    
+    }
+    if(flag2){
+    	DrawCircle(20,40,20);
+    	OLED_Update();
+    
+    }
+    	
     }
 }
