@@ -25,7 +25,7 @@ R_IXSEG,xdata,0000,NO
 R_ISEG,idata,0000,NO
 R_HOME,code,0000,NO
 R_XINIT,code,0000,NO
-R_CSEG,code,0987,NO
+R_CSEG,code,09B7,NO
 </SEGMENTS>
 
 <LOCALS>
@@ -1000,10 +1000,10 @@ BB FF rel3(L024018?;)
 12 addr16(_TIMER0_Init;)  
 12 addr16(_LCD_4BIT;)  
 12 addr16(_InitADC;)  
-75 data8(_InitPinADC_PARM_2;) 05
+75 data8(_InitPinADC_PARM_2;) 02
 75 82 02
 12 addr16(_InitPinADC;)  
-75 data8(_InitPinADC_PARM_2;) 06
+75 data8(_InitPinADC_PARM_2;) 03
 75 82 02
 12 addr16(_InitPinADC;)  
 A2 A4
@@ -1011,11 +1011,11 @@ E4
 33
 F5 data8(_main_button_1_128;)
 75 data8(_main_button_1_128;0x0001;+;) 00
-75 82 13
+75 82 10
 12 addr16(_ADC_at_Pin;)  
 AC 82
 AD 83
-75 82 12
+75 82 0F
 C0 04
 C0 05
 12 addr16(_ADC_at_Pin;)  
@@ -1245,6 +1245,22 @@ D0 01
 75 data8(_ir_send;) 01
 E4
 F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
 75 82 30
 12 addr16(_Timer3us;)  
 75 82 30

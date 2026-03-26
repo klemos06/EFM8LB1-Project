@@ -28,8 +28,8 @@
 #define LCD_D5 P1_2
 #define LCD_D6 P1_1
 #define LCD_D7 P1_0
-#define x_read P2_6
-#define y_read P2_5
+#define x_read P2_3
+#define y_read P2_2
 #define but_read P2_4
 
 #define CHARS_PER_LINE 16
@@ -418,6 +418,7 @@ int start_transmit (int start_bit){
 			Timer3us(560);
 			
 		}
+		
 		return 0; 
 	}
 	else {
@@ -517,8 +518,8 @@ void main (void)
 	TIMER0_Init(); // Initialize timer 0
 	LCD_4BIT(); // Configure LCD in 4 bit mode
 	InitADC(); // Initialize the ADC
-	InitPinADC(2,5); // Initialize pin 2.5 as analog
-	InitPinADC(2,6); // Initialize pin 2.6 as analog
+	InitPinADC(2,2); // Initialize pin 2.5 as analog
+	InitPinADC(2,3); // Initialize pin 2.6 as analog
 
 
 	while(1) {
@@ -527,8 +528,8 @@ void main (void)
 		//int_to_stringprint(1, button);
 		
 		
-		x_pos = ADC_at_Pin(QFP32_MUX_P2_6);
-		y_pos = ADC_at_Pin(QFP32_MUX_P2_5);
+		x_pos = ADC_at_Pin(QFP32_MUX_P2_3);
+		y_pos = ADC_at_Pin(QFP32_MUX_P2_2);
 		
 		if(x_pos > 11730) {
 			real_x =  11730 + 11730*((x_pos-11730)/4653.0);
@@ -601,7 +602,17 @@ void main (void)
 	transmit_byte(eight_bity);
 	end_transmit(1);
 	
+	
+	// final pulse - will be thick on oscope
 	ir_send =1;
+	Timer3us(560);
+	Timer3us(560);
+	Timer3us(560);				
+	Timer3us(560);
+	Timer3us(560);
+	Timer3us(560);
+	Timer3us(560);
+	Timer3us(560);
 	Timer3us(560);
 	Timer3us(560);
 	ir_send = 0; 
