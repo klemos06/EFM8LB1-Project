@@ -353,7 +353,7 @@ void int_to_stringprinty(int lin, int y)
 
 // converts fourteen bit to eight bit 
 int fourteen_to_eight(int val){
-	return ((val*255.0)/16383.0);
+	return ((val*255.0)/65535.0);
 }
 
 // this fcn is always happening --> therefore the pca will keep triggering in the background (if it runs depends on ir_send's val) 
@@ -567,8 +567,14 @@ void main (void)
 		*/
 		
 		// map 14 to 8 bits
-		eight_bitx = (uint8_t)(real_x>>6);
-		eight_bity = (uint8_t)(real_y>>6);
+		
+		eight_bitx = fourteen_to_eight(real_x);
+		eight_bity = fourteen_to_eight(real_y);
+		
+		
+		
+		//eight_bitx = (uint8_t)(real_x>>6);
+		//eight_bity = (uint8_t)(real_y>>6);
 		/*
 		start_now = 1;
 		//transmit_byte(eight_bitx, 7);		// xpos
@@ -623,6 +629,10 @@ void main (void)
 		int_to_stringprinty(2, real_y);	
 		
 		printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
+		
+		
+// ints are 16 bits
+		
 		
 		x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
 		float_to_stringprintx(1, x_pos);
