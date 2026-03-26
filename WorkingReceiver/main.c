@@ -102,6 +102,9 @@ int main(void)
     uint32_t frame_num = 0;
     int data [24] = {0};
 
+
+	x_temp = 0;
+	y_temp = 0;
     Init_Hardware();
     waitms(500);
 
@@ -159,7 +162,8 @@ int main(void)
         
         
      // DATA PARSING
-     
+     	x_temp = 0;
+		y_temp = 0;
         // Check start sequence
 		if (data[0] && data[1] && data[2] && !data[3] && !data[4]) {
 			// Continue parsing if valid start sequence
