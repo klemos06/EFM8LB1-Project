@@ -1,7 +1,7 @@
 0000              1   ;--------------------------------------------------------
 0000              2   ; File Created by C51
 0000              3   ; Version 1.0.0 #1170 (Feb 16 2022) (MSVC)
-0000              4   ; This file was generated Wed Mar 25 20:25:04 2026
+0000              4   ; This file was generated Wed Mar 25 22:37:36 2026
 0000              5   ;--------------------------------------------------------
                   5   $name WIP_IRCOMMS
                   6   $optc51 --model-small
@@ -586,11 +586,11 @@
 0000            586   ; data variables initialization
 0000            587   ;--------------------------------------------------------
 0000            588            rseg R_DINIT
-0000            589   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:42: int ir_send = 0; // this indicates if we need the ir to be on or off 
+0000            589   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:42: int ir_send = 0; // this indicates if we need the ir to be on or off 
 0000 E4         590            clr     a
-0001 F520       591            mov     _ir_send,a
-0003 F521       592            mov     (_ir_send + 1),a
-0005            593   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:43: int bit_count = 8; // max number of bits in the buffer
+0001 F5D8       591            mov     _ir_send,a
+0003 F5D9       592            mov     (_ir_send + 1),a
+0005            593   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:43: int bit_count = 8; // max number of bits in the buffer
 0005 75E008     594            mov     _bit_count,#0x08
 0008 E4         595            clr     a
 0009 F5E1       596            mov     (_bit_count + 1),a
@@ -603,124 +603,124 @@
 0000            603   ;Allocation info for local variables in function '_c51_external_startup'
 0000            604   ;------------------------------------------------------------
 0000            605   ;------------------------------------------------------------
-0000            606   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:46: char _c51_external_startup (void)
+0000            606   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:46: char _c51_external_startup (void)
 0000            607   ;        -----------------------------------------
 0000            608   ;         function _c51_external_startup
 0000            609   ;        -----------------------------------------
 0000            610   __c51_external_startup:
 0000            611            using   0
-0000            612   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:49: SFRPAGE = 0x00;
+0000            612   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:49: SFRPAGE = 0x00;
 0000 75A700     613            mov     _SFRPAGE,#0x00
-0003            614   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:50: WDTCN = 0xDE; //First key
+0003            614   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:50: WDTCN = 0xDE; //First key
 0003 7597DE     615            mov     _WDTCN,#0xDE
-0006            616   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:51: WDTCN = 0xAD; //Second key
+0006            616   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:51: WDTCN = 0xAD; //Second key
 0006 7597AD     617            mov     _WDTCN,#0xAD
-0009            618   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:53: VDM0CN |= 0x80;
+0009            618   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:53: VDM0CN |= 0x80;
 0009 43FF80     619            orl     _VDM0CN,#0x80
-000C            620   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:54: RSTSRC = 0x02;
+000C            620   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:54: RSTSRC = 0x02;
 000C 75EF02     621            mov     _RSTSRC,#0x02
-000F            622   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:61: SFRPAGE = 0x10;
+000F            622   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:61: SFRPAGE = 0x10;
 000F 75A710     623            mov     _SFRPAGE,#0x10
-0012            624   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:62: PFE0CN  = 0x20; // SYSCLK < 75 MHz.
+0012            624   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:62: PFE0CN  = 0x20; // SYSCLK < 75 MHz.
 0012 75C120     625            mov     _PFE0CN,#0x20
-0015            626   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:63: SFRPAGE = 0x00;
+0015            626   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:63: SFRPAGE = 0x00;
 0015 75A700     627            mov     _SFRPAGE,#0x00
-0018            628   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:84: CLKSEL = 0x00;
+0018            628   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:84: CLKSEL = 0x00;
 0018 75A900     629            mov     _CLKSEL,#0x00
-001B            630   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:85: CLKSEL = 0x00;
+001B            630   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:85: CLKSEL = 0x00;
 001B 75A900     631            mov     _CLKSEL,#0x00
-001E            632   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:86: while ((CLKSEL & 0x80) == 0);
+001E            632   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:86: while ((CLKSEL & 0x80) == 0);
 001E            633   L002001?:
 001E E5A9       634            mov     a,_CLKSEL
-0020 30E718     635            jnb     acc.7,L002001?
-0023            636   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:87: CLKSEL = 0x03;
+0020 30E730     635            jnb     acc.7,L002001?
+0023            636   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:87: CLKSEL = 0x03;
 0023 75A903     637            mov     _CLKSEL,#0x03
-0026            638   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:88: CLKSEL = 0x03;
+0026            638   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:88: CLKSEL = 0x03;
 0026 75A903     639            mov     _CLKSEL,#0x03
-0029            640   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:89: while ((CLKSEL & 0x80) == 0);
+0029            640   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:89: while ((CLKSEL & 0x80) == 0);
 0029            641   L002004?:
 0029 E5A9       642            mov     a,_CLKSEL
-002B 30E798     643            jnb     acc.7,L002004?
-002E            644   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:95: P0MDOUT |= 0b10000000;
+002B 30E7B0     643            jnb     acc.7,L002004?
+002E            644   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:95: P0MDOUT |= 0b10000000;
 002E 43A480     645            orl     _P0MDOUT,#0x80
-0031            646   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:96: P1MDOUT|=0b_1111_1111;
+0031            646   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:96: P1MDOUT|=0b_1111_1111;
 0031 E5A5       647            mov     a,_P1MDOUT
 0033 75A5FF     648            mov     _P1MDOUT,#0xFF
-0036            649   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:97: P2MDOUT|=0b_0000_0001;
+0036            649   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:97: P2MDOUT|=0b_0000_0001;
 0036 43A601     650            orl     _P2MDOUT,#0x01
-0039            651   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:99: XBR0     = 0x01; // Enable UART0 on P0.4(TX) and P0.5(RX)                     
+0039            651   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:99: XBR0     = 0x01; // Enable UART0 on P0.4(TX) and P0.5(RX)                     
 0039 75E101     652            mov     _XBR0,#0x01
-003C            653   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:100: XBR1     = 0X00;
+003C            653   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:100: XBR1     = 0X00;
 003C 75E200     654            mov     _XBR1,#0x00
-003F            655   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:101: XBR2     = 0x40; // Enable crossbar and weak pull-ups
+003F            655   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:101: XBR2     = 0x40; // Enable crossbar and weak pull-ups
 003F 75E340     656            mov     _XBR2,#0x40
-0042            657   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:107: SCON0 = 0x10;
+0042            657   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:107: SCON0 = 0x10;
 0042 759810     658            mov     _SCON0,#0x10
-0045            659   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:108: CKCON0 |= 0b_0000_0000 ; // Timer 1 uses the system clock divided by 12.
+0045            659   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:108: CKCON0 |= 0b_0000_0000 ; // Timer 1 uses the system clock divided by 12.
 0045 858E8E     660            mov     _CKCON0,_CKCON0
-0048            661   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:109: TH1 = 0x100-((SYSCLK/BAUDRATE)/(2L*12L));
+0048            661   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:109: TH1 = 0x100-((SYSCLK/BAUDRATE)/(2L*12L));
 0048 758DE6     662            mov     _TH1,#0xE6
-004B            663   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:110: TL1 = TH1;      // Init Timer1
+004B            663   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:110: TL1 = TH1;      // Init Timer1
 004B 858D8B     664            mov     _TL1,_TH1
-004E            665   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:111: TMOD &= ~0xf0;  // TMOD: timer 1 in 8-bit auto-reload
+004E            665   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:111: TMOD &= ~0xf0;  // TMOD: timer 1 in 8-bit auto-reload
 004E 53890F     666            anl     _TMOD,#0x0F
-0051            667   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:112: TMOD |=  0x20;                       
+0051            667   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:112: TMOD |=  0x20;                       
 0051 438920     668            orl     _TMOD,#0x20
-0054            669   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:113: TR1 = 1; // START Timer1
+0054            669   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:113: TR1 = 1; // START Timer1
 0054 D28E       670            setb    _TR1
-0056            671   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:114: TI = 1;  // Indicate TX0 ready
+0056            671   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:114: TI = 1;  // Indicate TX0 ready
 0056 D299       672            setb    _TI
-0058            673   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:117: SFRPAGE=0x0;
+0058            673   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:117: SFRPAGE=0x0;
 0058 75A700     674            mov     _SFRPAGE,#0x00
-005B            675   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:118: PCA0MD=0x00; // Disable and clear everything in the PCA
+005B            675   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:118: PCA0MD=0x00; // Disable and clear everything in the PCA
 005B 75D900     676            mov     _PCA0MD,#0x00
-005E            677   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:119: PCA0L=0; // Initialize the PCA counter to zero
+005E            677   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:119: PCA0L=0; // Initialize the PCA counter to zero
 005E 75F900     678            mov     _PCA0L,#0x00
-0061            679   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:120: PCA0H=0;
+0061            679   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:120: PCA0H=0;
 0061 75FA00     680            mov     _PCA0H,#0x00
-0064            681   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:121: PCA0MD=0b_0000_1000; // Configure PCA.  System CLK is the frequency input for the PCA
+0064            681   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:121: PCA0MD=0b_0000_1000; // Configure PCA.  System CLK is the frequency input for the PCA
 0064 75D908     682            mov     _PCA0MD,#0x08
-0067            683   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:123: PCA0CPM0=0b_0100_1001; // ECOM|MAT|ECCF;
+0067            683   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:123: PCA0CPM0=0b_0100_1001; // ECOM|MAT|ECCF;
 0067 75DA49     684            mov     _PCA0CPM0,#0x49
-006A            685   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:125: PCA0CPL0=(SYSCLK/(2*PCA_0_FREQ))%0x100; //Always write low byte first!
+006A            685   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:125: PCA0CPL0=(SYSCLK/(2*PCA_0_FREQ))%0x100; //Always write low byte first!
 006A 75FBB3     686            mov     _PCA0CPL0,#0xB3
-006D            687   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:126: PCA0CPH0=(SYSCLK/(2*PCA_0_FREQ))/0x100;
+006D            687   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:126: PCA0CPH0=(SYSCLK/(2*PCA_0_FREQ))/0x100;
 006D 75FC03     688            mov     _PCA0CPH0,#0x03
-0070            689   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:128: CR=1; // Enable PCA counter
+0070            689   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:128: CR=1; // Enable PCA counter
 0070 D2DE       690            setb    _CR
-0072            691   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:129: EIE1|=0b_0001_0000; // Enable PCA interrupts
+0072            691   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:129: EIE1|=0b_0001_0000; // Enable PCA interrupts
 0072 43E610     692            orl     _EIE1,#0x10
-0075            693   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:131: EA=1; // Enable interrupts
+0075            693   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:131: EA=1; // Enable interrupts
 0075 D2AF       694            setb    _EA
-0077            695   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:133: return 0;
+0077            695   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:133: return 0;
 0077 758200     696            mov     dpl,#0x00
 007A 22         697            ret
 007B            698   ;------------------------------------------------------------
 007B            699   ;Allocation info for local variables in function 'InitADC'
 007B            700   ;------------------------------------------------------------
 007B            701   ;------------------------------------------------------------
-007B            702   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:136: void InitADC (void)
+007B            702   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:136: void InitADC (void)
 007B            703   ;        -----------------------------------------
 007B            704   ;         function InitADC
 007B            705   ;        -----------------------------------------
 007B            706   _InitADC:
-007B            707   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:138: SFRPAGE = 0x00;
+007B            707   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:138: SFRPAGE = 0x00;
 007B 75A700     708            mov     _SFRPAGE,#0x00
-007E            709   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:139: ADEN=0; // Disable ADC
+007E            709   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:139: ADEN=0; // Disable ADC
 007E C2EF       710            clr     _ADEN
-0080            711   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:144: (0x0 << 0) ; // Accumulate n conversions: 0x0: 1, 0x1:4, 0x2:8, 0x3:16, 0x4:32
+0080            711   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:144: (0x0 << 0) ; // Accumulate n conversions: 0x0: 1, 0x1:4, 0x2:8, 0x3:16, 0x4:32
 0080 75B280     712            mov     _ADC0CN1,#0x80
-0083            713   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:148: (0x0 << 2); // 0:SYSCLK ADCCLK = SYSCLK. 1:HFOSC0 ADCCLK = HFOSC0.
+0083            713   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:148: (0x0 << 2); // 0:SYSCLK ADCCLK = SYSCLK. 1:HFOSC0 ADCCLK = HFOSC0.
 0083 75BC20     714            mov     _ADC0CF0,#0x20
-0086            715   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:152: (0x1E << 0); // Conversion Tracking Time. Tadtk = ADTK / (Fsarclk)
+0086            715   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:152: (0x1E << 0); // Conversion Tracking Time. Tadtk = ADTK / (Fsarclk)
 0086 75B91E     716            mov     _ADC0CF1,#0x1E
-0089            717   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:161: (0x0 << 0) ; // TEMPE. 0: Disable the Temperature Sensor. 1: Enable the Temperature Sensor.
+0089            717   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:161: (0x0 << 0) ; // TEMPE. 0: Disable the Temperature Sensor. 1: Enable the Temperature Sensor.
 0089 75E800     718            mov     _ADC0CN0,#0x00
-008C            719   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:166: (0x1F << 0); // ADPWR. Power Up Delay Time. Tpwrtime = ((4 * (ADPWR + 1)) + 2) / (Fadcclk)
+008C            719   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:166: (0x1F << 0); // ADPWR. Power Up Delay Time. Tpwrtime = ((4 * (ADPWR + 1)) + 2) / (Fadcclk)
 008C 75DF3F     720            mov     _ADC0CF2,#0x3F
-008F            721   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:170: (0x0 << 0) ; // ADCM. 0x0: ADBUSY, 0x1: TIMER0, 0x2: TIMER2, 0x3: TIMER3, 0x4: CNVSTR, 0x5: CEX5, 0x6: TIMER4, 0x7: TIMER5, 0x8: CLU0, 0x9: CLU1, 0xA: CLU2, 0xB: CLU3
+008F            721   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:170: (0x0 << 0) ; // ADCM. 0x0: ADBUSY, 0x1: TIMER0, 0x2: TIMER2, 0x3: TIMER3, 0x4: CNVSTR, 0x5: CEX5, 0x6: TIMER4, 0x7: TIMER5, 0x8: CLU0, 0x9: CLU1, 0xA: CLU2, 0xB: CLU3
 008F 75B300     722            mov     _ADC0CN2,#0x00
-0092            723   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:172: ADEN=1; // Enable ADC
+0092            723   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:172: ADEN=1; // Enable ADC
 0092 D2EF       724            setb    _ADEN
 0094 22         725            ret
 0095            726   ;------------------------------------------------------------
@@ -730,13 +730,13 @@
 0095            730   ;portno                    Allocated to registers r2 
 0095            731   ;mask                      Allocated to registers r3 
 0095            732   ;------------------------------------------------------------
-0095            733   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:175: void InitPinADC (unsigned char portno, unsigned char pin_num)
+0095            733   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:175: void InitPinADC (unsigned char portno, unsigned char pin_num)
 0095            734   ;        -----------------------------------------
 0095            735   ;         function InitPinADC
 0095            736   ;        -----------------------------------------
 0095            737   _InitPinADC:
 0095 AA82       738            mov     r2,dpl
-0097            739   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:179: mask=1<<pin_num;
+0097            739   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:179: mask=1<<pin_num;
 0097 8560F0     740            mov     b,_InitPinADC_PARM_2
 009A 05F0       741            inc     b
 009C 7401       742            mov     a,#0x01
@@ -744,56 +744,56 @@
 00A0            744   L004011?:
 00A0 25E0       745            add     a,acc
 00A2            746   L004013?:
-00A2 D5F098     747            djnz    b,L004011?
+00A2 D5F0B0     747            djnz    b,L004011?
 00A5 FB         748            mov     r3,a
-00A6            749   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:181: SFRPAGE = 0x20;
+00A6            749   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:181: SFRPAGE = 0x20;
 00A6 75A720     750            mov     _SFRPAGE,#0x20
-00A9            751   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:182: switch (portno)
-00A9 BA00D8     752            cjne    r2,#0x00,L004014?
+00A9            751   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:182: switch (portno)
+00A9 BA00F0     752            cjne    r2,#0x00,L004014?
 00AC 8000       753            sjmp    L004001?
 00AE            754   L004014?:
-00AE BA0158     755            cjne    r2,#0x01,L004015?
+00AE BA0170     755            cjne    r2,#0x01,L004015?
 00B1 8000       756            sjmp    L004002?
 00B3            757   L004015?:
-00B3            758   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:184: case 0:
-00B3 BA02D8     759            cjne    r2,#0x02,L004005?
+00B3            758   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:184: case 0:
+00B3 BA02F0     759            cjne    r2,#0x02,L004005?
 00B6 8000       760            sjmp    L004003?
 00B8            761   L004001?:
-00B8            762   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:185: P0MDIN &= (~mask); // Set pin as analog input
+00B8            762   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:185: P0MDIN &= (~mask); // Set pin as analog input
 00B8 EB         763            mov     a,r3
 00B9 F4         764            cpl     a
 00BA FA         765            mov     r2,a
 00BB 52F1       766            anl     _P0MDIN,a
-00BD            767   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:186: P0SKIP |= mask; // Skip Crossbar decoding for this pin
+00BD            767   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:186: P0SKIP |= mask; // Skip Crossbar decoding for this pin
 00BD EB         768            mov     a,r3
 00BE 42D4       769            orl     _P0SKIP,a
-00C0            770   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:187: break;
-00C0            771   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:188: case 1:
+00C0            770   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:187: break;
+00C0            771   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:188: case 1:
 00C0 8000       772            sjmp    L004005?
 00C2            773   L004002?:
-00C2            774   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:189: P1MDIN &= (~mask); // Set pin as analog input
+00C2            774   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:189: P1MDIN &= (~mask); // Set pin as analog input
 00C2 EB         775            mov     a,r3
 00C3 F4         776            cpl     a
 00C4 FA         777            mov     r2,a
 00C5 52F2       778            anl     _P1MDIN,a
-00C7            779   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:190: P1SKIP |= mask; // Skip Crossbar decoding for this pin
+00C7            779   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:190: P1SKIP |= mask; // Skip Crossbar decoding for this pin
 00C7 EB         780            mov     a,r3
 00C8 42D5       781            orl     _P1SKIP,a
-00CA            782   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:191: break;
-00CA            783   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:192: case 2:
+00CA            782   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:191: break;
+00CA            783   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:192: case 2:
 00CA 8000       784            sjmp    L004005?
 00CC            785   L004003?:
-00CC            786   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:193: P2MDIN &= (~mask); // Set pin as analog input
+00CC            786   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:193: P2MDIN &= (~mask); // Set pin as analog input
 00CC EB         787            mov     a,r3
 00CD F4         788            cpl     a
 00CE FA         789            mov     r2,a
 00CF 52F3       790            anl     _P2MDIN,a
-00D1            791   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:194: P2SKIP |= mask; // Skip Crossbar decoding for this pin
+00D1            791   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:194: P2SKIP |= mask; // Skip Crossbar decoding for this pin
 00D1 EB         792            mov     a,r3
 00D2 42CC       793            orl     _P2SKIP,a
-00D4            794   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:198: }
+00D4            794   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:198: }
 00D4            795   L004005?:
-00D4            796   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:199: SFRPAGE = 0x00;
+00D4            796   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:199: SFRPAGE = 0x00;
 00D4 75A700     797            mov     _SFRPAGE,#0x00
 00D7 22         798            ret
 00D8            799   ;------------------------------------------------------------
@@ -801,20 +801,20 @@
 00D8            801   ;------------------------------------------------------------
 00D8            802   ;pin                       Allocated to registers 
 00D8            803   ;------------------------------------------------------------
-00D8            804   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:202: unsigned int ADC_at_Pin(unsigned char pin)
+00D8            804   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:202: unsigned int ADC_at_Pin(unsigned char pin)
 00D8            805   ;        -----------------------------------------
 00D8            806   ;         function ADC_at_Pin
 00D8            807   ;        -----------------------------------------
 00D8            808   _ADC_at_Pin:
 00D8 8582BB     809            mov     _ADC0MX,dpl
-00DB            810   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:205: ADINT = 0;
+00DB            810   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:205: ADINT = 0;
 00DB C2ED       811            clr     _ADINT
-00DD            812   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:206: ADBUSY = 1;     // Convert voltage at the pin
+00DD            812   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:206: ADBUSY = 1;     // Convert voltage at the pin
 00DD D2EC       813            setb    _ADBUSY
-00DF            814   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:207: while (!ADINT); // Wait for conversion to complete
+00DF            814   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:207: while (!ADINT); // Wait for conversion to complete
 00DF            815   L005001?:
-00DF 30ED58     816            jnb     _ADINT,L005001?
-00E2            817   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:208: return (ADC0);
+00DF 30ED70     816            jnb     _ADINT,L005001?
+00E2            817   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:208: return (ADC0);
 00E2 85BD82     818            mov     dpl,_ADC0
 00E5 85BE83     819            mov     dph,(_ADC0 >> 8)
 00E8 22         820            ret
@@ -823,12 +823,12 @@
 00E9            823   ;------------------------------------------------------------
 00E9            824   ;pin                       Allocated to registers r2 
 00E9            825   ;------------------------------------------------------------
-00E9            826   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:211: float Volts_at_Pin(unsigned char pin)
+00E9            826   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:211: float Volts_at_Pin(unsigned char pin)
 00E9            827   ;        -----------------------------------------
 00E9            828   ;         function Volts_at_Pin
 00E9            829   ;        -----------------------------------------
 00E9            830   _Volts_at_Pin:
-00E9            831   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:213: return ((ADC_at_Pin(pin)*VDD)/16383.0);
+00E9            831   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:213: return ((ADC_at_Pin(pin)*VDD)/16383.0);
 00E9 120000     832            lcall   _ADC_at_Pin
 00EC 120000     833            lcall   ___uint2fs
 00EF AA82       834            mov     r2,dpl
@@ -881,40 +881,40 @@
 0144            881   ;us                        Allocated to registers r2 
 0144            882   ;i                         Allocated to registers r3 
 0144            883   ;------------------------------------------------------------
-0144            884   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:217: void Timer3us(unsigned char us)
+0144            884   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:217: void Timer3us(unsigned char us)
 0144            885   ;        -----------------------------------------
 0144            886   ;         function Timer3us
 0144            887   ;        -----------------------------------------
 0144            888   _Timer3us:
 0144 AA82       889            mov     r2,dpl
-0146            890   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:222: CKCON0|=0b_0100_0000;
+0146            890   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:222: CKCON0|=0b_0100_0000;
 0146 438E40     891            orl     _CKCON0,#0x40
-0149            892   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:224: TMR3RL = (-(SYSCLK)/1000000L); // Set Timer3 to overflow in 1us.
+0149            892   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:224: TMR3RL = (-(SYSCLK)/1000000L); // Set Timer3 to overflow in 1us.
 0149 7592B8     893            mov     _TMR3RL,#0xB8
 014C 7593FF     894            mov     (_TMR3RL >> 8),#0xFF
-014F            895   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:225: TMR3 = TMR3RL;                 // Initialize Timer3 for first overflow
+014F            895   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:225: TMR3 = TMR3RL;                 // Initialize Timer3 for first overflow
 014F 859294     896            mov     _TMR3,_TMR3RL
 0152 859395     897            mov     (_TMR3 >> 8),(_TMR3RL >> 8)
-0155            898   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:227: TMR3CN0 = 0x04;                 // Sart Timer3 and clear overflow flag
+0155            898   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:227: TMR3CN0 = 0x04;                 // Sart Timer3 and clear overflow flag
 0155 759104     899            mov     _TMR3CN0,#0x04
-0158            900   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:228: for (i = 0; i < us; i++)       // Count <us> overflows
+0158            900   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:228: for (i = 0; i < us; i++)       // Count <us> overflows
 0158 7B00       901            mov     r3,#0x00
 015A            902   L007004?:
 015A C3         903            clr     c
 015B EB         904            mov     a,r3
 015C 9A         905            subb    a,r2
 015D 5000       906            jnc     L007007?
-015F            907   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:230: while (!(TMR3CN0 & 0x80));  // Wait for overflow
+015F            907   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:230: while (!(TMR3CN0 & 0x80));  // Wait for overflow
 015F            908   L007001?:
 015F E591       909            mov     a,_TMR3CN0
-0161 30E758     910            jnb     acc.7,L007001?
-0164            911   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:231: TMR3CN0 &= ~(0x80);         // Clear overflow indicator
+0161 30E770     910            jnb     acc.7,L007001?
+0164            911   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:231: TMR3CN0 &= ~(0x80);         // Clear overflow indicator
 0164 53917F     912            anl     _TMR3CN0,#0x7F
-0167            913   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:228: for (i = 0; i < us; i++)       // Count <us> overflows
+0167            913   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:228: for (i = 0; i < us; i++)       // Count <us> overflows
 0167 0B         914            inc     r3
 0168 8000       915            sjmp    L007004?
 016A            916   L007007?:
-016A            917   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:233: TMR3CN0 = 0 ;                   // Stop Timer3 and clear overflow flag
+016A            917   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:233: TMR3CN0 = 0 ;                   // Stop Timer3 and clear overflow flag
 016A 759100     918            mov     _TMR3CN0,#0x00
 016D 22         919            ret
 016E            920   ;------------------------------------------------------------
@@ -923,38 +923,38 @@
 016E            923   ;ms                        Allocated to registers r2 r3 
 016E            924   ;j                         Allocated to registers r2 r3 
 016E            925   ;------------------------------------------------------------
-016E            926   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:236: void waitms (unsigned int ms)
+016E            926   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:236: void waitms (unsigned int ms)
 016E            927   ;        -----------------------------------------
 016E            928   ;         function waitms
 016E            929   ;        -----------------------------------------
 016E            930   _waitms:
 016E AA82       931            mov     r2,dpl
 0170 AB83       932            mov     r3,dph
-0172            933   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:239: for(j=ms; j!=0; j--)
+0172            933   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:239: for(j=ms; j!=0; j--)
 0172            934   L008001?:
-0172 BA00D8     935            cjne    r2,#0x00,L008010?
-0175 BB00D8     936            cjne    r3,#0x00,L008010?
+0172 BA00F0     935            cjne    r2,#0x00,L008010?
+0175 BB00F0     936            cjne    r3,#0x00,L008010?
 0178 22         937            ret
 0179            938   L008010?:
-0179            939   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:241: Timer3us(249);
+0179            939   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:241: Timer3us(249);
 0179 7582F9     940            mov     dpl,#0xF9
 017C C002       941            push    ar2
 017E C003       942            push    ar3
 0180 120000     943            lcall   _Timer3us
-0183            944   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:242: Timer3us(249);
+0183            944   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:242: Timer3us(249);
 0183 7582F9     945            mov     dpl,#0xF9
 0186 120000     946            lcall   _Timer3us
-0189            947   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:243: Timer3us(249);
+0189            947   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:243: Timer3us(249);
 0189 7582F9     948            mov     dpl,#0xF9
 018C 120000     949            lcall   _Timer3us
-018F            950   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:244: Timer3us(250);
+018F            950   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:244: Timer3us(250);
 018F 7582FA     951            mov     dpl,#0xFA
 0192 120000     952            lcall   _Timer3us
 0195 D003       953            pop     ar3
 0197 D002       954            pop     ar2
-0199            955   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:239: for(j=ms; j!=0; j--)
+0199            955   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:239: for(j=ms; j!=0; j--)
 0199 1A         956            dec     r2
-019A BAFF18     957            cjne    r2,#0xff,L008011?
+019A BAFF30     957            cjne    r2,#0xff,L008011?
 019D 1B         958            dec     r3
 019E            959   L008011?:
 019E 8000       960            sjmp    L008001?
@@ -962,17 +962,17 @@
 01A0            962   ;Allocation info for local variables in function 'LCD_pulse'
 01A0            963   ;------------------------------------------------------------
 01A0            964   ;------------------------------------------------------------
-01A0            965   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:247: void LCD_pulse (void)
+01A0            965   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:247: void LCD_pulse (void)
 01A0            966   ;        -----------------------------------------
 01A0            967   ;         function LCD_pulse
 01A0            968   ;        -----------------------------------------
 01A0            969   _LCD_pulse:
-01A0            970   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:249: LCD_E=1;
+01A0            970   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:249: LCD_E=1;
 01A0 D2A0       971            setb    _P2_0
-01A2            972   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:250: Timer3us(40);
+01A2            972   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:250: Timer3us(40);
 01A2 758228     973            mov     dpl,#0x28
 01A5 120000     974            lcall   _Timer3us
-01A8            975   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:251: LCD_E=0;
+01A8            975   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:251: LCD_E=0;
 01A8 C2A0       976            clr     _P2_0
 01AA 22         977            ret
 01AB            978   ;------------------------------------------------------------
@@ -980,66 +980,66 @@
 01AB            980   ;------------------------------------------------------------
 01AB            981   ;x                         Allocated to registers r2 
 01AB            982   ;------------------------------------------------------------
-01AB            983   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:254: void LCD_byte (unsigned char x)
+01AB            983   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:254: void LCD_byte (unsigned char x)
 01AB            984   ;        -----------------------------------------
 01AB            985   ;         function LCD_byte
 01AB            986   ;        -----------------------------------------
 01AB            987   _LCD_byte:
 01AB AA82       988            mov     r2,dpl
-01AD            989   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:257: ACC=x; //Send high nible
+01AD            989   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:257: ACC=x; //Send high nible
 01AD 8AE0       990            mov     _ACC,r2
-01AF            991   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:258: LCD_D7=ACC_7;
+01AF            991   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:258: LCD_D7=ACC_7;
 01AF A2E7       992            mov     c,_ACC_7
 01B1 9290       993            mov     _P1_0,c
-01B3            994   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:259: LCD_D6=ACC_6;
+01B3            994   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:259: LCD_D6=ACC_6;
 01B3 A2E6       995            mov     c,_ACC_6
 01B5 9291       996            mov     _P1_1,c
-01B7            997   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:260: LCD_D5=ACC_5;
+01B7            997   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:260: LCD_D5=ACC_5;
 01B7 A2E5       998            mov     c,_ACC_5
 01B9 9292       999            mov     _P1_2,c
-01BB           1000   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:261: LCD_D4=ACC_4;
+01BB           1000   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:261: LCD_D4=ACC_4;
 01BB A2E4      1001            mov     c,_ACC_4
 01BD 9293      1002            mov     _P1_3,c
-01BF           1003   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:262: LCD_pulse();
+01BF           1003   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:262: LCD_pulse();
 01BF C002      1004            push    ar2
 01C1 120000    1005            lcall   _LCD_pulse
-01C4           1006   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:263: Timer3us(40);
+01C4           1006   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:263: Timer3us(40);
 01C4 758228    1007            mov     dpl,#0x28
 01C7 120000    1008            lcall   _Timer3us
 01CA D002      1009            pop     ar2
-01CC           1010   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:264: ACC=x; //Send low nible
+01CC           1010   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:264: ACC=x; //Send low nible
 01CC 8AE0      1011            mov     _ACC,r2
-01CE           1012   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:265: LCD_D7=ACC_3;
+01CE           1012   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:265: LCD_D7=ACC_3;
 01CE A2E3      1013            mov     c,_ACC_3
 01D0 9290      1014            mov     _P1_0,c
-01D2           1015   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:266: LCD_D6=ACC_2;
+01D2           1015   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:266: LCD_D6=ACC_2;
 01D2 A2E2      1016            mov     c,_ACC_2
 01D4 9291      1017            mov     _P1_1,c
-01D6           1018   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:267: LCD_D5=ACC_1;
+01D6           1018   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:267: LCD_D5=ACC_1;
 01D6 A2E1      1019            mov     c,_ACC_1
 01D8 9292      1020            mov     _P1_2,c
-01DA           1021   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:268: LCD_D4=ACC_0;
+01DA           1021   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:268: LCD_D4=ACC_0;
 01DA A2E0      1022            mov     c,_ACC_0
 01DC 9293      1023            mov     _P1_3,c
-01DE           1024   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:269: LCD_pulse();
+01DE           1024   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:269: LCD_pulse();
 01DE 020000    1025            ljmp    _LCD_pulse
 01E1           1026   ;------------------------------------------------------------
 01E1           1027   ;Allocation info for local variables in function 'WriteData'
 01E1           1028   ;------------------------------------------------------------
 01E1           1029   ;x                         Allocated to registers r2 
 01E1           1030   ;------------------------------------------------------------
-01E1           1031   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:273: void WriteData (unsigned char x)
+01E1           1031   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:273: void WriteData (unsigned char x)
 01E1           1032   ;        -----------------------------------------
 01E1           1033   ;         function WriteData
 01E1           1034   ;        -----------------------------------------
 01E1           1035   _WriteData:
 01E1 AA82      1036            mov     r2,dpl
-01E3           1037   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:275: LCD_RS=1;
+01E3           1037   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:275: LCD_RS=1;
 01E3 D297      1038            setb    _P1_7
-01E5           1039   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:276: LCD_byte(x);
+01E5           1039   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:276: LCD_byte(x);
 01E5 8A82      1040            mov     dpl,r2
 01E7 120000    1041            lcall   _LCD_byte
-01EA           1042   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:277: waitms(2);
+01EA           1042   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:277: waitms(2);
 01EA 900002    1043            mov     dptr,#0x0002
 01ED 020000    1044            ljmp    _waitms
 01F0           1045   ;------------------------------------------------------------
@@ -1047,53 +1047,53 @@
 01F0           1047   ;------------------------------------------------------------
 01F0           1048   ;x                         Allocated to registers r2 
 01F0           1049   ;------------------------------------------------------------
-01F0           1050   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:280: void WriteCommand (unsigned char x)
+01F0           1050   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:280: void WriteCommand (unsigned char x)
 01F0           1051   ;        -----------------------------------------
 01F0           1052   ;         function WriteCommand
 01F0           1053   ;        -----------------------------------------
 01F0           1054   _WriteCommand:
 01F0 AA82      1055            mov     r2,dpl
-01F2           1056   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:282: LCD_RS=0;
+01F2           1056   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:282: LCD_RS=0;
 01F2 C297      1057            clr     _P1_7
-01F4           1058   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:283: LCD_byte(x);
+01F4           1058   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:283: LCD_byte(x);
 01F4 8A82      1059            mov     dpl,r2
 01F6 120000    1060            lcall   _LCD_byte
-01F9           1061   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:284: waitms(5);
+01F9           1061   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:284: waitms(5);
 01F9 900005    1062            mov     dptr,#0x0005
 01FC 020000    1063            ljmp    _waitms
 01FF           1064   ;------------------------------------------------------------
 01FF           1065   ;Allocation info for local variables in function 'LCD_4BIT'
 01FF           1066   ;------------------------------------------------------------
 01FF           1067   ;------------------------------------------------------------
-01FF           1068   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:287: void LCD_4BIT (void)
+01FF           1068   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:287: void LCD_4BIT (void)
 01FF           1069   ;        -----------------------------------------
 01FF           1070   ;         function LCD_4BIT
 01FF           1071   ;        -----------------------------------------
 01FF           1072   _LCD_4BIT:
-01FF           1073   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:289: LCD_E=0; // Resting state of LCD's enable is zero
+01FF           1073   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:289: LCD_E=0; // Resting state of LCD's enable is zero
 01FF C2A0      1074            clr     _P2_0
-0201           1075   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:291: waitms(20);
+0201           1075   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:291: waitms(20);
 0201 900014    1076            mov     dptr,#0x0014
 0204 120000    1077            lcall   _waitms
-0207           1078   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:293: WriteCommand(0x33);
+0207           1078   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:293: WriteCommand(0x33);
 0207 758233    1079            mov     dpl,#0x33
 020A 120000    1080            lcall   _WriteCommand
-020D           1081   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:294: WriteCommand(0x33);
+020D           1081   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:294: WriteCommand(0x33);
 020D 758233    1082            mov     dpl,#0x33
 0210 120000    1083            lcall   _WriteCommand
-0213           1084   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:295: WriteCommand(0x32); // Change to 4-bit mode
+0213           1084   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:295: WriteCommand(0x32); // Change to 4-bit mode
 0213 758232    1085            mov     dpl,#0x32
 0216 120000    1086            lcall   _WriteCommand
-0219           1087   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:298: WriteCommand(0x28);
+0219           1087   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:298: WriteCommand(0x28);
 0219 758228    1088            mov     dpl,#0x28
 021C 120000    1089            lcall   _WriteCommand
-021F           1090   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:299: WriteCommand(0x0c);
+021F           1090   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:299: WriteCommand(0x0c);
 021F 75820C    1091            mov     dpl,#0x0C
 0222 120000    1092            lcall   _WriteCommand
-0225           1093   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:300: WriteCommand(0x01); // Clear screen command (takes some time)
+0225           1093   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:300: WriteCommand(0x01); // Clear screen command (takes some time)
 0225 758201    1094            mov     dpl,#0x01
 0228 120000    1095            lcall   _WriteCommand
-022B           1096   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:301: waitms(20); // Wait for clear screen command to finsih.
+022B           1096   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:301: waitms(20); // Wait for clear screen command to finsih.
 022B 900014    1097            mov     dptr,#0x0014
 022E 020000    1098            ljmp    _waitms
 0231           1099   ;------------------------------------------------------------
@@ -1103,7 +1103,7 @@
 0231           1103   ;string                    Allocated to registers r2 r3 r4 
 0231           1104   ;j                         Allocated to registers r5 r6 
 0231           1105   ;------------------------------------------------------------
-0231           1106   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:304: void LCDprint(char * string, unsigned char line, bit clear)
+0231           1106   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:304: void LCDprint(char * string, unsigned char line, bit clear)
 0231           1107   ;        -----------------------------------------
 0231           1108   ;         function LCDprint
 0231           1109   ;        -----------------------------------------
@@ -1111,9 +1111,9 @@
 0231 AA82      1111            mov     r2,dpl
 0233 AB83      1112            mov     r3,dph
 0235 ACF0      1113            mov     r4,b
-0237           1114   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:308: WriteCommand(line==2?0xc0:0x80);
+0237           1114   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:308: WriteCommand(line==2?0xc0:0x80);
 0237 7402      1115            mov     a,#0x02
-0239 B5A058    1116            cjne    a,_LCDprint_PARM_2,L014013?
+0239 B5A070    1116            cjne    a,_LCDprint_PARM_2,L014013?
 023C 7DC0      1117            mov     r5,#0xC0
 023E 8000      1118            sjmp    L014014?
 0240           1119   L014013?:
@@ -1124,13 +1124,13 @@
 0246 C003      1124            push    ar3
 0248 C004      1125            push    ar4
 024A 120000    1126            lcall   _WriteCommand
-024D           1127   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:309: waitms(5);
+024D           1127   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:309: waitms(5);
 024D 900005    1128            mov     dptr,#0x0005
 0250 120000    1129            lcall   _waitms
 0253 D004      1130            pop     ar4
 0255 D003      1131            pop     ar3
 0257 D002      1132            pop     ar2
-0259           1133   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:310: for(j=0; string[j]!=0; j++)         WriteData(string[j]);// Write the message
+0259           1133   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:310: for(j=0; string[j]!=0; j++)      WriteData(string[j]);// Write the message
 0259 7D00      1134            mov     r5,#0x00
 025B 7E00      1135            mov     r6,#0x00
 025D           1136   L014003?:
@@ -1160,12 +1160,12 @@
 0286 D003      1160            pop     ar3
 0288 D002      1161            pop     ar2
 028A 0D        1162            inc     r5
-028B BD00D8    1163            cjne    r5,#0x00,L014003?
+028B BD00F0    1163            cjne    r5,#0x00,L014003?
 028E 0E        1164            inc     r6
 028F 8000      1165            sjmp    L014003?
 0291           1166   L014006?:
-0291           1167   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:311: if(clear) for(; j<CHARS_PER_LINE; j++) WriteData(' '); // Clear the rest of the line
-0291 301098    1168            jnb     _LCDprint_PARM_3,L014011?
+0291           1167   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:311: if(clear) for(; j<CHARS_PER_LINE; j++) WriteData(' '); // Clear the rest of the line
+0291 3010B0    1168            jnb     _LCDprint_PARM_3,L014011?
 0294 8D02      1169            mov     ar2,r5
 0296 8E03      1170            mov     ar3,r6
 0298           1171   L014007?:
@@ -1183,7 +1183,7 @@
 02AD D003      1183            pop     ar3
 02AF D002      1184            pop     ar2
 02B1 0A        1185            inc     r2
-02B2 BA00D8    1186            cjne    r2,#0x00,L014007?
+02B2 BA00F0    1186            cjne    r2,#0x00,L014007?
 02B5 0B        1187            inc     r3
 02B6 8000      1188            sjmp    L014007?
 02B8           1189   L014011?:
@@ -1192,16 +1192,16 @@
 02B9           1192   ;Allocation info for local variables in function 'TIMER0_Init'
 02B9           1193   ;------------------------------------------------------------
 02B9           1194   ;------------------------------------------------------------
-02B9           1195   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:315: void TIMER0_Init(void)
+02B9           1195   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:315: void TIMER0_Init(void)
 02B9           1196   ;        -----------------------------------------
 02B9           1197   ;         function TIMER0_Init
 02B9           1198   ;        -----------------------------------------
 02B9           1199   _TIMER0_Init:
-02B9           1200   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:317: TMOD&=0b_1111_0000; // Set the bits of Timer/Counter 0 to zero
+02B9           1200   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:317: TMOD&=0b_1111_0000; // Set the bits of Timer/Counter 0 to zero
 02B9 5389F0    1201            anl     _TMOD,#0xF0
-02BC           1202   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:318: TMOD|=0b_0000_0001; // Timer/Counter 0 used as a 16-bit timer
+02BC           1202   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:318: TMOD|=0b_0000_0001; // Timer/Counter 0 used as a 16-bit timer
 02BC 438901    1203            orl     _TMOD,#0x01
-02BF           1204   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:319: TR0=0; // Stop Timer/Counter 0
+02BF           1204   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:319: TR0=0; // Stop Timer/Counter 0
 02BF C28C      1205            clr     _TR0
 02C1 22        1206            ret
 02C2           1207   ;------------------------------------------------------------
@@ -1210,29 +1210,29 @@
 02C2           1210   ;x                         Allocated with name '_float_to_stringprintx_PARM_2'
 02C2           1211   ;line                      Allocated to registers r2 r3 
 02C2           1212   ;------------------------------------------------------------
-02C2           1213   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:325: void float_to_stringprintx(int line, float x)
+02C2           1213   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:325: void float_to_stringprintx(int line, float x)
 02C2           1214   ;        -----------------------------------------
 02C2           1215   ;         function float_to_stringprintx
 02C2           1216   ;        -----------------------------------------
 02C2           1217   _float_to_stringprintx:
 02C2 AA82      1218            mov     r2,dpl
 02C4 AB83      1219            mov     r3,dph
-02C6           1220   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:327: sprintf(buffer, "pos x: %.2f", x); // print string to buffer
+02C6           1220   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:327: sprintf(buffer, "pos x: %.2f", x); // print string to buffer
 02C6 C002      1221            push    ar2
 02C8 C003      1222            push    ar3
 02CA C050      1223            push    _float_to_stringprintx_PARM_2
 02CC C051      1224            push    (_float_to_stringprintx_PARM_2 + 1)
 02CE C052      1225            push    (_float_to_stringprintx_PARM_2 + 2)
 02D0 C053      1226            push    (_float_to_stringprintx_PARM_2 + 3)
-02D2 7418      1227            mov     a,#__str_0
+02D2 7430      1227            mov     a,#__str_0
 02D4 C0E0      1228            push    acc
 02D6 74C3      1229            mov     a,#(__str_0 >> 8)
 02D8 C0E0      1230            push    acc
 02DA 7480      1231            mov     a,#0x80
 02DC C0E0      1232            push    acc
-02DE 74F8      1233            mov     a,#_buffer
+02DE 7400      1233            mov     a,#_buffer
 02E0 C0E0      1234            push    acc
-02E2 744C      1235            mov     a,#(_buffer >> 8)
+02E2 744D      1235            mov     a,#(_buffer >> 8)
 02E4 C0E0      1236            push    acc
 02E6 7440      1237            mov     a,#0x40
 02E8 C0E0      1238            push    acc
@@ -1242,10 +1242,10 @@
 02F1 F581      1242            mov     sp,a
 02F3 D003      1243            pop     ar3
 02F5 D002      1244            pop     ar2
-02F7           1245   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:328: LCDprint(buffer, line, 1); // print buffer to LCD
+02F7           1245   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:328: LCDprint(buffer, line, 1); // print buffer to LCD
 02F7 8AA0      1246            mov     _LCDprint_PARM_2,r2
 02F9 D210      1247            setb    _LCDprint_PARM_3
-02FB 904CF8    1248            mov     dptr,#_buffer
+02FB 904D00    1248            mov     dptr,#_buffer
 02FE 75F040    1249            mov     b,#0x40
 0301 020000    1250            ljmp    _LCDprint
 0304           1251   ;------------------------------------------------------------
@@ -1254,29 +1254,29 @@
 0304           1254   ;x                         Allocated with name '_float_to_stringprinty_PARM_2'
 0304           1255   ;line                      Allocated to registers r2 r3 
 0304           1256   ;------------------------------------------------------------
-0304           1257   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:333: void float_to_stringprinty(int line, float x)
+0304           1257   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:333: void float_to_stringprinty(int line, float x)
 0304           1258   ;        -----------------------------------------
 0304           1259   ;         function float_to_stringprinty
 0304           1260   ;        -----------------------------------------
 0304           1261   _float_to_stringprinty:
 0304 AA82      1262            mov     r2,dpl
 0306 AB83      1263            mov     r3,dph
-0308           1264   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:335: sprintf(buffer, "pos y: %.2f", x); // print string to buffer
+0308           1264   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:335: sprintf(buffer, "pos y: %.2f", x); // print string to buffer
 0308 C002      1265            push    ar2
 030A C003      1266            push    ar3
 030C C000      1267            push    _float_to_stringprinty_PARM_2
 030E C001      1268            push    (_float_to_stringprinty_PARM_2 + 1)
 0310 C002      1269            push    (_float_to_stringprinty_PARM_2 + 2)
 0312 C003      1270            push    (_float_to_stringprinty_PARM_2 + 3)
-0314 7498      1271            mov     a,#__str_1
+0314 74B0      1271            mov     a,#__str_1
 0316 C0E0      1272            push    acc
 0318 74C3      1273            mov     a,#(__str_1 >> 8)
 031A C0E0      1274            push    acc
 031C 7480      1275            mov     a,#0x80
 031E C0E0      1276            push    acc
-0320 74F8      1277            mov     a,#_buffer
+0320 7400      1277            mov     a,#_buffer
 0322 C0E0      1278            push    acc
-0324 744C      1279            mov     a,#(_buffer >> 8)
+0324 744D      1279            mov     a,#(_buffer >> 8)
 0326 C0E0      1280            push    acc
 0328 7440      1281            mov     a,#0x40
 032A C0E0      1282            push    acc
@@ -1286,10 +1286,10 @@
 0333 F581      1286            mov     sp,a
 0335 D003      1287            pop     ar3
 0337 D002      1288            pop     ar2
-0339           1289   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:336: LCDprint(buffer, line, 1); // print buffer to LCD
+0339           1289   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:336: LCDprint(buffer, line, 1); // print buffer to LCD
 0339 8AA0      1290            mov     _LCDprint_PARM_2,r2
 033B D210      1291            setb    _LCDprint_PARM_3
-033D 904CF8    1292            mov     dptr,#_buffer
+033D 904D00    1292            mov     dptr,#_buffer
 0340 75F040    1293            mov     b,#0x40
 0343 020000    1294            ljmp    _LCDprint
 0346           1295   ;------------------------------------------------------------
@@ -1298,27 +1298,27 @@
 0346           1298   ;y                         Allocated with name '_int_to_stringprintx_PARM_2'
 0346           1299   ;lin                       Allocated to registers r2 r3 
 0346           1300   ;------------------------------------------------------------
-0346           1301   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:340: void int_to_stringprintx(int lin, int y)
+0346           1301   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:340: void int_to_stringprintx(int lin, int y)
 0346           1302   ;        -----------------------------------------
 0346           1303   ;         function int_to_stringprintx
 0346           1304   ;        -----------------------------------------
 0346           1305   _int_to_stringprintx:
 0346 AA82      1306            mov     r2,dpl
 0348 AB83      1307            mov     r3,dph
-034A           1308   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:342: sprintf(buffer, "x: %.1d", y); // print string to buffer
+034A           1308   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:342: sprintf(buffer, "x: %.1d", y); // print string to buffer
 034A C002      1309            push    ar2
 034C C003      1310            push    ar3
 034E C0B0      1311            push    _int_to_stringprintx_PARM_2
 0350 C0B1      1312            push    (_int_to_stringprintx_PARM_2 + 1)
-0352 74D8      1313            mov     a,#__str_2
+0352 74F0      1313            mov     a,#__str_2
 0354 C0E0      1314            push    acc
 0356 74C3      1315            mov     a,#(__str_2 >> 8)
 0358 C0E0      1316            push    acc
 035A 7480      1317            mov     a,#0x80
 035C C0E0      1318            push    acc
-035E 74F8      1319            mov     a,#_buffer
+035E 7400      1319            mov     a,#_buffer
 0360 C0E0      1320            push    acc
-0362 744C      1321            mov     a,#(_buffer >> 8)
+0362 744D      1321            mov     a,#(_buffer >> 8)
 0364 C0E0      1322            push    acc
 0366 7440      1323            mov     a,#0x40
 0368 C0E0      1324            push    acc
@@ -1328,10 +1328,10 @@
 0371 F581      1328            mov     sp,a
 0373 D003      1329            pop     ar3
 0375 D002      1330            pop     ar2
-0377           1331   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:343: LCDprint(buffer, lin, 1); // print buffer to LCD
+0377           1331   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:343: LCDprint(buffer, lin, 1); // print buffer to LCD
 0377 8AA0      1332            mov     _LCDprint_PARM_2,r2
 0379 D210      1333            setb    _LCDprint_PARM_3
-037B 904CF8    1334            mov     dptr,#_buffer
+037B 904D00    1334            mov     dptr,#_buffer
 037E 75F040    1335            mov     b,#0x40
 0381 020000    1336            ljmp    _LCDprint
 0384           1337   ;------------------------------------------------------------
@@ -1340,27 +1340,27 @@
 0384           1340   ;y                         Allocated with name '_int_to_stringprinty_PARM_2'
 0384           1341   ;lin                       Allocated to registers r2 r3 
 0384           1342   ;------------------------------------------------------------
-0384           1343   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:346: void int_to_stringprinty(int lin, int y)
+0384           1343   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:346: void int_to_stringprinty(int lin, int y)
 0384           1344   ;        -----------------------------------------
 0384           1345   ;         function int_to_stringprinty
 0384           1346   ;        -----------------------------------------
 0384           1347   _int_to_stringprinty:
 0384 AA82      1348            mov     r2,dpl
 0386 AB83      1349            mov     r3,dph
-0388           1350   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:348: sprintf(buffer, "y: %.1d", y); // print string to buffer
+0388           1350   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:348: sprintf(buffer, "y: %.1d", y); // print string to buffer
 0388 C002      1351            push    ar2
 038A C003      1352            push    ar3
 038C C060      1353            push    _int_to_stringprinty_PARM_2
 038E C061      1354            push    (_int_to_stringprinty_PARM_2 + 1)
-0390 7418      1355            mov     a,#__str_3
+0390 7430      1355            mov     a,#__str_3
 0392 C0E0      1356            push    acc
 0394 74C4      1357            mov     a,#(__str_3 >> 8)
 0396 C0E0      1358            push    acc
 0398 7480      1359            mov     a,#0x80
 039A C0E0      1360            push    acc
-039C 74F8      1361            mov     a,#_buffer
+039C 7400      1361            mov     a,#_buffer
 039E C0E0      1362            push    acc
-03A0 744C      1363            mov     a,#(_buffer >> 8)
+03A0 744D      1363            mov     a,#(_buffer >> 8)
 03A2 C0E0      1364            push    acc
 03A4 7440      1365            mov     a,#0x40
 03A6 C0E0      1366            push    acc
@@ -1370,10 +1370,10 @@
 03AF F581      1370            mov     sp,a
 03B1 D003      1371            pop     ar3
 03B3 D002      1372            pop     ar2
-03B5           1373   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:349: LCDprint(buffer, lin, 1); // print buffer to LCD
+03B5           1373   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:349: LCDprint(buffer, lin, 1); // print buffer to LCD
 03B5 8AA0      1374            mov     _LCDprint_PARM_2,r2
 03B7 D210      1375            setb    _LCDprint_PARM_3
-03B9 904CF8    1376            mov     dptr,#_buffer
+03B9 904D00    1376            mov     dptr,#_buffer
 03BC 75F040    1377            mov     b,#0x40
 03BF 020000    1378            ljmp    _LCDprint
 03C2           1379   ;------------------------------------------------------------
@@ -1381,12 +1381,12 @@
 03C2           1381   ;------------------------------------------------------------
 03C2           1382   ;val                       Allocated to registers r2 r3 
 03C2           1383   ;------------------------------------------------------------
-03C2           1384   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:355: int fourteen_to_eight(int val){
+03C2           1384   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:355: int fourteen_to_eight(int val){
 03C2           1385   ;        -----------------------------------------
 03C2           1386   ;         function fourteen_to_eight
 03C2           1387   ;        -----------------------------------------
 03C2           1388   _fourteen_to_eight:
-03C2           1389   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:356: return ((val*255.0)/16383.0);
+03C2           1389   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:356: return ((val*255.0)/65535.0);
 03C2 120000    1390            lcall   ___sint2fs
 03C5 AA82      1391            mov     r2,dpl
 03C7 AB83      1392            mov     r3,dph
@@ -1409,11 +1409,11 @@
 03EA F581      1409            mov     sp,a
 03EC E4        1410            clr     a
 03ED C0E0      1411            push    acc
-03EF 74FC      1412            mov     a,#0xFC
+03EF 74FF      1412            mov     a,#0xFF
 03F1 C0E0      1413            push    acc
 03F3 747F      1414            mov     a,#0x7F
 03F5 C0E0      1415            push    acc
-03F7 7446      1416            mov     a,#0x46
+03F7 7447      1416            mov     a,#0x47
 03F9 C0E0      1417            push    acc
 03FB 8A82      1418            mov     dpl,r2
 03FD 8B83      1419            mov     dph,r3
@@ -1437,7 +1437,7 @@
 041C           1437   ;------------------------------------------------------------
 041C           1438   ;j                         Allocated to registers r2 r3 
 041C           1439   ;------------------------------------------------------------
-041C           1440   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:360: void PCA_ISR (void) interrupt INTERRUPT_PCA0
+041C           1440   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:360: void PCA_ISR (void) interrupt INTERRUPT_PCA0
 041C           1441   ;        -----------------------------------------
 041C           1442   ;         function PCA_ISR
 041C           1443   ;        -----------------------------------------
@@ -1449,11 +1449,11 @@
 0424 C005      1449            push    ar5
 0426 C0D0      1450            push    psw
 0428 75D000    1451            mov     psw,#0x00
-042B           1452   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:364: SFRPAGE=0x0;
+042B           1452   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:364: SFRPAGE=0x0;
 042B 75A700    1453            mov     _SFRPAGE,#0x00
-042E           1454   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:366: if (CCF0)
-042E 30D818    1455            jnb     _CCF0,L021005?
-0431           1456   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:369: j=(PCA0CPH0*0x100+PCA0CPL0)+(SYSCLK/(2L*PCA_0_FREQ));
+042E           1454   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:366: if (CCF0)
+042E 30D830    1455            jnb     _CCF0,L021005?
+0431           1456   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:369: j=(PCA0CPH0*0x100+PCA0CPL0)+(SYSCLK/(2L*PCA_0_FREQ));
 0431 ABFC      1457            mov     r3,_PCA0CPH0
 0433 7A00      1458            mov     r2,#0x00
 0435 ACFB      1459            mov     r4,_PCA0CPL0
@@ -1478,33 +1478,33 @@
 044D 3C        1478            addc    a,r4
 044E E4        1479            clr     a
 044F 3D        1480            addc    a,r5
-0450           1481   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:370: PCA0CPL0=j%0x100; //Always write low byte first!
+0450           1481   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:370: PCA0CPL0=j%0x100; //Always write low byte first!
 0450 8A04      1482            mov     ar4,r2
 0452 7D00      1483            mov     r5,#0x00
 0454 8CFB      1484            mov     _PCA0CPL0,r4
-0456           1485   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:371: PCA0CPH0=j/0x100;
+0456           1485   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:371: PCA0CPH0=j/0x100;
 0456 8B02      1486            mov     ar2,r3
 0458 7B00      1487            mov     r3,#0x00
 045A 8AFC      1488            mov     _PCA0CPH0,r2
-045C           1489   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:372: CCF0=0;
+045C           1489   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:372: CCF0=0;
 045C C2D8      1490            clr     _CCF0
-045E           1491   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:374: if (ir_send == 1){
+045E           1491   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:374: if (ir_send == 1){
 045E 7401      1492            mov     a,#0x01
-0460 B52058    1493            cjne    a,_ir_send,L021011?
+0460 B5D870    1493            cjne    a,_ir_send,L021011?
 0463 E4        1494            clr     a
-0464 B52158    1495            cjne    a,(_ir_send + 1),L021011?
+0464 B5D970    1495            cjne    a,(_ir_send + 1),L021011?
 0467 8000      1496            sjmp    L021012?
 0469           1497   L021011?:
 0469 8000      1498            sjmp    L021002?
 046B           1499   L021012?:
-046B           1500   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:375: PCA_OUT_0=!PCA_OUT_0; // if the IR send is 1 --> turn on the pin 
+046B           1500   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:375: PCA_OUT_0=!PCA_OUT_0; // if the IR send is 1 --> turn on the pin 
 046B B287      1501            cpl     _P0_7
 046D 8000      1502            sjmp    L021005?
 046F           1503   L021002?:
-046F           1504   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:379: PCA_OUT_0 = 0; // if the IR send is 0 --> turn off the pin even if the interrupt is generated 
+046F           1504   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:379: PCA_OUT_0 = 0; // if the IR send is 0 --> turn off the pin even if the interrupt is generated 
 046F C287      1505            clr     _P0_7
 0471           1506   L021005?:
-0471           1507   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:382: CF=0;
+0471           1507   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:382: CF=0;
 0471 C2DF      1508            clr     _CF
 0473 D0D0      1509            pop     psw
 0475 D005      1510            pop     ar5
@@ -1522,20 +1522,20 @@
 0480           1522   ;start_bit                 Allocated to registers r2 r3 
 0480           1523   ;i                         Allocated to registers r2 r3 
 0480           1524   ;------------------------------------------------------------
-0480           1525   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:387: int start_transmit (int start_bit){
+0480           1525   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:387: int start_transmit (int start_bit){
 0480           1526   ;        -----------------------------------------
 0480           1527   ;         function start_transmit
 0480           1528   ;        -----------------------------------------
 0480           1529   _start_transmit:
 0480 AA82      1530            mov     r2,dpl
 0482 AB83      1531            mov     r3,dph
-0484           1532   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:388: if (start_bit){
+0484           1532   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:388: if (start_bit){
 0484 EA        1533            mov     a,r2
 0485 4B        1534            orl     a,r3
 0486 7000      1535            jnz     L022021?
 0488 020000    1536            ljmp    L022002?
 048B           1537   L022021?:
-048B           1538   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:391: for (i = 0;i<3;i++){ 
+048B           1538   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:391: for (i = 0;i<3;i++){ 
 048B 7A00      1539            mov     r2,#0x00
 048D 7B00      1540            mov     r3,#0x00
 048F           1541   L022004?:
@@ -1546,61 +1546,61 @@
 0494 6480      1546            xrl     a,#0x80
 0496 9480      1547            subb    a,#0x80
 0498 5000      1548            jnc     L022007?
-049A           1549   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:392: ir_send = 1;
-049A 752001    1550            mov     _ir_send,#0x01
+049A           1549   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:392: ir_send = 1;
+049A 75D801    1550            mov     _ir_send,#0x01
 049D E4        1551            clr     a
-049E F521      1552            mov     (_ir_send + 1),a
-04A0           1553   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:393: Timer3us(560);
+049E F5D9      1552            mov     (_ir_send + 1),a
+04A0           1553   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:393: Timer3us(560);
 04A0 758230    1554            mov     dpl,#0x30
 04A3 C002      1555            push    ar2
 04A5 C003      1556            push    ar3
 04A7 120000    1557            lcall   _Timer3us
-04AA           1558   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:394: Timer3us(560);
+04AA           1558   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:394: Timer3us(560);
 04AA 758230    1559            mov     dpl,#0x30
 04AD 120000    1560            lcall   _Timer3us
-04B0           1561   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:395: Timer3us(560);
+04B0           1561   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:395: Timer3us(560);
 04B0 758230    1562            mov     dpl,#0x30
 04B3 120000    1563            lcall   _Timer3us
-04B6           1564   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:396: Timer3us(560);
+04B6           1564   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:396: Timer3us(560);
 04B6 758230    1565            mov     dpl,#0x30
 04B9 120000    1566            lcall   _Timer3us
-04BC           1567   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:397: ir_send = 0;
+04BC           1567   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:397: ir_send = 0;
 04BC E4        1568            clr     a
-04BD F520      1569            mov     _ir_send,a
-04BF F521      1570            mov     (_ir_send + 1),a
-04C1           1571   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:398: Timer3us(560);
+04BD F5D8      1569            mov     _ir_send,a
+04BF F5D9      1570            mov     (_ir_send + 1),a
+04C1           1571   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:398: Timer3us(560);
 04C1 758230    1572            mov     dpl,#0x30
 04C4 120000    1573            lcall   _Timer3us
-04C7           1574   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:399: Timer3us(560);
+04C7           1574   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:399: Timer3us(560);
 04C7 758230    1575            mov     dpl,#0x30
 04CA 120000    1576            lcall   _Timer3us
-04CD           1577   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:400: Timer3us(560);
+04CD           1577   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:400: Timer3us(560);
 04CD 758230    1578            mov     dpl,#0x30
 04D0 120000    1579            lcall   _Timer3us
-04D3           1580   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:401: Timer3us(560);
+04D3           1580   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:401: Timer3us(560);
 04D3 758230    1581            mov     dpl,#0x30
 04D6 120000    1582            lcall   _Timer3us
-04D9           1583   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:402: Timer3us(560);
+04D9           1583   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:402: Timer3us(560);
 04D9 758230    1584            mov     dpl,#0x30
 04DC 120000    1585            lcall   _Timer3us
-04DF           1586   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:403: Timer3us(560);
+04DF           1586   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:403: Timer3us(560);
 04DF 758230    1587            mov     dpl,#0x30
 04E2 120000    1588            lcall   _Timer3us
-04E5           1589   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:404: Timer3us(560);
+04E5           1589   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:404: Timer3us(560);
 04E5 758230    1590            mov     dpl,#0x30
 04E8 120000    1591            lcall   _Timer3us
-04EB           1592   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:405: Timer3us(560);
+04EB           1592   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:405: Timer3us(560);
 04EB 758230    1593            mov     dpl,#0x30
 04EE 120000    1594            lcall   _Timer3us
 04F1 D003      1595            pop     ar3
 04F3 D002      1596            pop     ar2
-04F5           1597   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:391: for (i = 0;i<3;i++){ 
+04F5           1597   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:391: for (i = 0;i<3;i++){ 
 04F5 0A        1598            inc     r2
-04F6 BA0098    1599            cjne    r2,#0x00,L022004?
+04F6 BA00B0    1599            cjne    r2,#0x00,L022004?
 04F9 0B        1600            inc     r3
 04FA 8000      1601            sjmp    L022004?
 04FC           1602   L022007?:
-04FC           1603   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:408: for (i=0;i<2; i++){
+04FC           1603   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:408: for (i=0;i<2; i++){
 04FC 7A00      1604            mov     r2,#0x00
 04FE 7B00      1605            mov     r3,#0x00
 0500           1606   L022008?:
@@ -1611,51 +1611,51 @@
 0505 6480      1611            xrl     a,#0x80
 0507 9480      1612            subb    a,#0x80
 0509 5000      1613            jnc     L022011?
-050B           1614   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:409: ir_send = 1; 
-050B 752001    1615            mov     _ir_send,#0x01
+050B           1614   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:409: ir_send = 1; 
+050B 75D801    1615            mov     _ir_send,#0x01
 050E E4        1616            clr     a
-050F F521      1617            mov     (_ir_send + 1),a
-0511           1618   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:410: Timer3us(560);
+050F F5D9      1617            mov     (_ir_send + 1),a
+0511           1618   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:410: Timer3us(560);
 0511 758230    1619            mov     dpl,#0x30
 0514 C002      1620            push    ar2
 0516 C003      1621            push    ar3
 0518 120000    1622            lcall   _Timer3us
-051B           1623   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:411: Timer3us(560);
+051B           1623   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:411: Timer3us(560);
 051B 758230    1624            mov     dpl,#0x30
 051E 120000    1625            lcall   _Timer3us
-0521           1626   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:412: Timer3us(560);
+0521           1626   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:412: Timer3us(560);
 0521 758230    1627            mov     dpl,#0x30
 0524 120000    1628            lcall   _Timer3us
-0527           1629   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:413: Timer3us(560);
+0527           1629   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:413: Timer3us(560);
 0527 758230    1630            mov     dpl,#0x30
 052A 120000    1631            lcall   _Timer3us
-052D           1632   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:414: ir_send = 0;
+052D           1632   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:414: ir_send = 0;
 052D E4        1633            clr     a
-052E F520      1634            mov     _ir_send,a
-0530 F521      1635            mov     (_ir_send + 1),a
-0532           1636   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:415: Timer3us(560);
+052E F5D8      1634            mov     _ir_send,a
+0530 F5D9      1635            mov     (_ir_send + 1),a
+0532           1636   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:415: Timer3us(560);
 0532 758230    1637            mov     dpl,#0x30
 0535 120000    1638            lcall   _Timer3us
-0538           1639   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:416: Timer3us(560);
+0538           1639   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:416: Timer3us(560);
 0538 758230    1640            mov     dpl,#0x30
 053B 120000    1641            lcall   _Timer3us
-053E           1642   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:417: Timer3us(560);
+053E           1642   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:417: Timer3us(560);
 053E 758230    1643            mov     dpl,#0x30
 0541 120000    1644            lcall   _Timer3us
-0544           1645   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:418: Timer3us(560);
+0544           1645   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:418: Timer3us(560);
 0544 758230    1646            mov     dpl,#0x30
 0547 120000    1647            lcall   _Timer3us
 054A D003      1648            pop     ar3
 054C D002      1649            pop     ar2
-054E           1650   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:408: for (i=0;i<2; i++){
+054E           1650   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:408: for (i=0;i<2; i++){
 054E 0A        1651            inc     r2
-054F BA0018    1652            cjne    r2,#0x00,L022008?
+054F BA0030    1652            cjne    r2,#0x00,L022008?
 0552 0B        1653            inc     r3
 0553 8000      1654            sjmp    L022008?
 0555           1655   L022011?:
-0555           1656   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:422: return 0; 
+0555           1656   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:422: return 0; 
 0555 900000    1657            mov     dptr,#0x0000
-0558           1658   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:425: return -1;
+0558           1658   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:425: return -1;
 0558 22        1659            ret
 0559           1660   L022002?:
 0559 90FFFF    1661            mov     dptr,#0xFFFF
@@ -1666,20 +1666,20 @@
 055D           1666   ;end_bit                   Allocated to registers r2 r3 
 055D           1667   ;i                         Allocated to registers r2 r3 
 055D           1668   ;------------------------------------------------------------
-055D           1669   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:429: int end_transmit (int end_bit){                     // 10000
+055D           1669   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:429: int end_transmit (int end_bit){                  // 10000
 055D           1670   ;        -----------------------------------------
 055D           1671   ;         function end_transmit
 055D           1672   ;        -----------------------------------------
 055D           1673   _end_transmit:
 055D AA82      1674            mov     r2,dpl
 055F AB83      1675            mov     r3,dph
-0561           1676   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:430: if (end_bit){
+0561           1676   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:430: if (end_bit){
 0561 EA        1677            mov     a,r2
 0562 4B        1678            orl     a,r3
 0563 7000      1679            jnz     L023021?
 0565 020000    1680            ljmp    L023002?
 0568           1681   L023021?:
-0568           1682   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:433: for (i = 0;i<1;i++){ 
+0568           1682   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:433: for (i = 0;i<1;i++){ 
 0568 7A00      1683            mov     r2,#0x00
 056A 7B00      1684            mov     r3,#0x00
 056C           1685   L023004?:
@@ -1690,61 +1690,61 @@
 0571 6480      1690            xrl     a,#0x80
 0573 9480      1691            subb    a,#0x80
 0575 5000      1692            jnc     L023007?
-0577           1693   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:434: ir_send = 1;
-0577 752001    1694            mov     _ir_send,#0x01
+0577           1693   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:434: ir_send = 1;
+0577 75D801    1694            mov     _ir_send,#0x01
 057A E4        1695            clr     a
-057B F521      1696            mov     (_ir_send + 1),a
-057D           1697   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:435: Timer3us(560);
+057B F5D9      1696            mov     (_ir_send + 1),a
+057D           1697   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:435: Timer3us(560);
 057D 758230    1698            mov     dpl,#0x30
 0580 C002      1699            push    ar2
 0582 C003      1700            push    ar3
 0584 120000    1701            lcall   _Timer3us
-0587           1702   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:436: Timer3us(560);
+0587           1702   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:436: Timer3us(560);
 0587 758230    1703            mov     dpl,#0x30
 058A 120000    1704            lcall   _Timer3us
-058D           1705   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:437: Timer3us(560);
+058D           1705   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:437: Timer3us(560);
 058D 758230    1706            mov     dpl,#0x30
 0590 120000    1707            lcall   _Timer3us
-0593           1708   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:438: Timer3us(560);
+0593           1708   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:438: Timer3us(560);
 0593 758230    1709            mov     dpl,#0x30
 0596 120000    1710            lcall   _Timer3us
-0599           1711   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:439: ir_send = 0;
+0599           1711   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:439: ir_send = 0;
 0599 E4        1712            clr     a
-059A F520      1713            mov     _ir_send,a
-059C F521      1714            mov     (_ir_send + 1),a
-059E           1715   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:440: Timer3us(560);
+059A F5D8      1713            mov     _ir_send,a
+059C F5D9      1714            mov     (_ir_send + 1),a
+059E           1715   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:440: Timer3us(560);
 059E 758230    1716            mov     dpl,#0x30
 05A1 120000    1717            lcall   _Timer3us
-05A4           1718   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:441: Timer3us(560);
+05A4           1718   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:441: Timer3us(560);
 05A4 758230    1719            mov     dpl,#0x30
 05A7 120000    1720            lcall   _Timer3us
-05AA           1721   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:442: Timer3us(560);
+05AA           1721   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:442: Timer3us(560);
 05AA 758230    1722            mov     dpl,#0x30
 05AD 120000    1723            lcall   _Timer3us
-05B0           1724   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:443: Timer3us(560);
+05B0           1724   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:443: Timer3us(560);
 05B0 758230    1725            mov     dpl,#0x30
 05B3 120000    1726            lcall   _Timer3us
-05B6           1727   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:444: Timer3us(560);
+05B6           1727   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:444: Timer3us(560);
 05B6 758230    1728            mov     dpl,#0x30
 05B9 120000    1729            lcall   _Timer3us
-05BC           1730   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:445: Timer3us(560);
+05BC           1730   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:445: Timer3us(560);
 05BC 758230    1731            mov     dpl,#0x30
 05BF 120000    1732            lcall   _Timer3us
-05C2           1733   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:446: Timer3us(560);
+05C2           1733   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:446: Timer3us(560);
 05C2 758230    1734            mov     dpl,#0x30
 05C5 120000    1735            lcall   _Timer3us
-05C8           1736   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:447: Timer3us(560);
+05C8           1736   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:447: Timer3us(560);
 05C8 758230    1737            mov     dpl,#0x30
 05CB 120000    1738            lcall   _Timer3us
 05CE D003      1739            pop     ar3
 05D0 D002      1740            pop     ar2
-05D2           1741   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:433: for (i = 0;i<1;i++){ 
+05D2           1741   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:433: for (i = 0;i<1;i++){ 
 05D2 0A        1742            inc     r2
-05D3 BA0018    1743            cjne    r2,#0x00,L023004?
+05D3 BA0030    1743            cjne    r2,#0x00,L023004?
 05D6 0B        1744            inc     r3
 05D7 8000      1745            sjmp    L023004?
 05D9           1746   L023007?:
-05D9           1747   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:450: for (i=0;i<4; i++){
+05D9           1747   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:450: for (i=0;i<4; i++){
 05D9 7A00      1748            mov     r2,#0x00
 05DB 7B00      1749            mov     r3,#0x00
 05DD           1750   L023008?:
@@ -1755,51 +1755,51 @@
 05E2 6480      1755            xrl     a,#0x80
 05E4 9480      1756            subb    a,#0x80
 05E6 5000      1757            jnc     L023011?
-05E8           1758   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:451: ir_send = 1; 
-05E8 752001    1759            mov     _ir_send,#0x01
+05E8           1758   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:451: ir_send = 1; 
+05E8 75D801    1759            mov     _ir_send,#0x01
 05EB E4        1760            clr     a
-05EC F521      1761            mov     (_ir_send + 1),a
-05EE           1762   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:452: Timer3us(560);
+05EC F5D9      1761            mov     (_ir_send + 1),a
+05EE           1762   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:452: Timer3us(560);
 05EE 758230    1763            mov     dpl,#0x30
 05F1 C002      1764            push    ar2
 05F3 C003      1765            push    ar3
 05F5 120000    1766            lcall   _Timer3us
-05F8           1767   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:453: Timer3us(560);
+05F8           1767   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:453: Timer3us(560);
 05F8 758230    1768            mov     dpl,#0x30
 05FB 120000    1769            lcall   _Timer3us
-05FE           1770   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:454: Timer3us(560);
+05FE           1770   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:454: Timer3us(560);
 05FE 758230    1771            mov     dpl,#0x30
 0601 120000    1772            lcall   _Timer3us
-0604           1773   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:455: Timer3us(560);
+0604           1773   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:455: Timer3us(560);
 0604 758230    1774            mov     dpl,#0x30
 0607 120000    1775            lcall   _Timer3us
-060A           1776   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:456: ir_send = 0;
+060A           1776   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:456: ir_send = 0;
 060A E4        1777            clr     a
-060B F520      1778            mov     _ir_send,a
-060D F521      1779            mov     (_ir_send + 1),a
-060F           1780   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:457: Timer3us(560);
+060B F5D8      1778            mov     _ir_send,a
+060D F5D9      1779            mov     (_ir_send + 1),a
+060F           1780   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:457: Timer3us(560);
 060F 758230    1781            mov     dpl,#0x30
 0612 120000    1782            lcall   _Timer3us
-0615           1783   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:458: Timer3us(560);
+0615           1783   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:458: Timer3us(560);
 0615 758230    1784            mov     dpl,#0x30
 0618 120000    1785            lcall   _Timer3us
-061B           1786   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:459: Timer3us(560);
+061B           1786   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:459: Timer3us(560);
 061B 758230    1787            mov     dpl,#0x30
 061E 120000    1788            lcall   _Timer3us
-0621           1789   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:460: Timer3us(560);
+0621           1789   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:460: Timer3us(560);
 0621 758230    1790            mov     dpl,#0x30
 0624 120000    1791            lcall   _Timer3us
 0627 D003      1792            pop     ar3
 0629 D002      1793            pop     ar2
-062B           1794   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:450: for (i=0;i<4; i++){
+062B           1794   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:450: for (i=0;i<4; i++){
 062B 0A        1795            inc     r2
-062C BA0098    1796            cjne    r2,#0x00,L023008?
+062C BA00B0    1796            cjne    r2,#0x00,L023008?
 062F 0B        1797            inc     r3
 0630 8000      1798            sjmp    L023008?
 0632           1799   L023011?:
-0632           1800   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:463: return 0; 
+0632           1800   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:463: return 0; 
 0632 900000    1801            mov     dptr,#0x0000
-0635           1802   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:466: return -1;
+0635           1802   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:466: return -1;
 0635 22        1803            ret
 0636           1804   L023002?:
 0636 90FFFF    1805            mov     dptr,#0xFFFF
@@ -1810,21 +1810,21 @@
 063A           1810   ;input                     Allocated to registers r2 
 063A           1811   ;i                         Allocated to registers r3 r4 
 063A           1812   ;------------------------------------------------------------
-063A           1813   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:471: void transmit_byte(uint8_t input){
+063A           1813   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:471: void transmit_byte(uint8_t input){
 063A           1814   ;        -----------------------------------------
 063A           1815   ;         function transmit_byte
 063A           1816   ;        -----------------------------------------
 063A           1817   _transmit_byte:
 063A AA82      1818            mov     r2,dpl
-063C           1819   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:474: for (i = 7; i >= 0; i--){
+063C           1819   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:474: for (i = 7; i >= 0; i--){
 063C 7B07      1820            mov     r3,#0x07
 063E 7C00      1821            mov     r4,#0x00
 0640           1822   L024004?:
 0640 EC        1823            mov     a,r4
-0641 30E758    1824            jnb     acc.7,L024014?
+0641 30E770    1824            jnb     acc.7,L024014?
 0644 22        1825            ret
 0645           1826   L024014?:
-0645           1827   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:475: if ((input >> i) & 1) {                     // this shifts the first bit to the right and ands it with 1 --> if this is one, this means the bit is supposed to be a one  
+0645           1827   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:475: if ((input >> i) & 1) {                  // this shifts the first bit to the right and ands it with 1 --> if this is one, this means the bit is supposed to be a one  
 0645 8BF0      1828            mov     b,r3
 0647 05F0      1829            inc     b
 0649 EA        1830            mov     a,r2
@@ -1833,53 +1833,53 @@
 064C C3        1833            clr     c
 064D 13        1834            rrc     a
 064E           1835   L024016?:
-064E D5F0D8    1836            djnz    b,L024015?
-0651 30E018    1837            jnb     acc.0,L024002?
-0654           1838   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:476: ir_send = 1; 
-0654 752001    1839            mov     _ir_send,#0x01
+064E D5F0F0    1836            djnz    b,L024015?
+0651 30E030    1837            jnb     acc.0,L024002?
+0654           1838   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:476: ir_send = 1; 
+0654 75D801    1839            mov     _ir_send,#0x01
 0657 E4        1840            clr     a
-0658 F521      1841            mov     (_ir_send + 1),a
-065A           1842   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:477: Timer3us(560);
+0658 F5D9      1841            mov     (_ir_send + 1),a
+065A           1842   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:477: Timer3us(560);
 065A 758230    1843            mov     dpl,#0x30
 065D C002      1844            push    ar2
 065F C003      1845            push    ar3
 0661 C004      1846            push    ar4
 0663 120000    1847            lcall   _Timer3us
-0666           1848   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:478: Timer3us(560);
+0666           1848   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:478: Timer3us(560);
 0666 758230    1849            mov     dpl,#0x30
 0669 120000    1850            lcall   _Timer3us
-066C           1851   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:479: Timer3us(560);                              // 2240 us high
+066C           1851   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:479: Timer3us(560);                           // 2240 us high
 066C 758230    1852            mov     dpl,#0x30
 066F 120000    1853            lcall   _Timer3us
-0672           1854   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:480: Timer3us(560);
+0672           1854   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:480: Timer3us(560);
 0672 758230    1855            mov     dpl,#0x30
 0675 120000    1856            lcall   _Timer3us
-0678           1857   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:481: ir_send = 0; 
+0678           1857   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:481: ir_send = 0; 
 0678 E4        1858            clr     a
-0679 F520      1859            mov     _ir_send,a
-067B F521      1860            mov     (_ir_send + 1),a
-067D           1861   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:482: Timer3us(560);                              // 4480 us low 
+0679 F5D8      1859            mov     _ir_send,a
+067B F5D9      1860            mov     (_ir_send + 1),a
+067D           1861   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:482: Timer3us(560);                           // 4480 us low 
 067D 758230    1862            mov     dpl,#0x30
 0680 120000    1863            lcall   _Timer3us
-0683           1864   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:483: Timer3us(560);
+0683           1864   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:483: Timer3us(560);
 0683 758230    1865            mov     dpl,#0x30
 0686 120000    1866            lcall   _Timer3us
-0689           1867   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:484: Timer3us(560);
+0689           1867   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:484: Timer3us(560);
 0689 758230    1868            mov     dpl,#0x30
 068C 120000    1869            lcall   _Timer3us
-068F           1870   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:485: Timer3us(560);
+068F           1870   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:485: Timer3us(560);
 068F 758230    1871            mov     dpl,#0x30
 0692 120000    1872            lcall   _Timer3us
-0695           1873   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:486: Timer3us(560);
+0695           1873   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:486: Timer3us(560);
 0695 758230    1874            mov     dpl,#0x30
 0698 120000    1875            lcall   _Timer3us
-069B           1876   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:487: Timer3us(560);
+069B           1876   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:487: Timer3us(560);
 069B 758230    1877            mov     dpl,#0x30
 069E 120000    1878            lcall   _Timer3us
-06A1           1879   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:488: Timer3us(560);
+06A1           1879   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:488: Timer3us(560);
 06A1 758230    1880            mov     dpl,#0x30
 06A4 120000    1881            lcall   _Timer3us
-06A7           1882   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:489: Timer3us(560);
+06A7           1882   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:489: Timer3us(560);
 06A7 758230    1883            mov     dpl,#0x30
 06AA 120000    1884            lcall   _Timer3us
 06AD D004      1885            pop     ar4
@@ -1887,48 +1887,48 @@
 06B1 D002      1887            pop     ar2
 06B3 8000      1888            sjmp    L024006?
 06B5           1889   L024002?:
-06B5           1890   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:493: ir_send = 1; 
-06B5 752001    1891            mov     _ir_send,#0x01
+06B5           1890   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:493: ir_send = 1; 
+06B5 75D801    1891            mov     _ir_send,#0x01
 06B8 E4        1892            clr     a
-06B9 F521      1893            mov     (_ir_send + 1),a
-06BB           1894   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:494: Timer3us(560);                      // 2240 us high and low 
+06B9 F5D9      1893            mov     (_ir_send + 1),a
+06BB           1894   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:494: Timer3us(560);                   // 2240 us high and low 
 06BB 758230    1895            mov     dpl,#0x30
 06BE C002      1896            push    ar2
 06C0 C003      1897            push    ar3
 06C2 C004      1898            push    ar4
 06C4 120000    1899            lcall   _Timer3us
-06C7           1900   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:495: Timer3us(560);
+06C7           1900   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:495: Timer3us(560);
 06C7 758230    1901            mov     dpl,#0x30
 06CA 120000    1902            lcall   _Timer3us
-06CD           1903   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:496: Timer3us(560);
+06CD           1903   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:496: Timer3us(560);
 06CD 758230    1904            mov     dpl,#0x30
 06D0 120000    1905            lcall   _Timer3us
-06D3           1906   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:497: Timer3us(560);
+06D3           1906   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:497: Timer3us(560);
 06D3 758230    1907            mov     dpl,#0x30
 06D6 120000    1908            lcall   _Timer3us
-06D9           1909   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:498: ir_send = 0; 
+06D9           1909   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:498: ir_send = 0; 
 06D9 E4        1910            clr     a
-06DA F520      1911            mov     _ir_send,a
-06DC F521      1912            mov     (_ir_send + 1),a
-06DE           1913   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:499: Timer3us(560);
+06DA F5D8      1911            mov     _ir_send,a
+06DC F5D9      1912            mov     (_ir_send + 1),a
+06DE           1913   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:499: Timer3us(560);
 06DE 758230    1914            mov     dpl,#0x30
 06E1 120000    1915            lcall   _Timer3us
-06E4           1916   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:500: Timer3us(560);
+06E4           1916   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:500: Timer3us(560);
 06E4 758230    1917            mov     dpl,#0x30
 06E7 120000    1918            lcall   _Timer3us
-06EA           1919   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:501: Timer3us(560);
+06EA           1919   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:501: Timer3us(560);
 06EA 758230    1920            mov     dpl,#0x30
 06ED 120000    1921            lcall   _Timer3us
-06F0           1922   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:502: Timer3us(560);
+06F0           1922   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:502: Timer3us(560);
 06F0 758230    1923            mov     dpl,#0x30
 06F3 120000    1924            lcall   _Timer3us
 06F6 D004      1925            pop     ar4
 06F8 D003      1926            pop     ar3
 06FA D002      1927            pop     ar2
 06FC           1928   L024006?:
-06FC           1929   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:474: for (i = 7; i >= 0; i--){
+06FC           1929   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:474: for (i = 7; i >= 0; i--){
 06FC 1B        1930            dec     r3
-06FD BBFF98    1931            cjne    r3,#0xff,L024018?
+06FD BBFFB0    1931            cjne    r3,#0xff,L024018?
 0700 1C        1932            dec     r4
 0701           1933   L024018?:
 0701 020000    1934            ljmp    L024004?
@@ -1944,39 +1944,39 @@
 0704           1944   ;eight_bity                Allocated to registers r1 
 0704           1945   ;end_sequence              Allocated to registers 
 0704           1946   ;------------------------------------------------------------
-0704           1947   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:509: void main (void) 
+0704           1947   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:509: void main (void) 
 0704           1948   ;        -----------------------------------------
 0704           1949   ;         function main
 0704           1950   ;        -----------------------------------------
 0704           1951   _main:
-0704           1952   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:518: TIMER0_Init(); // Initialize timer 0
+0704           1952   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:518: TIMER0_Init(); // Initialize timer 0
 0704 120000    1953            lcall   _TIMER0_Init
-0707           1954   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:519: LCD_4BIT(); // Configure LCD in 4 bit mode
+0707           1954   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:519: LCD_4BIT(); // Configure LCD in 4 bit mode
 0707 120000    1955            lcall   _LCD_4BIT
-070A           1956   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:520: InitADC(); // Initialize the ADC
+070A           1956   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:520: InitADC(); // Initialize the ADC
 070A 120000    1957            lcall   _InitADC
-070D           1958   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:521: InitPinADC(2,2); // Initialize pin 2.5 as analog
+070D           1958   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:521: InitPinADC(2,2); // Initialize pin 2.5 as analog
 070D 756002    1959            mov     _InitPinADC_PARM_2,#0x02
 0710 758202    1960            mov     dpl,#0x02
 0713 120000    1961            lcall   _InitPinADC
-0716           1962   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:522: InitPinADC(2,3); // Initialize pin 2.6 as analog
+0716           1962   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:522: InitPinADC(2,3); // Initialize pin 2.6 as analog
 0716 756003    1963            mov     _InitPinADC_PARM_2,#0x03
 0719 758202    1964            mov     dpl,#0x02
 071C 120000    1965            lcall   _InitPinADC
-071F           1966   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:525: while(1) {
+071F           1966   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:525: while(1) {
 071F           1967   L025008?:
-071F           1968   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:527: button = but_read;
+071F           1968   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:527: button = but_read;
 071F A2A4      1969            mov     c,_P2_4
 0721 E4        1970            clr     a
 0722 33        1971            rlc     a
-0723 F5F8      1972            mov     _main_button_1_128,a
-0725 75F900    1973            mov     (_main_button_1_128 + 1),#0x00
-0728           1974   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:531: x_pos = ADC_at_Pin(QFP32_MUX_P2_3);
+0723 F510      1972            mov     _main_button_1_128,a
+0725 751100    1973            mov     (_main_button_1_128 + 1),#0x00
+0728           1974   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:531: x_pos = ADC_at_Pin(QFP32_MUX_P2_3);
 0728 758210    1975            mov     dpl,#0x10
 072B 120000    1976            lcall   _ADC_at_Pin
 072E AC82      1977            mov     r4,dpl
 0730 AD83      1978            mov     r5,dph
-0732           1979   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:532: y_pos = ADC_at_Pin(QFP32_MUX_P2_2);
+0732           1979   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:532: y_pos = ADC_at_Pin(QFP32_MUX_P2_2);
 0732 75820F    1980            mov     dpl,#0x0F
 0735 C004      1981            push    ar4
 0737 C005      1982            push    ar5
@@ -1985,7 +1985,7 @@
 073E AF83      1985            mov     r7,dph
 0740 D005      1986            pop     ar5
 0742 D004      1987            pop     ar4
-0744           1988   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:534: if(x_pos > 11730) {
+0744           1988   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:534: if(x_pos > 11730) {
 0744 C3        1989            clr     c
 0745 74D2      1990            mov     a,#0xD2
 0747 9C        1991            subb    a,r4
@@ -1996,7 +1996,7 @@
 0751 4000      1996            jc      L025015?
 0753 020000    1997            ljmp    L025002?
 0756           1998   L025015?:
-0756           1999   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:535: real_x =  11730 + 11730*((x_pos-11730)/4653.0);
+0756           1999   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:535: real_x =  11730 + 11730*((x_pos-11730)/4653.0);
 0756 EC        2000            mov     a,r4
 0757 242E      2001            add     a,#0x2e
 0759 F582      2002            mov     dpl,a
@@ -2070,17 +2070,17 @@
 07DE 88F0      2070            mov     b,r0
 07E0 E9        2071            mov     a,r1
 07E1 120000    2072            lcall   ___fs2sint
-07E4 858248    2073            mov     _main_real_x_1_128,dpl
-07E7 858349    2074            mov     (_main_real_x_1_128 + 1),dph
+07E4 858260    2073            mov     _main_real_x_1_128,dpl
+07E7 858361    2074            mov     (_main_real_x_1_128 + 1),dph
 07EA D007      2075            pop     ar7
 07EC D006      2076            pop     ar6
 07EE 8000      2077            sjmp    L025003?
 07F0           2078   L025002?:
-07F0           2079   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:539: real_x = x_pos;
-07F0 8C48      2080            mov     _main_real_x_1_128,r4
-07F2 8D49      2081            mov     (_main_real_x_1_128 + 1),r5
+07F0           2079   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:539: real_x = x_pos;
+07F0 8C60      2080            mov     _main_real_x_1_128,r4
+07F2 8D61      2081            mov     (_main_real_x_1_128 + 1),r5
 07F4           2082   L025003?:
-07F4           2083   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:541: if(y_pos > 11796) {
+07F4           2083   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:541: if(y_pos > 11796) {
 07F4 C3        2084            clr     c
 07F5 7414      2085            mov     a,#0x14
 07F7 9E        2086            subb    a,r6
@@ -2091,7 +2091,7 @@
 0801 4000      2091            jc      L025016?
 0803 020000    2092            ljmp    L025005?
 0806           2093   L025016?:
-0806           2094   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:542: real_y = 11796 + 11796*((y_pos-11796)/4587.0);
+0806           2094   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:542: real_y = 11796 + 11796*((y_pos-11796)/4587.0);
 0806 EE        2095            mov     a,r6
 0807 24EC      2096            add     a,#0xec
 0809 F582      2097            mov     dpl,a
@@ -2167,187 +2167,165 @@
 0892 AB83      2167            mov     r3,dph
 0894 8000      2168            sjmp    L025006?
 0896           2169   L025005?:
-0896           2170   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:546: real_y = y_pos;
+0896           2170   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:546: real_y = y_pos;
 0896 8E02      2171            mov     ar2,r6
 0898 8F03      2172            mov     ar3,r7
 089A           2173   L025006?:
-089A           2174   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:570: eight_bitx = (uint8_t)(real_x>>6);
-089A A848      2175            mov     r0,_main_real_x_1_128
-089C E549      2176            mov     a,(_main_real_x_1_128 + 1)
-089E A2E7      2177            mov     c,acc.7
-08A0 C8        2178            xch     a,r0
-08A1 33        2179            rlc     a
-08A2 C8        2180            xch     a,r0
-08A3 33        2181            rlc     a
-08A4 A2E7      2182            mov     c,acc.7
-08A6 C8        2183            xch     a,r0
-08A7 33        2184            rlc     a
-08A8 C8        2185            xch     a,r0
-08A9 33        2186            rlc     a
-08AA C8        2187            xch     a,r0
-08AB 5403      2188            anl     a,#0x03
-08AD 30E1D8    2189            jnb     acc.1,L025017?
-08B0 44FC      2190            orl     a,#0xfc
-08B2           2191   L025017?:
-08B2 8898      2192            mov     _main_eight_bitx_1_128,r0
-08B4           2193   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:571: eight_bity = (uint8_t)(real_y>>6);
-08B4 8A01      2194            mov     ar1,r2
-08B6 EB        2195            mov     a,r3
-08B7 A2E7      2196            mov     c,acc.7
-08B9 C9        2197            xch     a,r1
-08BA 33        2198            rlc     a
-08BB C9        2199            xch     a,r1
-08BC 33        2200            rlc     a
-08BD A2E7      2201            mov     c,acc.7
-08BF C9        2202            xch     a,r1
-08C0 33        2203            rlc     a
-08C1 C9        2204            xch     a,r1
-08C2 33        2205            rlc     a
-08C3 C9        2206            xch     a,r1
-08C4 5403      2207            anl     a,#0x03
-08C6 30E118    2208            jnb     acc.1,L025018?
-08C9 44FC      2209            orl     a,#0xfc
-08CB           2210   L025018?:
-08CB           2211   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:600: start_transmit(1);
-08CB 900001    2212            mov     dptr,#0x0001
-08CE C002      2213            push    ar2
-08D0 C003      2214            push    ar3
-08D2 C001      2215            push    ar1
-08D4 120000    2216            lcall   _start_transmit
-08D7           2217   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:601: transmit_byte(eight_bitx);
-08D7 859882    2218            mov     dpl,_main_eight_bitx_1_128
-08DA 120000    2219            lcall   _transmit_byte
-08DD D001      2220            pop     ar1
-08DF           2221   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:602: transmit_byte(eight_bity);
-08DF 8982      2222            mov     dpl,r1
-08E1 120000    2223            lcall   _transmit_byte
-08E4           2224   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:603: end_transmit(1);
-08E4 900001    2225            mov     dptr,#0x0001
-08E7 120000    2226            lcall   _end_transmit
-08EA           2227   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:607: ir_send =1;
-08EA 752001    2228            mov     _ir_send,#0x01
-08ED E4        2229            clr     a
-08EE F521      2230            mov     (_ir_send + 1),a
-08F0           2231   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:608: Timer3us(560);
-08F0 758230    2232            mov     dpl,#0x30
-08F3 120000    2233            lcall   _Timer3us
-08F6           2234   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:609: Timer3us(560);
-08F6 758230    2235            mov     dpl,#0x30
-08F9 120000    2236            lcall   _Timer3us
-08FC           2237   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:610: Timer3us(560);                              
-08FC 758230    2238            mov     dpl,#0x30
-08FF 120000    2239            lcall   _Timer3us
-0902           2240   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:611: Timer3us(560);
-0902 758230    2241            mov     dpl,#0x30
-0905 120000    2242            lcall   _Timer3us
-0908           2243   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:612: Timer3us(560);
-0908 758230    2244            mov     dpl,#0x30
-090B 120000    2245            lcall   _Timer3us
-090E           2246   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:613: Timer3us(560);
-090E 758230    2247            mov     dpl,#0x30
-0911 120000    2248            lcall   _Timer3us
-0914           2249   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:614: Timer3us(560);
-0914 758230    2250            mov     dpl,#0x30
-0917 120000    2251            lcall   _Timer3us
-091A           2252   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:615: Timer3us(560);
-091A 758230    2253            mov     dpl,#0x30
-091D 120000    2254            lcall   _Timer3us
-0920           2255   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:616: Timer3us(560);
-0920 758230    2256            mov     dpl,#0x30
-0923 120000    2257            lcall   _Timer3us
-0926           2258   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:617: Timer3us(560);
-0926 758230    2259            mov     dpl,#0x30
-0929 120000    2260            lcall   _Timer3us
-092C           2261   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:618: ir_send = 0; 
-092C E4        2262            clr     a
-092D F520      2263            mov     _ir_send,a
-092F F521      2264            mov     (_ir_send + 1),a
-0931           2265   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:620: waitms(100); 
-0931 900064    2266            mov     dptr,#0x0064
-0934 120000    2267            lcall   _waitms
-0937           2268   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:622: int_to_stringprintx(1, real_x);
-0937 8548B0    2269            mov     _int_to_stringprintx_PARM_2,_main_real_x_1_128
-093A 8549B1    2270            mov     (_int_to_stringprintx_PARM_2 + 1),(_main_real_x_1_128 + 1)
-093D 900001    2271            mov     dptr,#0x0001
-0940 120000    2272            lcall   _int_to_stringprintx
-0943 D003      2273            pop     ar3
-0945 D002      2274            pop     ar2
-0947           2275   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:623: int_to_stringprinty(2, real_y);     
-0947 8A60      2276            mov     _int_to_stringprinty_PARM_2,r2
-0949 8B61      2277            mov     (_int_to_stringprinty_PARM_2 + 1),r3
-094B 900002    2278            mov     dptr,#0x0002
-094E C002      2279            push    ar2
-0950 C003      2280            push    ar3
-0952 120000    2281            lcall   _int_to_stringprinty
-0955 D003      2282            pop     ar3
-0957 D002      2283            pop     ar2
-0959           2284   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:625: printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
-0959 C0F8      2285            push    _main_button_1_128
-095B C0F9      2286            push    (_main_button_1_128 + 1)
-095D C002      2287            push    ar2
-095F C003      2288            push    ar3
-0961 C048      2289            push    _main_real_x_1_128
-0963 C049      2290            push    (_main_real_x_1_128 + 1)
-0965 7458      2291            mov     a,#__str_4
-0967 C0E0      2292            push    acc
-0969 74CD      2293            mov     a,#(__str_4 >> 8)
-096B C0E0      2294            push    acc
-096D 7480      2295            mov     a,#0x80
-096F C0E0      2296            push    acc
-0971 120000    2297            lcall   _printf
-0974 E581      2298            mov     a,sp
-0976 24F7      2299            add     a,#0xf7
-0978 F581      2300            mov     sp,a
-097A           2301   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:627: x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
-097A 758213    2302            mov     dpl,#0x13
-097D 120000    2303            lcall   _Volts_at_Pin
-0980 120000    2304            lcall   ___fs2sint
-0983           2305   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:628: float_to_stringprintx(1, x_pos);
-0983 120000    2306            lcall   ___sint2fs
-0986 858250    2307            mov     _float_to_stringprintx_PARM_2,dpl
-0989 858351    2308            mov     (_float_to_stringprintx_PARM_2 + 1),dph
-098C 85F052    2309            mov     (_float_to_stringprintx_PARM_2 + 2),b
-098F F553      2310            mov     (_float_to_stringprintx_PARM_2 + 3),a
-0991 900001    2311            mov     dptr,#0x0001
-0994 120000    2312            lcall   _float_to_stringprintx
-0997           2313   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:630: y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
-0997 758212    2314            mov     dpl,#0x12
-099A 120000    2315            lcall   _Volts_at_Pin
-099D 120000    2316            lcall   ___fs2sint
-09A0           2317   ;        C:\Users\Keega\Downloads\EFM8LB1-Project\WIP_IRCOMMS.c:631: float_to_stringprinty(2, y_pos);
-09A0 120000    2318            lcall   ___sint2fs
-09A3 858200    2319            mov     _float_to_stringprinty_PARM_2,dpl
-09A6 858301    2320            mov     (_float_to_stringprinty_PARM_2 + 1),dph
-09A9 85F002    2321            mov     (_float_to_stringprinty_PARM_2 + 2),b
-09AC F503      2322            mov     (_float_to_stringprinty_PARM_2 + 3),a
-09AE 900002    2323            mov     dptr,#0x0002
-09B1 120000    2324            lcall   _float_to_stringprinty
-09B4 020000    2325            ljmp    L025008?
-09B7           2326            rseg R_CSEG
-09B7           2327   
-0000           2328            rseg R_XINIT
-0000           2329   
-0000           2330            rseg R_CONST
-0000           2331   __str_0:
-0000 706F7320  2332            db 'pos x: %.2f'
+089A           2174   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:571: eight_bitx = fourteen_to_eight(real_x);
+089A 856082    2175            mov     dpl,_main_real_x_1_128
+089D 856183    2176            mov     dph,(_main_real_x_1_128 + 1)
+08A0 C002      2177            push    ar2
+08A2 C003      2178            push    ar3
+08A4 120000    2179            lcall   _fourteen_to_eight
+08A7 A882      2180            mov     r0,dpl
+08A9 D003      2181            pop     ar3
+08AB D002      2182            pop     ar2
+08AD 88B0      2183            mov     _main_eight_bitx_1_128,r0
+08AF           2184   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:572: eight_bity = fourteen_to_eight(real_y);
+08AF 8A82      2185            mov     dpl,r2
+08B1 8B83      2186            mov     dph,r3
+08B3 C002      2187            push    ar2
+08B5 C003      2188            push    ar3
+08B7 120000    2189            lcall   _fourteen_to_eight
+08BA A982      2190            mov     r1,dpl
+08BC           2191   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:606: start_transmit(1);
+08BC 900001    2192            mov     dptr,#0x0001
+08BF C001      2193            push    ar1
+08C1 120000    2194            lcall   _start_transmit
+08C4           2195   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:607: transmit_byte(eight_bitx);
+08C4 85B082    2196            mov     dpl,_main_eight_bitx_1_128
+08C7 120000    2197            lcall   _transmit_byte
+08CA D001      2198            pop     ar1
+08CC           2199   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:608: transmit_byte(eight_bity);
+08CC 8982      2200            mov     dpl,r1
+08CE 120000    2201            lcall   _transmit_byte
+08D1           2202   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:609: end_transmit(1);
+08D1 900001    2203            mov     dptr,#0x0001
+08D4 120000    2204            lcall   _end_transmit
+08D7           2205   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:613: ir_send =1;
+08D7 75D801    2206            mov     _ir_send,#0x01
+08DA E4        2207            clr     a
+08DB F5D9      2208            mov     (_ir_send + 1),a
+08DD           2209   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:614: Timer3us(560);
+08DD 758230    2210            mov     dpl,#0x30
+08E0 120000    2211            lcall   _Timer3us
+08E3           2212   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:615: Timer3us(560);
+08E3 758230    2213            mov     dpl,#0x30
+08E6 120000    2214            lcall   _Timer3us
+08E9           2215   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:616: Timer3us(560);                           
+08E9 758230    2216            mov     dpl,#0x30
+08EC 120000    2217            lcall   _Timer3us
+08EF           2218   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:617: Timer3us(560);
+08EF 758230    2219            mov     dpl,#0x30
+08F2 120000    2220            lcall   _Timer3us
+08F5           2221   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:618: Timer3us(560);
+08F5 758230    2222            mov     dpl,#0x30
+08F8 120000    2223            lcall   _Timer3us
+08FB           2224   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:619: Timer3us(560);
+08FB 758230    2225            mov     dpl,#0x30
+08FE 120000    2226            lcall   _Timer3us
+0901           2227   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:620: Timer3us(560);
+0901 758230    2228            mov     dpl,#0x30
+0904 120000    2229            lcall   _Timer3us
+0907           2230   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:621: Timer3us(560);
+0907 758230    2231            mov     dpl,#0x30
+090A 120000    2232            lcall   _Timer3us
+090D           2233   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:622: Timer3us(560);
+090D 758230    2234            mov     dpl,#0x30
+0910 120000    2235            lcall   _Timer3us
+0913           2236   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:623: Timer3us(560);
+0913 758230    2237            mov     dpl,#0x30
+0916 120000    2238            lcall   _Timer3us
+0919           2239   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:624: ir_send = 0; 
+0919 E4        2240            clr     a
+091A F5D8      2241            mov     _ir_send,a
+091C F5D9      2242            mov     (_ir_send + 1),a
+091E           2243   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:626: waitms(100); 
+091E 900064    2244            mov     dptr,#0x0064
+0921 120000    2245            lcall   _waitms
+0924           2246   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:628: int_to_stringprintx(1, real_x);
+0924 8560B0    2247            mov     _int_to_stringprintx_PARM_2,_main_real_x_1_128
+0927 8561B1    2248            mov     (_int_to_stringprintx_PARM_2 + 1),(_main_real_x_1_128 + 1)
+092A 900001    2249            mov     dptr,#0x0001
+092D 120000    2250            lcall   _int_to_stringprintx
+0930 D003      2251            pop     ar3
+0932 D002      2252            pop     ar2
+0934           2253   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:629: int_to_stringprinty(2, real_y);  
+0934 8A60      2254            mov     _int_to_stringprinty_PARM_2,r2
+0936 8B61      2255            mov     (_int_to_stringprinty_PARM_2 + 1),r3
+0938 900002    2256            mov     dptr,#0x0002
+093B C002      2257            push    ar2
+093D C003      2258            push    ar3
+093F 120000    2259            lcall   _int_to_stringprinty
+0942 D003      2260            pop     ar3
+0944 D002      2261            pop     ar2
+0946           2262   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:631: printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
+0946 C010      2263            push    _main_button_1_128
+0948 C011      2264            push    (_main_button_1_128 + 1)
+094A C002      2265            push    ar2
+094C C003      2266            push    ar3
+094E C060      2267            push    _main_real_x_1_128
+0950 C061      2268            push    (_main_real_x_1_128 + 1)
+0952 74F0      2269            mov     a,#__str_4
+0954 C0E0      2270            push    acc
+0956 74CC      2271            mov     a,#(__str_4 >> 8)
+0958 C0E0      2272            push    acc
+095A 7480      2273            mov     a,#0x80
+095C C0E0      2274            push    acc
+095E 120000    2275            lcall   _printf
+0961 E581      2276            mov     a,sp
+0963 24F7      2277            add     a,#0xf7
+0965 F581      2278            mov     sp,a
+0967           2279   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:637: x_pos = Volts_at_Pin(QFP32_MUX_P2_6);
+0967 758213    2280            mov     dpl,#0x13
+096A 120000    2281            lcall   _Volts_at_Pin
+096D 120000    2282            lcall   ___fs2sint
+0970           2283   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:638: float_to_stringprintx(1, x_pos);
+0970 120000    2284            lcall   ___sint2fs
+0973 858250    2285            mov     _float_to_stringprintx_PARM_2,dpl
+0976 858351    2286            mov     (_float_to_stringprintx_PARM_2 + 1),dph
+0979 85F052    2287            mov     (_float_to_stringprintx_PARM_2 + 2),b
+097C F553      2288            mov     (_float_to_stringprintx_PARM_2 + 3),a
+097E 900001    2289            mov     dptr,#0x0001
+0981 120000    2290            lcall   _float_to_stringprintx
+0984           2291   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:640: y_pos = Volts_at_Pin(QFP32_MUX_P2_5);
+0984 758212    2292            mov     dpl,#0x12
+0987 120000    2293            lcall   _Volts_at_Pin
+098A 120000    2294            lcall   ___fs2sint
+098D           2295   ;        C:\ELEC 291\EFM8LB1-Project\WIP_IRCOMMS.c:641: float_to_stringprinty(2, y_pos);
+098D 120000    2296            lcall   ___sint2fs
+0990 858200    2297            mov     _float_to_stringprinty_PARM_2,dpl
+0993 858301    2298            mov     (_float_to_stringprinty_PARM_2 + 1),dph
+0996 85F002    2299            mov     (_float_to_stringprinty_PARM_2 + 2),b
+0999 F503      2300            mov     (_float_to_stringprinty_PARM_2 + 3),a
+099B 900002    2301            mov     dptr,#0x0002
+099E 120000    2302            lcall   _float_to_stringprinty
+09A1 020000    2303            ljmp    L025008?
+09A4           2304            rseg R_CSEG
+09A4           2305   
+0000           2306            rseg R_XINIT
+0000           2307   
+0000           2308            rseg R_CONST
+0000           2309   __str_0:
+0000 706F7320  2310            db 'pos x: %.2f'
      783A2025
      2E3266
-000B 00        2333            db 0x00
-000C           2334   __str_1:
-000C 706F7320  2335            db 'pos y: %.2f'
+000B 00        2311            db 0x00
+000C           2312   __str_1:
+000C 706F7320  2313            db 'pos y: %.2f'
      793A2025
      2E3266
-0017 00        2336            db 0x00
-0018           2337   __str_2:
-0018 783A2025  2338            db 'x: %.1d'
+0017 00        2314            db 0x00
+0018           2315   __str_2:
+0018 783A2025  2316            db 'x: %.1d'
      2E3164
-001F 00        2339            db 0x00
-0020           2340   __str_3:
-0020 793A2025  2341            db 'y: %.1d'
+001F 00        2317            db 0x00
+0020           2318   __str_3:
+0020 793A2025  2319            db 'y: %.1d'
      2E3164
-0027 00        2342            db 0x00
-0028           2343   __str_4:
-0028 785F706F  2344            db 'x_pos: %d, y_pos: %d, button: %d'
+0027 00        2320            db 0x00
+0028           2321   __str_4:
+0028 785F706F  2322            db 'x_pos: %d, y_pos: %d, button: %d'
      733A2025
      642C2079
      5F706F73
@@ -2355,9 +2333,9 @@
      2C206275
      74746F6E
      3A202564
-0048 0A        2345            db 0x0A
-0049 00        2346            db 0x00
-004A           2347   
-005E           2348            CSEG
-005E           2349   
-005E           2350   end
+0048 0A        2323            db 0x0A
+0049 00        2324            db 0x00
+004A           2325   
+005E           2326            CSEG
+005E           2327   
+005E           2328   end
