@@ -1,0 +1,370 @@
+#include <efm8lb1.h>
+#include <stdint.h>
+
+#define SCL P0_0 
+#define SDA P0_1 
+#define OLED_ADDR 0x78
+#define button1	 P2_4
+#define button2	 P2_5
+#define SYSCLK      72000000L
+
+#define mode1 P1_3
+#define mode2 P1_1
+
+
+// Full screen buffer (128x64 / 8)
+unsigned char xdata screen_buffer[1024];
+
+
+void Timer3us(unsigned char us)
+{
+	unsigned char i;               // usec counter
+	
+	// The input for Timer 3 is selected as SYSCLK by setting T3ML (bit 6) of CKCON0:
+	CKCON0|=0b_0100_0000;
+	
+	TMR3RL = (-(SYSCLK)/1000000L); // Set Timer3 to overflow in 1us.
+	TMR3 = TMR3RL;                 // Initialize Timer3 for first overflow
+	
+	TMR3CN0 = 0x04;                 // Sart Timer3 and clear overflow flag
+	for (i = 0; i < us; i++)       // Count <us> overflows
+	{
+		while (!(TMR3CN0 & 0x80));  // Wait for overflow
+		TMR3CN0 &= ~(0x80);         // Clear overflow indicator
+	}
+	TMR3CN0 = 0 ;                   // Stop Timer3 and clear overflow flag
+}
+
+void waitms (unsigned int ms)
+{
+	unsigned int j;
+	for(j=ms; j!=0; j--)
+	{
+		Timer3us(249);
+		Timer3us(249);
+		Timer3us(249);
+		Timer3us(250);
+	}
+}
+
+
+// ================= I2C =================
+void I2C_Delay(void) {
+    unsigned char i;
+    for(i = 0; i < 5; i++);
+}
+
+void I2C_Start(void) {
+    SDA = 1; SCL = 1; I2C_Delay();
+    SDA = 0; I2C_Delay();
+    SCL = 0;
+}
+
+void I2C_Stop(void) {
+    SDA = 0; SCL = 0; I2C_Delay();
+    SCL = 1; I2C_Delay();
+    SDA = 1; I2C_Delay();
+}
+
+void I2C_Write(unsigned char dat) {
+    unsigned char i;
+    for (i = 0; i < 8; i++) {
+        SDA = (dat & 0x80) ? 1 : 0;
+        I2C_Delay();
+        SCL = 1; I2C_Delay();
+        SCL = 0;
+        dat <<= 1;
+    }
+    SDA = 1; I2C_Delay();
+    SCL = 1; I2C_Delay();
+    SCL = 0;
+}
+
+// ================= OLED =================
+void OLED_Command(unsigned char cmd) {
+    I2C_Start();
+    I2C_Write(OLED_ADDR);
+    I2C_Write(0x00);
+    I2C_Write(cmd);
+    I2C_Stop();
+}
+
+void OLED_Init(void) {
+    OLED_Command(0xAE);
+    OLED_Command(0x20);
+    OLED_Command(0x02);
+    OLED_Command(0x8D);
+    OLED_Command(0x14);
+    OLED_Command(0xAF);
+}
+
+void OLED_ClearDisplay(void) {
+    uint8_t p, i;
+
+    for (p = 0; p < 8; p++) {
+        OLED_Command(0xB0 + p);
+        OLED_Command(0x00);
+        OLED_Command(0x10);
+
+        I2C_Start();
+        I2C_Write(OLED_ADDR);
+        I2C_Write(0x40);
+
+        for (i = 0; i < 128; i++) {
+            I2C_Write(0x00);
+        }
+
+        I2C_Stop();
+    }
+}
+
+void OLED_Update(void) {
+    uint8_t p, i;
+
+    for (p = 0; p < 8; p++) {
+        OLED_Command(0xB0 + p);
+        OLED_Command(0x00);
+        OLED_Command(0x10);
+
+        I2C_Start();
+        I2C_Write(OLED_ADDR);
+        I2C_Write(0x40);
+
+        for (i = 0; i < 128; i++) {
+            I2C_Write(screen_buffer[p * 128 + i]);
+        }
+
+        I2C_Stop();
+    }
+}
+
+// ================= GRAPHICS =================
+void ClearBuffer(void) {
+    uint16_t i;
+    for (i = 0; i < 1024; i++) {
+        screen_buffer[i] = 0;
+    }
+}
+
+void SetPixel(uint8_t x, uint8_t y, int on) {
+	//find which row to go on
+    uint16_t index = x + (y / 8) * 128;
+    
+    //turn on pixel at that byte
+    if(on){
+    screen_buffer[index] |= (1 << (y % 8));
+    }
+    else{
+    	 screen_buffer[index] &= (1 << (y % 8));
+    }
+}
+
+// Draw 5x7 character
+void DrawChar(uint8_t x, uint8_t y, const uint8_t *ch) {
+    uint8_t i, j;
+
+    for (i = 0; i < 5; i++) {
+        uint8_t col = ch[i];
+        for (j = 0; j < 8; j++) {
+            if (col & (1 << j)) {
+                SetPixel(x + i, y + j,1); // turns on bit
+            }
+        }
+    }
+}
+
+void DrawLine(int x0, int y0, int x1, int y1) {
+    int dx = x1 - x0;
+    int dy = y1 - y0;
+    int steps = (dx > dy ? dx : dy);
+
+    float x_inc = dx / (float)steps;
+    float y_inc = dy / (float)steps;
+
+    float x = x0;
+    float y = y0;
+
+    int i;
+    for (i = 0; i <= steps; i++) {
+        SetPixel((uint8_t)x, (uint8_t)y,1);
+        x += x_inc;
+        y += y_inc;
+    }
+}
+
+
+void DrawCircle(int xc, int yc, int r) {
+    int x, y;
+    for (x = -r; x <= r; x++) {
+        for (y = -r; y <= r; y++) {
+            if (x*x + y*y <= r*r) {
+                SetPixel(xc + x, yc + y,1);
+            }
+        }
+    }
+}
+
+// ================= FONT  =================
+const uint8_t font5x7[][5] = {
+
+    // SPACE
+    {0x00,0x00,0x00,0x00,0x00}, // 0
+
+    // NUMBERS 1–10
+    {0x3E,0x51,0x49,0x45,0x3E}, // 0
+    {0x00,0x42,0x7F,0x40,0x00}, // 1
+    {0x42,0x61,0x51,0x49,0x46}, // 2
+    {0x21,0x41,0x45,0x4B,0x31}, // 3
+    {0x18,0x14,0x12,0x7F,0x10}, // 4
+    {0x27,0x45,0x45,0x45,0x39}, // 5
+    {0x3C,0x4A,0x49,0x49,0x30}, // 6
+    {0x01,0x71,0x09,0x05,0x03}, // 7
+    {0x36,0x49,0x49,0x49,0x36}, // 8
+    {0x06,0x49,0x49,0x29,0x1E}, // 9
+
+    // LETTERS A–Z
+    {0x7E,0x11,0x11,0x11,0x7E}, // A
+    {0x7F,0x49,0x49,0x49,0x36}, // B
+    {0x3E,0x41,0x41,0x41,0x22}, // C
+    {0x7F,0x41,0x41,0x22,0x1C}, // D
+    {0x7F,0x49,0x49,0x49,0x41}, // E
+    {0x7F,0x09,0x09,0x09,0x01}, // F
+    {0x3E,0x41,0x49,0x49,0x7A}, // G
+    {0x7F,0x08,0x08,0x08,0x7F}, // H
+    {0x00,0x41,0x7F,0x41,0x00}, // I
+    {0x20,0x40,0x41,0x3F,0x01}, // J
+    {0x7F,0x08,0x14,0x22,0x41}, // K
+    {0x7F,0x40,0x40,0x40,0x40}, // L
+    {0x7F,0x02,0x0C,0x02,0x7F}, // M
+    {0x7F,0x04,0x08,0x10,0x7F}, // N
+    {0x3E,0x41,0x41,0x41,0x3E}, // O
+    {0x7F,0x09,0x09,0x09,0x06}, // P
+    {0x3E,0x41,0x51,0x21,0x5E}, // Q
+    {0x7F,0x09,0x19,0x29,0x46}, // R
+    {0x46,0x49,0x49,0x49,0x31}, // S
+    {0x01,0x01,0x7F,0x01,0x01}, // T
+    {0x3F,0x40,0x40,0x40,0x3F}, // U
+    {0x1F,0x20,0x40,0x20,0x1F}, // V
+    {0x3F,0x40,0x38,0x40,0x3F}, // W
+    {0x63,0x14,0x08,0x14,0x63}, // X
+    {0x07,0x08,0x70,0x08,0x07}, // Y
+    {0x61,0x51,0x49,0x45,0x43}  // Z
+    
+    
+};
+
+void DrawFilledRect(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2) {
+    uint8_t x, y;
+    for (x = x1; x <= x2; x++) {
+        for (y = y1; y <= y2; y++) {
+            SetPixel(x, y,1);
+        }
+    }
+}
+
+void ClearPixel(uint8_t x, uint8_t y) {
+    uint16_t index = x + (y / 8) * 128;
+    screen_buffer[index] &= ~(1 << (y % 8));
+}
+
+// Manual mapping (simple + safe)
+const uint8_t* GetChar(char c) {
+
+    // SPACE
+    if (c == ' ') return font5x7[0];
+
+    // NUMBERS
+    if (c >= '0' && c <= '9') {
+        return font5x7[1 + (c - '0')];
+    }
+
+    // LETTERS
+    if (c >= 'A' && c <= 'Z') {
+        return font5x7[11 + (c - 'A')];
+    }
+
+    return font5x7[0];
+}
+
+
+void DrawString(uint8_t x, uint8_t y, char *str) {
+    while (*str) {
+        DrawChar(x, y, GetChar(*str));
+        x += 6;
+        str++;
+    }
+}
+
+// ================= MCU =================
+void Init_MCU(void) {
+    SFRPAGE = 0x00;
+    WDTCN = 0xDE;
+    WDTCN = 0xAD;
+
+    CLKSEL = 0x00;
+    P0MDOUT = 0x00;
+    XBR2 = 0x40;
+}
+   int rect_x=0;
+   int flag1=1;
+   int flag2=0;
+
+// ================= MAIN =================
+void main(void) {
+    Init_MCU();
+    OLED_Init();
+    OLED_ClearDisplay();  
+    
+
+    while (1) {
+        ClearBuffer();
+
+	if(mode1==0){
+		flag1=1;
+		flag2=0;
+		waitms(50);
+	}
+	if(mode2==0){
+		flag2=1;
+		flag1=0;
+		waitms(50);
+	
+	}
+	
+	if(flag1){
+        DrawString(10, 10, "PATH 1");
+        DrawString(50, 10, "PATH 2");
+        DrawString(90, 10, "PATH 3");
+        
+        //DrawCircle(64,32,10);
+       // DrawLine(10,20,45,20);
+       
+       if(button1==0){
+       	rect_x+=40;
+       	waitms(50);
+       }
+       if(button2==0){
+       	rect_x-=40;
+       	waitms(50);
+       }
+       
+       if(rect_x>128||rect_x+43>128){
+       	rect_x=80;
+       }
+       
+       if(rect_x<0){
+       	 rect_x=0;
+       }
+        
+        DrawFilledRect(rect_x,20,rect_x+40,23);       
+        OLED_Update();
+    
+    }
+    if(flag2){
+    	DrawCircle(20,40,20);
+    	OLED_Update();
+    
+    }
+    	
+    }
+}
