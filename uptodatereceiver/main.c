@@ -209,20 +209,20 @@ int main(void)
                 
             }
 			
-			if (!data[25] && !data[26]){
+			if (!data[25] && data[26]){
             	path_flag = 1; 
             	}
             if (data[25] && !data[26]) {
             	path_flag = 2; 
             }
-            if (data[25] && !data[26]){
+            if (data[25] && data[26]){
             	path_flag = 3;
             	}
 		
 		
 		// add button stuff	
 			
-            printf("scaled x: %d, scaled y: %d\n", scaled_x, scaled_y);  
+            printf("scaled x: %d, scaled y: %d, left trigger: %d, right trigger %d, path: %d\n", scaled_x, scaled_y, data[22], data[21], path_flag); 
                  
             
         }
