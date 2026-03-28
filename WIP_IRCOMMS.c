@@ -41,6 +41,7 @@
 char buffer[16]; // Buffer for converting values to strings
 int ir_send = 0; // this indicates if we need the ir to be on or off 
 int bit_count = 8; // max number of bits in the buffer
+int path_flag = 1; // path flag can be modified based on the oled screen code
 
 
 char _c51_external_startup (void)
@@ -505,10 +506,167 @@ void transmit_byte(uint8_t input){
 	} 
 }
 
+void transmit_bit(uint8_t val_bit){
+	if (val_bit & 1){
+		 ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);				// 2240 us high
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(560);				// 4480 us low 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+	else {
+		ir_send = 1; 
+			Timer3us(560);			// 2240 us high and low 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+	}
+
+void transmit_path(int path_flag){
+
+int i;
+
+switch(path_flag){
+
+case 1: // path 1 --> o/p is 00
+		for (i=0;i<2; i++){
+			ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			
+		}
+		break;
+case 2:		// path 2 --> o/p is 01
+	for (i=0;i<1; i++){
+			ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);		
+		}
+	for (i = 0;i<1;i++){ 
+			ir_send = 1;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+		break;
+case 3: // path 3 --> o/p is 10
+	for (i = 0;i<1;i++){ 
+			ir_send = 1;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+	for (i=0;i<1; i++){
+			ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0;
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			
+		}
+		break; 
+	}
+}
+
+void transmit_checksum(uint8_t x_in, uint8_t y_in){
+	int i; 
+	
+	uint8_t math;
+	math = (x_in+y_in)/2;
+	
+	for (i = 7; i >= 0; i--){
+		if ((math >> i) & 1) {			// this shifts the first bit to the right and ands it with 1 --> if this is one, this means the bit is supposed to be a one  
+			ir_send = 1; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);				// 2240 us high
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(560);				// 4480 us low 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			}
+		
+		else {				// if its a zero, then its sends zero sequence 
+			ir_send = 1; 
+			Timer3us(560);			// 2240 us high and low 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			ir_send = 0; 
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+			Timer3us(560);
+		}
+	}
+
+} 
+	
+
 //----- MAIN -----
 void main (void) 
 {
-	int button; // not sure what this will do for now
+	uint8_t button; // not sure what this will do for now
 	int x_pos, y_pos; 
 	int real_x, real_y;
 	uint8_t eight_bitx;
@@ -547,67 +705,25 @@ void main (void)
 		
 // -------------------IR CODE HERE------------------------------- 
 		
-
-	/*	// 1. Convert x/y pos from full 14 bits to 8 bits 
-		if ((eight_bitx = fourteen_to_eight(real_x)) < 0) {
-			printf("Error - x conversion to 8 bits failed");		// these lowkey don't work cause it wont ever be negative
-
-		}
-		else if (!(eight_bity = fourteen_to_eight(real_y)) < 0) {
-			printf("Error - y conversion to 8 bits failed");
-		}
-		else{
-			start_now = 1; 
-		}
-		
-		// 2. Transmit the bits 
-		if (start_transmit(start_now) != 0){ // start sequence
-			printf("Error - start sequence unsuccessful");
-		}
-		*/
 		
 		// map 14 to 8 bits
 		
 		eight_bitx = fourteen_to_eight(real_x);
 		eight_bity = fourteen_to_eight(real_y);
-		
-		
-		
-		//eight_bitx = (uint8_t)(real_x>>6);
-		//eight_bity = (uint8_t)(real_y>>6);
-		/*
-		start_now = 1;
-		//transmit_byte(eight_bitx, 7);		// xpos
-
-		//transmit_byte(eight_bity, 7); 		// ypos
-
-		//transmit_byte(button, 0);   		// len set to zero to follow fcn "functionality"
-
-		transmit_byte(end_sequence, 8); 	// end sequence
-
-		// 3. Stop Bit
-		ir_send = 1;						// final stop bit 
-		Timer3us(560);
-		ir_send = 0;
-		
-		// 4. 
-		waitms(50); 						// waiting before sending another pulse
-		*/
-	
-		
-		// use an adc pin to read x and y positions
-		
-		// Convert x and y coordinates into usable information
-		// Communicate via NEC with IR information packages
-		// Solder onto protoboard
-	
 	
 // this stuff works more - no more conversion to 8 bits 
 	start_transmit(1);
 	transmit_byte(eight_bitx);
 	transmit_byte(eight_bity);
+	transmit_bit(button);
+	transmit_bit(button);
+	transmit_bit(button);
+	transmit_path(path_flag);
+	transmit_checksum(eight_bitx,eight_bity);
 	end_transmit(1);
 	
+	// original package --> 11100xxxxxxxxyyyyyyyy10000 (26 bits)
+	// current package --> 11100xxxxxxxxyyyyyyyybbbppcccccccc10000 
 	
 	// final pulse - will be thick on oscope
 	ir_send =1;

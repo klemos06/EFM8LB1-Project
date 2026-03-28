@@ -18,14 +18,14 @@ BIT_BANK,data,0000,OV
 R_CONST,code,004A,NO
 rbank0,data,0000,OV
 R_PSEG,xdata,0000,NO
-R_DINIT,code,000B,NO
-R_DSEG,data,0026,NO
+R_DINIT,code,0011,NO
+R_DSEG,data,0028,NO
 R_OSEG,data,0001,OV
 R_IXSEG,xdata,0000,NO
 R_ISEG,idata,0000,NO
 R_HOME,code,0000,NO
 R_XINIT,code,0000,NO
-R_CSEG,code,09A4,NO
+R_CSEG,code,0D52,NO
 </SEGMENTS>
 
 <LOCALS>
@@ -33,13 +33,24 @@ L002004?,R_CSEG,0029,0000
 L002001?,R_CSEG,001E,0000
 L021012?,R_CSEG,046B,0000
 L021011?,R_CSEG,0469,0000
+L027006?,R_CSEG,0A82,0000
+L027004?,R_CSEG,09C6,0000
+L027002?,R_CSEG,0A3B,0000
+L028008?,R_CSEG,0AA5,0000
 L022011?,R_CSEG,0555,0000
+L028006?,R_CSEG,0C1D,0000
+L028005?,R_CSEG,0C19,0000
+L028003?,R_CSEG,0B77,0000
+L028002?,R_CSEG,0B73,0000
+L026057?,R_CSEG,09A4,0000
+L026056?,R_CSEG,095C,0000
+L026052?,R_CSEG,0879,0000
 L004005?,R_CSEG,00D4,0000
 L022021?,R_CSEG,048B,0000
 L004003?,R_CSEG,00CC,0000
 L004002?,R_CSEG,00C2,0000
 L004001?,R_CSEG,00B8,0000
-_main_eight_bitx_1_128,R_DSEG,0025,0001
+_main_eight_bitx_1_145,R_DSEG,0027,0001
 L023011?,R_CSEG,0632,0000
 L008011?,R_CSEG,019E,0000
 L008010?,R_CSEG,0179,0000
@@ -49,11 +60,9 @@ L024018?,R_CSEG,0701,0000
 L024016?,R_CSEG,064E,0000
 L024015?,R_CSEG,064C,0000
 L024014?,R_CSEG,0645,0000
+_main_real_x_1_145,R_DSEG,0025,0002
 L021005?,R_CSEG,0471,0000
-_main_real_x_1_128,R_DSEG,0023,0002
 L021002?,R_CSEG,046F,0000
-L025016?,R_CSEG,0806,0000
-L025015?,R_CSEG,0756,0000
 L022008?,R_CSEG,0500,0000
 L022007?,R_CSEG,04FC,0000
 L022004?,R_CSEG,048F,0000
@@ -61,6 +70,9 @@ L022002?,R_CSEG,0559,0000
 L007007?,R_CSEG,016A,0000
 L007004?,R_CSEG,015A,0000
 L007001?,R_CSEG,015F,0000
+L026017?,R_CSEG,08DF,0000
+L026013?,R_CSEG,086D,0000
+L026012?,R_CSEG,0869,0000
 L023008?,R_CSEG,05DD,0000
 L023007?,R_CSEG,05D9,0000
 L014014?,R_CSEG,0242,0000
@@ -73,20 +85,33 @@ __str_1,R_CONST,000C,0000
 __str_2,R_CONST,0018,0000
 __str_3,R_CONST,0020,0000
 __str_4,R_CONST,0028,0000
-_main_button_1_128,R_DSEG,0021,0002
+_main_button_1_145,R_DSEG,0024,0001
+L026021?,R_CSEG,0950,0000
+L026020?,R_CSEG,094C,0000
 L008001?,R_CSEG,0172,0000
+L026037?,R_CSEG,08DB,0000
+L027018?,R_CSEG,0A87,0000
+L027016?,R_CSEG,09D4,0000
+L026033?,R_CSEG,0810,0000
+L027015?,R_CSEG,09D2,0000
+L027014?,R_CSEG,09CB,0000
+L026031?,R_CSEG,07B6,0000
 L024006?,R_CSEG,06FC,0000
 L024004?,R_CSEG,0640,0000
+L026048?,R_CSEG,07C6,0000
+L026047?,R_CSEG,07B5,0000
 L024002?,R_CSEG,06B5,0000
-L025008?,R_CSEG,071F,0000
-L025006?,R_CSEG,089A,0000
-L025005?,R_CSEG,0896,0000
-L025003?,R_CSEG,07F4,0000
-L025002?,R_CSEG,07F0,0000
+L026046?,R_CSEG,07AC,0000
+L026045?,R_CSEG,07A4,0000
+L028016?,R_CSEG,0B89,0000
+L028015?,R_CSEG,0AD9,0000
+L025002?,R_CSEG,075D,0000
 L004015?,R_CSEG,00B3,0000
 L004014?,R_CSEG,00AE,0000
 L004013?,R_CSEG,00A2,0000
 L004011?,R_CSEG,00A0,0000
+L026009?,R_CSEG,0814,0000
+L026005?,R_CSEG,07BA,0000
 L014007?,R_CSEG,0298,0000
 L014006?,R_CSEG,0291,0000
 L014003?,R_CSEG,025D,0000
@@ -98,20 +123,23 @@ _WriteData,R_CSEG,01E1,0000
 _InitPinADC,R_CSEG,0095,0000
 _TIMER0_Init,R_CSEG,02B9,0000
 _Volts_at_Pin,R_CSEG,00E9,0000
-_main,R_CSEG,0704,0000
+_main,R_CSEG,0A8A,0000
 _buffer,R_DSEG,0000,0010
+_transmit_checksum_PARM_2,R_DSEG,0023,0001
 _LCD_pulse,R_CSEG,01A0,0000
 _WriteCommand,R_CSEG,01F0,0000
+_transmit_checksum,R_CSEG,09A7,0000
 _LCD_4BIT,R_CSEG,01FF,0000
 __c51_external_startup,R_CSEG,0000,0000
 _InitPinADC_PARM_2,R_OSEG,0000,0001
-_int_to_stringprintx_PARM_2,R_DSEG,001D,0002
-_int_to_stringprinty_PARM_2,R_DSEG,001F,0002
+_int_to_stringprintx_PARM_2,R_DSEG,001F,0002
+_int_to_stringprinty_PARM_2,R_DSEG,0021,0002
 _LCD_byte,R_CSEG,01AB,0000
 _end_transmit,R_CSEG,055D,0000
 _bit_count,R_DSEG,0012,0002
-_LCDprint_PARM_2,R_DSEG,0014,0001
+_LCDprint_PARM_2,R_DSEG,0016,0001
 _LCDprint_PARM_3,R_BSEG,0000,0001
+_path_flag,R_DSEG,0014,0002
 _transmit_byte,R_CSEG,063A,0000
 _start_transmit,R_CSEG,0480,0000
 _PCA_ISR,R_CSEG,041C,0000
@@ -119,9 +147,11 @@ _fourteen_to_eight,R_CSEG,03C2,0000
 _InitADC,R_CSEG,007B,0000
 _float_to_stringprintx,R_CSEG,02C2,0000
 _float_to_stringprinty,R_CSEG,0304,0000
-_float_to_stringprintx_PARM_2,R_DSEG,0015,0004
+_transmit_bit,R_CSEG,0704,0000
+_transmit_path,R_CSEG,0798,0000
+_float_to_stringprintx_PARM_2,R_DSEG,0017,0004
 _Timer3us,R_CSEG,0144,0000
-_float_to_stringprinty_PARM_2,R_DSEG,0019,0004
+_float_to_stringprinty_PARM_2,R_DSEG,001B,0004
 _ir_send,R_DSEG,0010,0002
 _ADC_at_Pin,R_CSEG,00D8,0000
 _int_to_stringprintx,R_CSEG,0346,0000
@@ -136,10 +166,12 @@ ___fs2sint,any,0000,0000
 ___fsmul,any,0000,0000
 ___fsadd,any,0000,0000
 _printf,any,0000,0000
+__divsint,any,0000,0000
 _sprintf,any,0000,0000
 _crt0,any,0000,0000
 ___sint2fs,any,0000,0000
 ___fsdiv,any,0000,0000
+__divsint_PARM_2,any,0000,0000
 </EXTERNALS>
 
 <CODE AT 0000>
@@ -178,6 +210,9 @@ F5 data8(_ir_send;0x0001;+;)
 75 data8(_bit_count;) 08
 E4
 F5 data8(_bit_count;0x0001;+;)
+75 data8(_path_flag;) 01
+E4
+F5 data8(_path_flag;0x0001;+;)
 </CODE>
 
 <CODE R_CSEG>
@@ -995,6 +1030,384 @@ D0 02
 BB FF rel3(L024018?;)
 1C
 02 addr16(L024004?;)  
+E5 82
+FA
+30 E0 rel3(L025002?;)
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+02 addr16(_Timer3us;)  
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+02 addr16(_Timer3us;)  
+AA 82
+AB 83
+BA 01 rel3(L026045?;)
+BB 00 rel3(L026045?;)
+80 rel2(L026031?;)
+BA 02 rel3(L026046?;)
+BB 00 rel3(L026046?;)
+80 rel2(L026033?;)
+BA 03 rel3(L026047?;)
+BB 00 rel3(L026047?;)
+02 addr16(L026037?;)  
+22
+7A 00
+7B 00
+C3
+EA
+94 02
+EB
+64 80
+94 80
+40 rel2(L026048?;)
+22
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 03
+D0 02
+0A
+BA 00 rel3(L026005?;)
+0B
+80 rel2(L026005?;)
+7A 00
+7B 00
+C3
+EA
+94 01
+EB
+64 80
+94 80
+50 rel2(L026012?;)
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 03
+D0 02
+0A
+BA 00 rel3(L026009?;)
+0B
+80 rel2(L026009?;)
+7A 00
+7B 00
+C3
+EA
+94 01
+EB
+64 80
+94 80
+40 rel2(L026052?;)
+22
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 03
+D0 02
+0A
+BA 00 rel3(L026013?;)
+0B
+80 rel2(L026013?;)
+7A 00
+7B 00
+C3
+EA
+94 01
+EB
+64 80
+94 80
+50 rel2(L026020?;)
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 03
+D0 02
+0A
+BA 00 rel3(L026017?;)
+0B
+80 rel2(L026017?;)
+7A 00
+7B 00
+C3
+EA
+94 01
+EB
+64 80
+94 80
+40 rel2(L026056?;)
+22
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 03
+D0 02
+0A
+BA 00 rel3(L026057?;)
+0B
+02 addr16(L026021?;)  
+AA 82
+7B 00
+AC data8(_transmit_checksum_PARM_2;)
+7D 00
+EC
+2A
+F5 82
+ED
+3B
+F5 83
+75 data8(__divsint_PARM_2;) 02
+E4
+F5 data8(__divsint_PARM_2;0x0001;+;)
+12 addr16(__divsint;)  
+AA 82
+7B 07
+7C 00
+EC
+30 E7 rel3(L027014?;)
+22
+8B F0
+05 F0
+EA
+80 rel2(L027016?;)
+C3
+13
+D5 F0 rel3(L027015?;)
+30 E0 rel3(L027002?;)
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+C0 04
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 04
+D0 03
+D0 02
+80 rel2(L027006?;)
+75 data8(_ir_send;) 01
+E4
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+C0 02
+C0 03
+C0 04
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+E4
+F5 data8(_ir_send;)
+F5 data8(_ir_send;0x0001;+;)
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+75 82 30
+12 addr16(_Timer3us;)  
+D0 04
+D0 03
+D0 02
+1B
+BB FF rel3(L027018?;)
+1C
+02 addr16(L027004?;)  
 12 addr16(_TIMER0_Init;)  
 12 addr16(_LCD_4BIT;)  
 12 addr16(_InitADC;)  
@@ -1007,42 +1420,41 @@ BB FF rel3(L024018?;)
 A2 A4
 E4
 33
-F5 data8(_main_button_1_128;)
-75 data8(_main_button_1_128;0x0001;+;) 00
+F5 data8(_main_button_1_145;)
 75 82 10
 12 addr16(_ADC_at_Pin;)  
-AC 82
-AD 83
+AB 82
+AC 83
 75 82 0F
+C0 03
 C0 04
-C0 05
 12 addr16(_ADC_at_Pin;)  
-AE 82
-AF 83
-D0 05
+AD 82
+AE 83
 D0 04
+D0 03
 C3
 74 D2
-9C
+9B
 74 AD
-8D F0
+8C F0
 63 F0 80
 95 F0
-40 rel2(L025015?;)
-02 addr16(L025002?;)  
-EC
+40 rel2(L028015?;)
+02 addr16(L028002?;)  
+EB
 24 2E
 F5 82
-ED
+EC
 34 D2
 F5 83
+C0 05
 C0 06
-C0 07
 12 addr16(___sint2fs;)  
-A8 82
-A9 83
-AA F0
-FB
+AF 82
+A8 83
+A9 F0
+FA
 E4
 C0 E0
 74 68
@@ -1051,20 +1463,20 @@ C0 E0
 C0 E0
 74 45
 C0 E0
-88 82
-89 83
-8A F0
-EB
+8F 82
+88 83
+89 F0
+EA
 12 addr16(___fsdiv;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
 24 FC
 F5 81
 C0 02
-C0 03
+C0 07
 C0 00
 C0 01
 90 48 00
@@ -1072,7 +1484,7 @@ C0 01
 74 46
 12 addr16(___fsmul;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
@@ -1087,49 +1499,49 @@ C0 E0
 74 46
 C0 E0
 8A 82
-8B 83
+8F 83
 88 F0
 E9
 12 addr16(___fsadd;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
 24 FC
 F5 81
 8A 82
-8B 83
+8F 83
 88 F0
 E9
 12 addr16(___fs2sint;)  
-85 82 data8(_main_real_x_1_128;)
-85 83 data8(_main_real_x_1_128;0x0001;+;)
-D0 07
+85 82 data8(_main_real_x_1_145;)
+85 83 data8(_main_real_x_1_145;0x0001;+;)
 D0 06
-80 rel2(L025003?;)
-8C data8(_main_real_x_1_128;)
-8D data8(_main_real_x_1_128;0x0001;+;)
+D0 05
+80 rel2(L028003?;)
+8B data8(_main_real_x_1_145;)
+8C data8(_main_real_x_1_145;0x0001;+;)
 C3
 74 14
-9E
+9D
 74 AE
-8F F0
+8E F0
 63 F0 80
 95 F0
-40 rel2(L025016?;)
-02 addr16(L025005?;)  
-EE
+40 rel2(L028016?;)
+02 addr16(L028005?;)  
+ED
 24 EC
 F5 82
-EF
+EE
 34 D1
 F5 83
 12 addr16(___sint2fs;)  
 A8 82
 A9 83
 AA F0
-FB
+FF
 E4
 C0 E0
 74 58
@@ -1141,17 +1553,17 @@ C0 E0
 88 82
 89 83
 8A F0
-EB
+EF
 12 addr16(___fsdiv;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
 24 FC
 F5 81
 C0 02
-C0 03
+C0 07
 C0 00
 C0 01
 90 50 00
@@ -1159,7 +1571,7 @@ C0 01
 74 46
 12 addr16(___fsmul;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
@@ -1174,50 +1586,64 @@ C0 E0
 74 46
 C0 E0
 8A 82
-8B 83
+8F 83
 88 F0
 E9
 12 addr16(___fsadd;)  
 AA 82
-AB 83
+AF 83
 A8 F0
 F9
 E5 81
 24 FC
 F5 81
 8A 82
-8B 83
+8F 83
 88 F0
 E9
 12 addr16(___fs2sint;)  
 AA 82
-AB 83
-80 rel2(L025006?;)
-8E 02
-8F 03
-85 data8(_main_real_x_1_128;) 82
-85 data8(_main_real_x_1_128;0x0001;+;) 83
+AF 83
+80 rel2(L028006?;)
+8D 02
+8E 07
+85 data8(_main_real_x_1_145;) 82
+85 data8(_main_real_x_1_145;0x0001;+;) 83
 C0 02
-C0 03
+C0 07
 12 addr16(_fourteen_to_eight;)  
 A8 82
-D0 03
+D0 07
 D0 02
-88 data8(_main_eight_bitx_1_128;)
+88 data8(_main_eight_bitx_1_145;)
 8A 82
-8B 83
+8F 83
 C0 02
-C0 03
+C0 07
 12 addr16(_fourteen_to_eight;)  
 A9 82
 90 00 01
 C0 01
 12 addr16(_start_transmit;)  
-85 data8(_main_eight_bitx_1_128;) 82
+85 data8(_main_eight_bitx_1_145;) 82
 12 addr16(_transmit_byte;)  
 D0 01
 89 82
+C0 01
 12 addr16(_transmit_byte;)  
+85 data8(_main_button_1_145;) 82
+12 addr16(_transmit_bit;)  
+85 data8(_main_button_1_145;) 82
+12 addr16(_transmit_bit;)  
+85 data8(_main_button_1_145;) 82
+12 addr16(_transmit_bit;)  
+85 data8(_path_flag;) 82
+85 data8(_path_flag;0x0001;+;) 83
+12 addr16(_transmit_path;)  
+D0 01
+89 data8(_transmit_checksum_PARM_2;)
+85 data8(_main_eight_bitx_1_145;) 82
+12 addr16(_transmit_checksum;)  
 90 00 01
 12 addr16(_end_transmit;)  
 75 data8(_ir_send;) 01
@@ -1248,26 +1674,28 @@ F5 data8(_ir_send;)
 F5 data8(_ir_send;0x0001;+;)
 90 00 64
 12 addr16(_waitms;)  
-85 data8(_main_real_x_1_128;) data8(_int_to_stringprintx_PARM_2;)
-85 data8(_main_real_x_1_128;0x0001;+;) data8(_int_to_stringprintx_PARM_2;0x0001;+;)
+85 data8(_main_real_x_1_145;) data8(_int_to_stringprintx_PARM_2;)
+85 data8(_main_real_x_1_145;0x0001;+;) data8(_int_to_stringprintx_PARM_2;0x0001;+;)
 90 00 01
 12 addr16(_int_to_stringprintx;)  
-D0 03
+D0 07
 D0 02
 8A data8(_int_to_stringprinty_PARM_2;)
-8B data8(_int_to_stringprinty_PARM_2;0x0001;+;)
+8F data8(_int_to_stringprinty_PARM_2;0x0001;+;)
 90 00 02
 C0 02
-C0 03
+C0 07
 12 addr16(_int_to_stringprinty;)  
-D0 03
+D0 07
 D0 02
-C0 data8(_main_button_1_128;)
-C0 data8(_main_button_1_128;0x0001;+;)
+A8 data8(_main_button_1_145;)
+79 00
+C0 00
+C0 01
 C0 02
-C0 03
-C0 data8(_main_real_x_1_128;)
-C0 data8(_main_real_x_1_128;0x0001;+;)
+C0 07
+C0 data8(_main_real_x_1_145;)
+C0 data8(_main_real_x_1_145;0x0001;+;)
 74 data8(__str_4;)
 C0 E0
 74 data8(__str_4;0x0008;>>;)
@@ -1298,7 +1726,7 @@ F5 data8(_float_to_stringprintx_PARM_2;0x0003;+;)
 F5 data8(_float_to_stringprinty_PARM_2;0x0003;+;)
 90 00 02
 12 addr16(_float_to_stringprinty;)  
-02 addr16(L025008?;)  
+02 addr16(L028008?;)  
 </CODE>
 
 <CODE R_CSEG>
