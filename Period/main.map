@@ -1,0 +1,1799 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+                              newlib_stubs.o (errno)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                              serial.o (__aeabi_idiv)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o) (__aeabi_idiv0)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+                              main.o (__aeabi_dadd)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+                              main.o (__aeabi_ddiv)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+                              main.o (__aeabi_dmul)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+                              main.o (__aeabi_dsub)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+                              main.o (__aeabi_d2iz)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+                              main.o (__aeabi_i2d)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o) (__aeabi_uidivmod)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o) (__clzsi2)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                              (_printf_float)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (_printf_common)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+                              main.o (printf)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+                              main.o (putchar)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+                              main.o (puts)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o) (__swbuf_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o) (__swsetup_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (_localeconv_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o) (_impure_ptr)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o) (__retarget_lock_acquire_recursive)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o) (memchr)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (strlen)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (_dtoa_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o) (_free_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (malloc)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o) (_malloc_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o) (__malloc_lock)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (_Balloc)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o) (_vfprintf_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o) (_fflush_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o) (__sglue)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o) (__sfvwrite_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o) (_fwalk_sglue)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o) (__smakebuf_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o) (_putc_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o) (__sread)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o) (memmove)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o) (memset)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o) (__global_locale)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o) (_close_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o) (_fstat_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o) (_isatty_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o) (_lseek_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o) (_read_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o) (_write_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o) (strcmp)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (memcpy)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (__assert_func)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o) (_calloc_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o) (__ascii_mbtowc)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o) (_realloc_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o) (__ascii_wctomb)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o) (_ctype_)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o) (fiprintf)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o) (abort)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o) (_malloc_usable_size_r)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o) (raise)
+C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o) (_kill_r)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (__gnu_thumb1_case_uqi)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o) (__gnu_thumb1_case_shi)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (__aeabi_dcmpeq)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o) (__eqdf2)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o) (__gedf2)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+                              C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o) (__ledf2)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o) (__aeabi_dcmpun)
+C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o) (__aeabi_ui2d)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00010000
+ram              0x20000000         0x00002000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD main.o
+LOAD startup.o
+LOAD serial.o
+LOAD newlib_stubs.o
+LOAD C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a
+LOAD C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a
+START GROUP
+LOAD C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a
+LOAD C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a
+LOAD C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libm.a
+END GROUP
+
+.text           0x08000000     0x7844
+ *(.vectors)
+ .vectors       0x08000000       0xb8 startup.o
+                0x08000000                Vectors
+ *(.after_vectors*)
+ .after_vectors
+                0x080000b8       0x28 startup.o
+                0x080000b8                ResetInit
+ *(.text*)
+ .text          0x080000e0      0xf7c main.o
+                0x080000e0                wait_1ms
+                0x08000118                waitms
+                0x0800013a                Init_Hardware
+                0x08000224                initialize
+                0x0800057c                manual_run
+                0x08000c08                auto_run
+                0x08000fc0                main
+ .text          0x0800105c      0x1a8 startup.o
+                0x080010d4                initClock
+                0x080011dc                EXTI2_3_Handler
+                0x080011dc                TIM21_Handler
+                0x080011dc                SysTick_Handler
+                0x080011dc                I2C1_Handler
+                0x080011dc                PendSV_Handler
+                0x080011dc                NMI_Handler
+                0x080011dc                WWDG_Handler
+                0x080011dc                RTC_Handler
+                0x080011dc                EXTI4_15_Handler
+                0x080011dc                TIM2_Handler
+                0x080011dc                DMA_CH4_5_6_7_Handler
+                0x080011dc                Default_Handler
+                0x080011dc                LPUART1_Handler
+                0x080011dc                FLASH_Handler
+                0x080011dc                EXTI0_1_Handler
+                0x080011dc                DMA_CH1_Handler
+                0x080011dc                SPI2_Handler
+                0x080011dc                DMA_CH2_3_Handler
+                0x080011dc                I2C2_Handler
+                0x080011dc                SVC_Handler
+                0x080011dc                LPTIM1_Handler
+                0x080011dc                USART2_Handler
+                0x080011dc                SPI1_Handler
+                0x080011dc                RCC_Handler
+                0x080011dc                PVD_Handler
+                0x080011dc                TIM6_Handler
+                0x080011dc                TIM22_Handler
+                0x080011dc                ADC_COMP_Handler
+                0x080011f0                Hard_Fault_Handler
+ .text          0x08001204      0x5b4 serial.o
+                0x08001204                ReadCom
+                0x08001278                WriteCom
+                0x08001318                initUART
+                0x08001468                USART1_Handler
+                0x08001494                usart_rx
+                0x080014c4                usart_tx
+                0x0800152c                PutBuf
+                0x0800158e                GetBuf
+                0x080015e4                GetBufCount
+                0x080015f8                eputs
+                0x08001634                eputc
+                0x08001652                egetc
+                0x0800166c                egets
+                0x080016f8                egetc_echo
+                0x0800171e                egets_echo
+ .text          0x080017b8      0x29c newlib_stubs.o
+                0x080017b8                _exit
+                0x080017c2                _close
+                0x080017d6                _execve
+                0x080017f8                _fork
+                0x08001810                _fstat
+                0x0800182c                _getpid
+                0x08001838                _kill
+                0x08001858                _link
+                0x08001878                _lseek
+                0x0800188e                _stat
+                0x080018aa                _times
+                0x080018be                _unlink
+                0x080018dc                _wait
+                0x080018fc                _isatty
+                0x08001924                _sbrk
+                0x08001988                _read
+                0x08001a00                _write
+ .text          0x08001a54        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+ .text          0x08001a54      0x1d4 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                0x08001a54                __divsi3
+                0x08001a54                __aeabi_idiv
+                0x08001c20                __aeabi_idivmod
+ .text          0x08001c28        0x4 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                0x08001c28                __aeabi_idiv0
+                0x08001c28                __aeabi_ldiv0
+ .text          0x08001c2c        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+ .text.__aeabi_dadd
+                0x08001c2c      0x828 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+                0x08001c2c                __aeabi_dadd
+ .text          0x08002454        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .text.__aeabi_ddiv
+                0x08002454      0x630 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+                0x08002454                __aeabi_ddiv
+ .text          0x08002a84        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+ .text.__aeabi_dmul
+                0x08002a84      0x570 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+                0x08002a84                __aeabi_dmul
+ .text          0x08002ff4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+ .text.__aeabi_dsub
+                0x08002ff4      0x814 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+                0x08002ff4                __aeabi_dsub
+ .text          0x08003808        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+ .text.__aeabi_d2iz
+                0x08003808       0x70 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+                0x08003808                __aeabi_d2iz
+ .text          0x08003878        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+ .text.__aeabi_i2d
+                0x08003878       0x68 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+                0x08003878                __aeabi_i2d
+ .text          0x080038e0      0x114 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                0x080038e0                __aeabi_uidiv
+                0x080038e0                __udivsi3
+                0x080039ec                __aeabi_uidivmod
+ .text          0x080039f4       0x3c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+                0x080039f4                __clzsi2
+ .text          0x08003a30        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+ .text.__cvt    0x08003a30       0xcc C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003a30                __cvt
+ .text.__exponent
+                0x08003afc       0x82 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003afc                __exponent
+ *fill*         0x08003b7e        0x2 
+ .text._printf_float
+                0x08003b80      0x458 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003b80                _printf_float
+ .text          0x08003fd8        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .text._printf_common
+                0x08003fd8       0xde C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08003fd8                _printf_common
+ *fill*         0x080040b6        0x2 
+ .text._printf_i
+                0x080040b8      0x214 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080040b8                _printf_i
+ .text          0x080042cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+ .text._printf_r
+                0x080042cc       0x18 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+                0x080042cc                _iprintf_r
+                0x080042cc                _printf_r
+ .text.printf   0x080042e4       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+                0x080042e4                iprintf
+                0x080042e4                printf
+ .text          0x08004304        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+ .text._putchar_r
+                0x08004304        0xa C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+                0x08004304                _putchar_r
+ *fill*         0x0800430e        0x2 
+ .text.putchar  0x08004310       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+                0x08004310                putchar
+ .text          0x08004324        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+ .text._puts_r  0x08004324       0xaa C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+                0x08004324                _puts_r
+ *fill*         0x080043ce        0x2 
+ .text.puts     0x080043d0       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+                0x080043d0                puts
+ .text          0x080043e4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+ .text.__swbuf_r
+                0x080043e4       0x82 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                0x080043e4                __swbuf_r
+ *fill*         0x08004466        0x2 
+ .text.__swbuf  0x08004468       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                0x08004468                __swbuf
+ .text          0x0800447c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+ .text.__swsetup_r
+                0x0800447c       0xb8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+                0x0800447c                __swsetup_r
+ .text          0x08004534        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+ .text.__localeconv_l
+                0x08004534        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+                0x08004534                __localeconv_l
+ .text._localeconv_r
+                0x08004538        0x8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+                0x08004538                _localeconv_r
+ .text.localeconv
+                0x08004540        0x8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+                0x08004540                localeconv
+ .text          0x08004548        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+ .text          0x08004548        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_init
+                0x08004548        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x08004548                __retarget_lock_init
+ .text.__retarget_lock_init_recursive
+                0x0800454a        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x0800454a                __retarget_lock_init_recursive
+ .text.__retarget_lock_close
+                0x0800454c        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x0800454c                __retarget_lock_close
+ .text.__retarget_lock_close_recursive
+                0x0800454e        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x0800454e                __retarget_lock_close_recursive
+ .text.__retarget_lock_acquire
+                0x08004550        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x08004550                __retarget_lock_acquire
+ .text.__retarget_lock_acquire_recursive
+                0x08004552        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x08004552                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_try_acquire
+                0x08004554        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x08004554                __retarget_lock_try_acquire
+ .text.__retarget_lock_try_acquire_recursive
+                0x08004558        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x08004558                __retarget_lock_try_acquire_recursive
+ .text.__retarget_lock_release
+                0x0800455c        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x0800455c                __retarget_lock_release
+ .text.__retarget_lock_release_recursive
+                0x0800455e        0x2 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x0800455e                __retarget_lock_release_recursive
+ .text          0x08004560        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+ .text.memchr   0x08004560       0x16 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+                0x08004560                memchr
+ .text          0x08004576        0xe C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+                0x08004576                strlen
+ .text          0x08004584        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .text.quorem   0x08004584      0x11c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .text._dtoa_r  0x080046a0      0xbc4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                0x080046a0                _dtoa_r
+ .text          0x08005264        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+ .text._free_r  0x08005264       0x94 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+                0x08005264                _free_r
+ .text          0x080052f8        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+ .text.malloc   0x080052f8       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                0x080052f8                malloc
+ .text.free     0x0800530c       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                0x0800530c                free
+ .text          0x08005320        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .text.sbrk_aligned
+                0x08005320       0x44 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x08005364      0x100 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                0x08005364                _malloc_r
+ .text          0x08005464        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+ .text.__malloc_lock
+                0x08005464       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                0x08005464                __malloc_lock
+ .text.__malloc_unlock
+                0x08005474       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                0x08005474                __malloc_unlock
+ .text          0x08005484        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .text._Balloc  0x08005484       0x84 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005484                _Balloc
+ .text._Bfree   0x08005508       0x4c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005508                _Bfree
+ .text.__multadd
+                0x08005554       0x88 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005554                __multadd
+ .text.__s2b    0x080055dc       0x98 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x080055dc                __s2b
+ .text.__hi0bits
+                0x08005674       0x42 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005674                __hi0bits
+ .text.__lo0bits
+                0x080056b6       0x60 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x080056b6                __lo0bits
+ *fill*         0x08005716        0x2 
+ .text.__i2b    0x08005718       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005718                __i2b
+ .text.__multiply
+                0x08005744      0x174 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005744                __multiply
+ .text.__pow5mult
+                0x080058b8       0xc4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x080058b8                __pow5mult
+ .text.__lshift
+                0x0800597c       0xd8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x0800597c                __lshift
+ .text.__mcmp   0x08005a54       0x34 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005a54                __mcmp
+ .text.__mdiff  0x08005a88      0x144 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005a88                __mdiff
+ .text.__ulp    0x08005bcc       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005bcc                __ulp
+ .text.__b2d    0x08005c0c       0x98 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005c0c                __b2d
+ .text.__d2b    0x08005ca4       0xc0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005ca4                __d2b
+ .text.__ratio  0x08005d64       0x52 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005d64                __ratio
+ *fill*         0x08005db6        0x2 
+ .text._mprec_log10
+                0x08005db8       0x34 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005db8                _mprec_log10
+ .text.__copybits
+                0x08005dec       0x42 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005dec                __copybits
+ .text.__any_on
+                0x08005e2e       0x46 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08005e2e                __any_on
+ .text          0x08005e74        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sfputc_r
+                0x08005e74       0x2a C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x08005e9e       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x08005e9e                __sfputs_r
+ .text.__sprint_r
+                0x08005ec2       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x08005ec2                __sprint_r
+ *fill*         0x08005ee2        0x2 
+ .text._vfprintf_r
+                0x08005ee4      0x224 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x08005ee4                _vfprintf_r
+                0x08005ee4                _vfiprintf_r
+ .text.vfprintf
+                0x08006108       0x18 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x08006108                vfprintf
+                0x08006108                vfiprintf
+ .text          0x08006120        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+ .text.__sflush_r
+                0x08006120      0x10c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                0x08006120                __sflush_r
+ .text._fflush_r
+                0x0800622c       0x56 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                0x0800622c                _fflush_r
+ *fill*         0x08006282        0x2 
+ .text.fflush   0x08006284       0x30 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                0x08006284                fflush
+ .text          0x080062b4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.std      0x080062b4       0x6c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x08006320       0x1c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x0800633c       0x3c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x08006378       0x18 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x08006390       0x18 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x080063a8       0x3c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x080063e4       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x080063e4                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x080063f4       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x080063f4                __sfp_lock_release
+ .text.__sfp    0x08006404       0xac C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x08006404                __sfp
+ .text.__sinit  0x080064b0       0x30 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x080064b0                __sinit
+ .text.__fp_lock_all
+                0x080064e0       0x1c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x080064e0                __fp_lock_all
+ .text.__fp_unlock_all
+                0x080064fc       0x1c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x080064fc                __fp_unlock_all
+ .text          0x08006518        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x08006518      0x2c0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                0x08006518                __sfvwrite_r
+ .text          0x080067d8        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+ .text._fwalk_sglue
+                0x080067d8       0x38 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+                0x080067d8                _fwalk_sglue
+ .text          0x08006810        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+ .text.__swhatbuf_r
+                0x08006810       0x54 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+                0x08006810                __swhatbuf_r
+ .text.__smakebuf_r
+                0x08006864       0x72 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+                0x08006864                __smakebuf_r
+ .text          0x080068d6        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+ .text._putc_r  0x080068d6       0x6c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                0x080068d6                _putc_r
+ *fill*         0x08006942        0x2 
+ .text.putc     0x08006944       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                0x08006944                putc
+ .text          0x08006958        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+ .text.__sread  0x08006958       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                0x08006958                __sread
+ .text.__seofread
+                0x08006980        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                0x08006980                __seofread
+ .text.__swrite
+                0x08006984       0x38 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                0x08006984                __swrite
+ .text.__sseek  0x080069bc       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                0x080069bc                __sseek
+ .text.__sclose
+                0x080069e8        0xc C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                0x080069e8                __sclose
+ .text          0x080069f4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+ .text.memmove  0x080069f4       0x26 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+                0x080069f4                memmove
+ .text          0x08006a1a        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+ .text.memset   0x08006a1a       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+                0x08006a1a                memset
+ .text          0x08006a2a        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+ *fill*         0x08006a2a        0x2 
+ .text._setlocale_r
+                0x08006a2c       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                0x08006a2c                _setlocale_r
+ .text.__locale_mb_cur_max
+                0x08006a6c       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                0x08006a6c                __locale_mb_cur_max
+ .text.setlocale
+                0x08006a7c       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                0x08006a7c                setlocale
+ .text          0x08006a90        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+ .text._close_r
+                0x08006a90       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+                0x08006a90                _close_r
+ .text          0x08006ab4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+ .text._fstat_r
+                0x08006ab4       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+                0x08006ab4                _fstat_r
+ .text          0x08006ad8        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+ .text._isatty_r
+                0x08006ad8       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+                0x08006ad8                _isatty_r
+ .text          0x08006afc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+ .text._lseek_r
+                0x08006afc       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+                0x08006afc                _lseek_r
+ .text          0x08006b24        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+ .text._read_r  0x08006b24       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+                0x08006b24                _read_r
+ .text          0x08006b4c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+ .text._sbrk_r  0x08006b4c       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+                0x08006b4c                _sbrk_r
+ .text          0x08006b70        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+ .text._write_r
+                0x08006b70       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+                0x08006b70                _write_r
+ .text          0x08006b98       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+                0x08006b98                strcmp
+ .text          0x08006bac        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+ .text.memcpy   0x08006bac       0x12 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+                0x08006bac                memcpy
+ .text          0x08006bbe        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+ *fill*         0x08006bbe        0x2 
+ .text.__assert_func
+                0x08006bc0       0x3c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                0x08006bc0                __assert_func
+ .text.__assert
+                0x08006bfc        0xa C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                0x08006bfc                __assert
+ .text          0x08006c06        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+ .text._calloc_r
+                0x08006c06       0x5a C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+                0x08006c06                _calloc_r
+ .text          0x08006c60        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+ .text._mbtowc_r
+                0x08006c60       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+                0x08006c60                _mbtowc_r
+ .text.__ascii_mbtowc
+                0x08006c74       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+                0x08006c74                __ascii_mbtowc
+ .text          0x08006c98        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+ .text._realloc_r
+                0x08006c98       0x60 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                0x08006c98                _realloc_r
+ .text          0x08006cf8        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+ .text._wctomb_r
+                0x08006cf8       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+                0x08006cf8                _wctomb_r
+ .text.__ascii_wctomb
+                0x08006d08       0x18 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+                0x08006d08                __ascii_wctomb
+ .text          0x08006d20        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+ .text          0x08006d20        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+ .text._fprintf_r
+                0x08006d20       0x16 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                0x08006d20                _fiprintf_r
+                0x08006d20                _fprintf_r
+ *fill*         0x08006d36        0x2 
+ .text.fprintf  0x08006d38       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                0x08006d38                fiprintf
+                0x08006d38                fprintf
+ .text          0x08006d58        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+ .text.abort    0x08006d58        0xe C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+                0x08006d58                abort
+ .text          0x08006d66        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+ .text._malloc_usable_size_r
+                0x08006d66       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+                0x08006d66                _malloc_usable_size_r
+ .text          0x08006d76        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+ .text._init_signal_r
+                0x08006d76       0x2a C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006d76                _init_signal_r
+ .text._signal_r
+                0x08006da0       0x30 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006da0                _signal_r
+ .text._raise_r
+                0x08006dd0       0x52 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006dd0                _raise_r
+ .text.__sigtramp_r
+                0x08006e22       0x46 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006e22                __sigtramp_r
+ .text.raise    0x08006e68       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006e68                raise
+ .text.signal   0x08006e7c       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006e7c                signal
+ .text._init_signal
+                0x08006e90       0x10 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006e90                _init_signal
+ .text.__sigtramp
+                0x08006ea0       0x14 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                0x08006ea0                __sigtramp
+ .text          0x08006eb4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+ .text._kill_r  0x08006eb4       0x24 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                0x08006eb4                _kill_r
+ .text._getpid_r
+                0x08006ed8        0x8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                0x08006ed8                _getpid_r
+ .text          0x08006ee0       0x14 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+                0x08006ee0                __gnu_thumb1_case_uqi
+ .text          0x08006ef4       0x14 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                0x08006ef4                __gnu_thumb1_case_shi
+ .text          0x08006f08       0x7c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                0x08006f08                __aeabi_cdrcmple
+                0x08006f18                __aeabi_cdcmple
+                0x08006f18                __aeabi_cdcmpeq
+                0x08006f28                __aeabi_dcmpeq
+                0x08006f34                __aeabi_dcmplt
+                0x08006f48                __aeabi_dcmple
+                0x08006f5c                __aeabi_dcmpgt
+                0x08006f70                __aeabi_dcmpge
+ .text          0x08006f84        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+ .text.__eqdf2  0x08006f84       0x94 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+                0x08006f84                __nedf2
+                0x08006f84                __eqdf2
+ .text          0x08007018        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+ .text.__gedf2  0x08007018       0xd4 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+                0x08007018                __gedf2
+                0x08007018                __gtdf2
+ .text          0x080070ec        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+ .text.__ledf2  0x080070ec       0xd4 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+                0x080070ec                __ledf2
+                0x080070ec                __ltdf2
+ .text          0x080071c0        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+ .text.__aeabi_dcmpun
+                0x080071c0       0x40 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+                0x080071c0                __aeabi_dcmpun
+ .text          0x08007200        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+ .text.__aeabi_ui2d
+                0x08007200       0x48 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+                0x08007200                __aeabi_ui2d
+ *(.rodata*)
+ .rodata        0x08007248      0x19e main.o
+ *fill*         0x080073e6        0x2 
+ .rodata        0x080073e8       0x7c startup.o
+ .rodata.__aeabi_ddiv
+                0x08007464       0x40 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .rodata._printf_float.str1.1
+                0x080074a4      0x177 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                                 0x12 (size before relaxing)
+ .rodata._printf_i.str1.1
+                0x0800761b        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                 0x22 (size before relaxing)
+ .rodata._dtoa_r.str1.1
+                0x0800761b        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                 0x92 (size before relaxing)
+ .rodata._Balloc.str1.1
+                0x0800761b        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                 0x73 (size before relaxing)
+ .rodata.__multadd.str1.1
+                0x0800761b        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                 0x11 (size before relaxing)
+ *fill*         0x0800761b        0x1 
+ .rodata.p05.0  0x0800761c        0xc C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .rodata.__mprec_tinytens
+                0x08007628       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08007628                __mprec_tinytens
+ .rodata.__mprec_bigtens
+                0x08007650       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08007650                __mprec_bigtens
+ .rodata.__mprec_tens
+                0x08007678       0xc8 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                0x08007678                __mprec_tens
+ .rodata._vfprintf_r.str1.1
+                0x08007740        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                 0x11 (size before relaxing)
+ .rodata._setlocale_r.str1.1
+                0x08007740        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                                  0x9 (size before relaxing)
+ .rodata.str1.1
+                0x08007740        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                                  0x2 (size before relaxing)
+ .rodata.__assert_func.str1.1
+                0x08007740        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                                 0x3d (size before relaxing)
+ .rodata._ctype_
+                0x08007740      0x101 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+                0x08007740                _ctype_
+                0x08007844                        . = ALIGN (0x4)
+ *fill*         0x08007841        0x3 
+                0x08007844                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                0x08007844                        PROVIDE (__init_array_end = .)
+                0x08007844                        . = ALIGN (0x4)
+                0x08007844                        _etext = .
+
+.glue_7         0x08007844        0x0
+ .glue_7        0x08007844        0x0 linker stubs
+
+.glue_7t        0x08007844        0x0
+ .glue_7t       0x08007844        0x0 linker stubs
+
+.vfp11_veneer   0x08007844        0x0
+ .vfp11_veneer  0x08007844        0x0 linker stubs
+
+.v4_bx          0x08007844        0x0
+ .v4_bx         0x08007844        0x0 linker stubs
+
+.iplt           0x08007844        0x0
+ .iplt          0x08007844        0x0 main.o
+
+.rel.dyn        0x08007844        0x0
+ .rel.iplt      0x08007844        0x0 main.o
+
+.data           0x20000000      0x1cc load address 0x08007844
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _data = .
+ *(.data*)
+ .data          0x20000000        0x0 main.o
+ .data          0x20000000        0x0 startup.o
+ .data          0x20000000        0x0 serial.o
+ .data          0x20000000        0x4 newlib_stubs.o
+                0x20000000                environ
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+ .data          0x20000004        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+ .data._impure_ptr
+                0x20000004        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+                0x20000004                _impure_ptr
+ .data._impure_data
+                0x20000008       0x4c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+                0x20000008                _impure_data
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+ .data          0x20000054        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .data.__sglue  0x20000054        0xc C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x20000054                __sglue
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+ .data          0x20000060        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+ .data.__global_locale
+                0x20000060      0x16c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                0x20000060                __global_locale
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+ .data          0x200001cc        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+                0x200001cc                        . = ALIGN (0x4)
+                0x200001cc                        _edata = .
+
+.igot.plt       0x200001cc        0x0 load address 0x08007a10
+ .igot.plt      0x200001cc        0x0 main.o
+
+.bss            0x200001d0      0x380 load address 0x08007a10
+                0x200001d0                        _bss = .
+ *(.bss*)
+ .bss           0x200001d0      0x17d main.o
+                0x200001d0                low_pulse
+                0x20000224                high_gap
+                0x20000276                path_flag
+                0x20000277                mode_flag
+                0x20000278                x_temp
+                0x2000027c                y_temp
+                0x20000280                check_sum
+                0x20000284                k
+                0x20000288                j
+                0x2000028c                keep
+                0x20000290                scaled_x
+                0x20000294                scaled_y
+                0x20000298                i
+                0x200002a0                prev_word
+                0x200002a8                frame_num
+                0x200002b0                data
+                0x2000034c                current_state
+ .bss           0x2000034d        0x0 startup.o
+ *fill*         0x2000034d        0x3 
+ .bss           0x20000350       0xa4 serial.o
+                0x20000350                ComRXBuffer
+                0x2000039c                ComTXBuffer
+                0x200003e8                ComOpen
+                0x200003ec                ComError
+                0x200003f0                ComBusy
+ .bss           0x200003f4        0x8 newlib_stubs.o
+                0x200003f4                __env
+ .bss           0x200003fc        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+ .bss.errno     0x200003fc        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+                0x200003fc                errno
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+ .bss           0x20000400        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x20000400        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000400                __lock___arc4random_mutex
+ .bss.__lock___dd_hash_mutex
+                0x20000401        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000401                __lock___dd_hash_mutex
+ .bss.__lock___tz_mutex
+                0x20000402        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000402                __lock___tz_mutex
+ .bss.__lock___env_recursive_mutex
+                0x20000403        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000403                __lock___env_recursive_mutex
+ .bss.__lock___malloc_recursive_mutex
+                0x20000404        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000404                __lock___malloc_recursive_mutex
+ .bss.__lock___at_quick_exit_mutex
+                0x20000405        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000405                __lock___at_quick_exit_mutex
+ .bss.__lock___atexit_recursive_mutex
+                0x20000406        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000406                __lock___atexit_recursive_mutex
+ .bss.__lock___sfp_recursive_mutex
+                0x20000407        0x1 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                0x20000407                __lock___sfp_recursive_mutex
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+ .bss           0x20000408        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x20000408        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                0x20000408                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x2000040c        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                0x2000040c                __malloc_free_list
+ .bss           0x20000410        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+ .bss           0x20000410        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .bss           0x20000410        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .bss           0x20000410        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+ .bss           0x20000410        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .bss.__sf      0x20000410      0x138 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x20000410                __sf
+ .bss.__stdio_exit_handler
+                0x20000548        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                0x20000548                __stdio_exit_handler
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+ .bss           0x2000054c        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+ .bss._PathLocale
+                0x2000054c        0x4 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                0x2000054c                _PathLocale
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+ .bss           0x20000550        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+ *(COMMON)
+                0x20000550                        . = ALIGN (0x4)
+                0x20000550                        _ebss = .
+                [!provide]                        PROVIDE (end = .)
+                0x20000550                        PROVIDE (_HeapStart = .)
+                0x20002000                        PROVIDE (_StackTop = (ORIGIN (ram) + LENGTH (ram)))
+OUTPUT(main.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x19b9
+ .debug_info    0x00000000      0x777 main.o
+ .debug_info    0x00000777      0x396 startup.o
+ .debug_info    0x00000b0d      0x7a3 serial.o
+ .debug_info    0x000012b0      0x709 newlib_stubs.o
+
+.debug_abbrev   0x00000000      0x7a2
+ .debug_abbrev  0x00000000      0x211 main.o
+ .debug_abbrev  0x00000211      0x1c8 startup.o
+ .debug_abbrev  0x000003d9      0x20e serial.o
+ .debug_abbrev  0x000005e7      0x1bb newlib_stubs.o
+
+.debug_aranges  0x00000000       0x88
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x28 startup.o
+ .debug_aranges
+                0x00000048       0x20 serial.o
+ .debug_aranges
+                0x00000068       0x20 newlib_stubs.o
+
+.debug_line     0x00000000     0x11c6
+ .debug_line    0x00000000      0x7b6 main.o
+ .debug_line    0x000007b6      0x285 startup.o
+ .debug_line    0x00000a3b      0x4e4 serial.o
+ .debug_line    0x00000f1f      0x2a7 newlib_stubs.o
+
+.debug_str      0x00000000      0x7c7
+ .debug_str     0x00000000      0x7c7 main.o
+                                0x396 (size before relaxing)
+ .debug_str     0x000007c7        0x0 startup.o
+                                0x2c2 (size before relaxing)
+ .debug_str     0x000007c7        0x0 serial.o
+                                0x381 (size before relaxing)
+ .debug_str     0x000007c7        0x0 newlib_stubs.o
+                                0x3b3 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 main.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 startup.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 serial.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 newlib_stubs.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x2c main.o
+ .ARM.attributes
+                0x0000002c       0x2c startup.o
+ .ARM.attributes
+                0x00000058       0x2c serial.o
+ .ARM.attributes
+                0x00000084       0x2c newlib_stubs.o
+ .ARM.attributes
+                0x000000b0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+ .ARM.attributes
+                0x000000dc       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000000fa       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000118       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+ .ARM.attributes
+                0x00000144       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .ARM.attributes
+                0x00000170       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x0000019c       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+ .ARM.attributes
+                0x000001c8       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+ .ARM.attributes
+                0x000001f4       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+ .ARM.attributes
+                0x00000220       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000023e       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000025c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+ .ARM.attributes
+                0x00000288       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x000002b4       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+ .ARM.attributes
+                0x000002e0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+ .ARM.attributes
+                0x0000030c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+ .ARM.attributes
+                0x00000338       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+ .ARM.attributes
+                0x00000364       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+ .ARM.attributes
+                0x00000390       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+ .ARM.attributes
+                0x000003bc       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x000003e8       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+ .ARM.attributes
+                0x00000414       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+ .ARM.attributes
+                0x00000440       0x1c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+ .ARM.attributes
+                0x0000045c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .ARM.attributes
+                0x00000488       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+ .ARM.attributes
+                0x000004b4       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+ .ARM.attributes
+                0x000004e0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x0000050c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x00000538       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .ARM.attributes
+                0x00000564       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x00000590       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+ .ARM.attributes
+                0x000005bc       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x000005e8       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+ .ARM.attributes
+                0x00000614       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+ .ARM.attributes
+                0x00000640       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+ .ARM.attributes
+                0x0000066c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+ .ARM.attributes
+                0x00000698       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+ .ARM.attributes
+                0x000006c4       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+ .ARM.attributes
+                0x000006f0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x0000071c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+ .ARM.attributes
+                0x00000748       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+ .ARM.attributes
+                0x00000774       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+ .ARM.attributes
+                0x000007a0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+ .ARM.attributes
+                0x000007cc       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+ .ARM.attributes
+                0x000007f8       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+ .ARM.attributes
+                0x00000824       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x00000850       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+ .ARM.attributes
+                0x0000087c       0x1c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+ .ARM.attributes
+                0x00000898       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000008c4       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+ .ARM.attributes
+                0x000008f0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+ .ARM.attributes
+                0x0000091c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+ .ARM.attributes
+                0x00000948       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+ .ARM.attributes
+                0x00000974       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+ .ARM.attributes
+                0x000009a0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+ .ARM.attributes
+                0x000009cc       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+ .ARM.attributes
+                0x000009f8       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+ .ARM.attributes
+                0x00000a24       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+ .ARM.attributes
+                0x00000a50       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+ .ARM.attributes
+                0x00000a7c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+ .ARM.attributes
+                0x00000aa8       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x00000ac6       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x00000ae4       0x1e C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000b02       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+ .ARM.attributes
+                0x00000b2e       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+ .ARM.attributes
+                0x00000b5a       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+ .ARM.attributes
+                0x00000b86       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+ .ARM.attributes
+                0x00000bb2       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+
+.debug_frame    0x00000000     0x1794
+ .debug_frame   0x00000000       0xfc main.o
+ .debug_frame   0x000000fc       0x94 startup.o
+ .debug_frame   0x00000190      0x1e8 serial.o
+ .debug_frame   0x00000378      0x228 newlib_stubs.o
+ .debug_frame   0x000005a0       0x20 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .debug_frame   0x000005c0       0x38 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+ .debug_frame   0x000005f8       0x3c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+ .debug_frame   0x00000634       0x3c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+ .debug_frame   0x00000670       0x3c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+ .debug_frame   0x000006ac       0x30 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+ .debug_frame   0x000006dc       0x2c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+ .debug_frame   0x00000708       0x20 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000728       0x70 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+ .debug_frame   0x00000798       0x54 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x000007ec       0x4c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+ .debug_frame   0x00000838       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+ .debug_frame   0x00000878       0x44 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+ .debug_frame   0x000008bc       0x48 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+ .debug_frame   0x00000904       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+ .debug_frame   0x00000930       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+ .debug_frame   0x00000970       0xb0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+ .debug_frame   0x00000a20       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+ .debug_frame   0x00000a40       0x54 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+ .debug_frame   0x00000a94       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+ .debug_frame   0x00000ac0       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+ .debug_frame   0x00000b00       0x50 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00000b50       0x40 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00000b90      0x23c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+ .debug_frame   0x00000dcc       0x9c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+ .debug_frame   0x00000e68       0x68 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+ .debug_frame   0x00000ed0      0x138 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+ .debug_frame   0x00001008       0x30 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+ .debug_frame   0x00001038       0x34 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+ .debug_frame   0x0000106c       0x54 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+ .debug_frame   0x000010c0       0x44 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+ .debug_frame   0x00001104       0x90 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+ .debug_frame   0x00001194       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+ .debug_frame   0x000011bc       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x000011dc       0x54 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+ .debug_frame   0x00001230       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+ .debug_frame   0x0000125c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+ .debug_frame   0x00001288       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+ .debug_frame   0x000012b4       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+ .debug_frame   0x000012e0       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+ .debug_frame   0x0000130c       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x00001338       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+ .debug_frame   0x00001364       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+ .debug_frame   0x00001384       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x000013ac       0x4c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+ .debug_frame   0x000013f8       0x2c C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+ .debug_frame   0x00001424       0x44 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+ .debug_frame   0x00001468       0x34 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+ .debug_frame   0x0000149c       0x38 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+ .debug_frame   0x000014d4       0x50 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+ .debug_frame   0x00001524       0x28 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+ .debug_frame   0x0000154c       0x20 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+ .debug_frame   0x0000156c       0xe0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+ .debug_frame   0x0000164c       0x44 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+ .debug_frame   0x00001690       0x3c C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+ .debug_frame   0x000016cc       0x38 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+ .debug_frame   0x00001704       0x38 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+ .debug_frame   0x0000173c       0x30 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+ .debug_frame   0x0000176c       0x28 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+
+.debug_rnglists
+                0x00000000       0x1a
+ .debug_rnglists
+                0x00000000       0x1a startup.o
+
+.debug_line_str
+                0x00000000      0x1d4
+ .debug_line_str
+                0x00000000      0x1d4 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+                                 0xeb (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+                                 0xe8 (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                                 0xcd (size before relaxing)
+ .debug_line_str
+                0x000001d4        0x0 C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                                 0xcd (size before relaxing)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_COMP_Handler                                  startup.o
+ComBusy                                           serial.o
+ComError                                          serial.o
+ComOpen                                           serial.o
+ComRXBuffer                                       serial.o
+ComTXBuffer                                       serial.o
+DMA_CH1_Handler                                   startup.o
+DMA_CH2_3_Handler                                 startup.o
+DMA_CH4_5_6_7_Handler                             startup.o
+Default_Handler                                   startup.o
+EXTI0_1_Handler                                   startup.o
+EXTI2_3_Handler                                   startup.o
+EXTI4_15_Handler                                  startup.o
+FLASH_Handler                                     startup.o
+GetBuf                                            serial.o
+GetBufCount                                       serial.o
+Hard_Fault_Handler                                startup.o
+I2C1_Handler                                      startup.o
+I2C2_Handler                                      startup.o
+Init_Hardware                                     main.o
+LPTIM1_Handler                                    startup.o
+LPUART1_Handler                                   startup.o
+NMI_Handler                                       startup.o
+PVD_Handler                                       startup.o
+PendSV_Handler                                    startup.o
+PutBuf                                            serial.o
+RCC_Handler                                       startup.o
+RTC_Handler                                       startup.o
+ReadCom                                           serial.o
+ResetInit                                         startup.o
+SPI1_Handler                                      startup.o
+SPI2_Handler                                      startup.o
+SVC_Handler                                       startup.o
+SysTick_Handler                                   startup.o
+TIM21_Handler                                     startup.o
+TIM22_Handler                                     startup.o
+TIM2_Handler                                      startup.o
+TIM6_Handler                                      startup.o
+USART1_Handler                                    serial.o
+                                                  startup.o
+USART2_Handler                                    startup.o
+Vectors                                           startup.o
+WWDG_Handler                                      startup.o
+WriteCom                                          serial.o
+_Balloc                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+_Bfree                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+_HeapStart                                        newlib_stubs.o
+_PathLocale                                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+_StackTop                                         newlib_stubs.o
+                                                  startup.o
+__aeabi_cdcmpeq                                   C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdcmple                                   C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdrcmple                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__aeabi_d2iz                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(fixdfsi.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_dadd                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_dcmpeq                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__aeabi_dcmpge                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmpgt                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__aeabi_dcmple                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__aeabi_dcmplt                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__aeabi_dcmpun                                    C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(unorddf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__aeabi_ddiv                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_dmul                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_dsub                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_i2d                                       C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  main.o
+__aeabi_idiv                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                                                  serial.o
+__aeabi_idiv0                                     C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+__aeabi_idivmod                                   C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__aeabi_ldiv0                                     C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+__aeabi_ui2d                                      C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__aeabi_uidiv                                     C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__aeabi_uidivmod                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+__any_on                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__ascii_mbtowc                                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+__ascii_wctomb                                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+__assert                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+__assert_func                                     C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__b2d                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__clzsi2                                          C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_clzsi2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatunsidf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(floatsidf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(subdf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(muldf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(divdf3.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(adddf3.o)
+__copybits                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__cvt                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__d2b                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__divsi3                                          C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+__env                                             newlib_stubs.o
+__eqdf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__exponent                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+__fp_lock_all                                     C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__fp_unlock_all                                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__gedf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__global_locale                                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+__gnu_thumb1_case_shi                             C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+__gnu_thumb1_case_uqi                             C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_uqi.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__gtdf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(gedf2.o)
+__hi0bits                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__i2b                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__init_array_end                                  startup.o
+__init_array_start                                startup.o
+__ledf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+                                                  C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_arm_cmpdf2.o)
+__lo0bits                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__locale_mb_cur_max                               C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+__localeconv_l                                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+__lock___arc4random_mutex                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lock___at_quick_exit_mutex                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lock___atexit_recursive_mutex                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lock___dd_hash_mutex                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lock___env_recursive_mutex                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lock___malloc_recursive_mutex                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+__lock___sfp_recursive_mutex                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__lock___tz_mutex                                 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__lshift                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__ltdf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(ledf2.o)
+__malloc_free_list                                C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+__malloc_lock                                     C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+__malloc_sbrk_start                               C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+__malloc_unlock                                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+__mcmp                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__mdiff                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__mprec_bigtens                                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__mprec_tens                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__mprec_tinytens                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__multadd                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__multiply                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__nedf2                                           C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(eqdf2.o)
+__pow5mult                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+__ratio                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__retarget_lock_acquire                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_acquire_recursive                 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+__retarget_lock_close                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_close_recursive                   C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_init                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_init_recursive                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__retarget_lock_release                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_release_recursive                 C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mlock.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+__retarget_lock_try_acquire                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__retarget_lock_try_acquire_recursive             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lock.o)
+__s2b                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+__sclose                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__seofread                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+__sf                                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+__sflush_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+__sfp                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__sfp_lock_acquire                                C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__sfp_lock_release                                C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__sfputs_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+__sfvwrite_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+__sglue                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+__sigtramp                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+__sigtramp_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+__sinit                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+__smakebuf_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+__sprint_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+__sread                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__sseek                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__stdio_exit_handler                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__swbuf                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+__swbuf_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+__swhatbuf_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+__swrite                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+__swsetup_r                                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+__udivsi3                                         C:\Program Files\ARM GNU Toolchain\lib\gcc\arm-none-eabi\15.2.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+__ulp                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+_calloc_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+_close                                            newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+_close_r                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+_ctype_                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-ctype_.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+_data                                             startup.o
+_dtoa_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+_ebss                                             startup.o
+_edata                                            startup.o
+_etext                                            startup.o
+_execve                                           newlib_stubs.o
+_exit                                             newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+_fflush_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+_fiprintf_r                                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+_fork                                             newlib_stubs.o
+_fprintf_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+_free_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-freer.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+_fstat                                            newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+_fstat_r                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+_fwalk_sglue                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fwalk.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+_getpid                                           newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+_getpid_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_impure_data                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+_impure_ptr                                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-impure.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wsetup.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wbuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+_init_signal                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_init_signal_r                                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_iprintf_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+_isatty                                           newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+_isatty_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+_kill                                             newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+_kill_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_link                                             newlib_stubs.o
+_localeconv_r                                     C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+_lseek                                            newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+_lseek_r                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+_malloc_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-makebuf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+_malloc_usable_size_r                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-msizer.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+_mbtowc_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mbtowc_r.o)
+_mprec_log10                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+_printf_common                                    C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+_printf_float                                     C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+_printf_i                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+_printf_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+_putc_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+_putchar_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+_puts_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+_raise_r                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_read                                             newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+_read_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+_realloc_r                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+_sbrk                                             newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+_sbrk_r                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mallocr.o)
+_setlocale_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+_signal_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+_stat                                             newlib_stubs.o
+_times                                            newlib_stubs.o
+_unlink                                           newlib_stubs.o
+_vfiprintf_r                                      C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+_vfprintf_r                                       C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+_wait                                             newlib_stubs.o
+_wctomb_r                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-wctomb_r.o)
+_write                                            newlib_stubs.o
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+_write_r                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-stdio.o)
+abort                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+auto_run                                          main.o
+check_sum                                         main.o
+current_state                                     main.o
+data                                              main.o
+egetc                                             serial.o
+                                                  newlib_stubs.o
+egetc_echo                                        serial.o
+egets                                             serial.o
+egets_echo                                        serial.o
+environ                                           newlib_stubs.o
+eputc                                             serial.o
+                                                  newlib_stubs.o
+eputs                                             serial.o
+                                                  startup.o
+errno                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libnosys.a(errno.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signalr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-writer.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-sbrkr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-readr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-lseekr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-isattyr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fstatr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-closer.o)
+                                                  newlib_stubs.o
+fflush                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fflush.o)
+fiprintf                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-assert.o)
+fprintf                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fprintf.o)
+frame_num                                         main.o
+free                                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+high_gap                                          main.o
+i                                                 main.o
+initClock                                         startup.o
+initUART                                          serial.o
+                                                  startup.o
+initialize                                        main.o
+iprintf                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+j                                                 main.o
+k                                                 main.o
+keep                                              main.o
+localeconv                                        C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-localeconv.o)
+low_pulse                                         main.o
+main                                              main.o
+                                                  startup.o
+malloc                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-malloc.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+manual_run                                        main.o
+memchr                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memchr-stub.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+memcpy                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memcpy-stub.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-reallocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-mprec.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-dtoa.o)
+memmove                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memmove.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-fvwrite.o)
+memset                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-memset.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-callocr.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-findfp.o)
+mode_flag                                         main.o
+path_flag                                         main.o
+prev_word                                         main.o
+printf                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-printf.o)
+                                                  main.o
+putc                                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putc.o)
+putchar                                           C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-putchar.o)
+                                                  main.o
+puts                                              C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-puts.o)
+                                                  main.o
+raise                                             C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-abort.o)
+scaled_x                                          main.o
+scaled_y                                          main.o
+setlocale                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+signal                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-signal.o)
+strcmp                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strcmp.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-locale.o)
+strlen                                            C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-strlen.o)
+                                                  C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf_float.o)
+usart_rx                                          serial.o
+usart_tx                                          serial.o
+vfiprintf                                         C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+vfprintf                                          C:\Program Files\ARM GNU Toolchain\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(libc_a-nano-vfprintf.o)
+wait_1ms                                          main.o
+waitms                                            main.o
+x_temp                                            main.o
+y_temp                                            main.o
