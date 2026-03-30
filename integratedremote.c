@@ -1,8 +1,4 @@
 // WIP IR Stuff 
-
-
-// to do:
-
 // fix the int to binary 
 #include <EFM8LB1.h>
 #include <stdio.h>
@@ -48,6 +44,7 @@
 
 // Full screen buffer (128x64 / 8)
 unsigned char xdata screen_buffer[1024];
+
 #define CHARS_PER_LINE 16
 //#define x_ratio 2.52
 //#define y_ratio 2.57
@@ -55,9 +52,9 @@ unsigned char xdata screen_buffer[1024];
 // Declare states
 typedef enum {
 	STATE_MENU,
-	STATE_SCREEN1,
-	STATE_SCREEN2,
-	STATE_SCREEN3,
+	PATH_SELECT,
+	MODE_SELECT,
+	CONFIRM_SELECT,
 	INSTRUCTIONS1,
 	INSTRUCTIONS2,
 	INSTRUCTIONS3,
@@ -65,22 +62,23 @@ typedef enum {
 	
 } State;
 
-int x_pos_sec, real_x_sec, path_val, chosen_path;
-int screen, mode, chosen_mode, chosen_confirm, confirm; // mode = 0: manual, mode = 1: automatic
-int prev_butl, prev_butr, left_button_pressed, right_button_pressed;
+int xdata x_pos_sec, real_x_sec, path_val, chosen_path;
+int xdata screen, mode, chosen_mode, chosen_confirm, confirm; // mode = 0: manual, mode = 1: automatic
+int xdata prev_butl, prev_butr, left_button_pressed, right_button_pressed;
 State current_state;
+int rjs_prev, ljs_prev, rjs, ljs;
 
-uint8_t eight_bitx;
-uint8_t eight_bity;	
-uint8_t end_sequence = 0;
+uint8_t xdata eight_bitx;
+uint8_t xdata eight_bity;	
+uint8_t xdata end_sequence = 0;
 	
 
-int x_pos, y_pos; 
-int real_x, real_y;
+int xdata x_pos, y_pos; 
+int xdata real_x, real_y;
 
-char buffer[16]; // Buffer for converting values to strings
-int ir_send = 0; // this indicates if we need the ir to be on or off 
-int bit_count = 8; // max number of bits in the buffer
+char xdata buffer[16]; // Buffer for converting values to strings
+int xdata ir_send = 0; // this indicates if we need the ir to be on or off 
+int xdata bit_count = 8; // max number of bits in the buffer
 
 
 char _c51_external_startup (void)
@@ -434,7 +432,9 @@ const uint8_t font5x7[][5] = {
 
     // SPACE
     {0x00,0x00,0x00,0x00,0x00}, // 0
-
+	{0x08,0x08,0x08,0x08,0x08}, // '-'	
+	
+	
     // NUMBERS 1â€“10
     {0x3E,0x51,0x49,0x45,0x3E}, // 0
     {0x00,0x42,0x7F,0x40,0x00}, // 1
@@ -475,7 +475,7 @@ const uint8_t font5x7[][5] = {
     {0x07,0x08,0x70,0x08,0x07}, // Y
     {0x61,0x51,0x49,0x45,0x43}  // Z
     
-    
+   
 };
 
 void DrawFilledRect(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2) {
@@ -500,13 +500,16 @@ const uint8_t* GetChar(char c) {
 
     // NUMBERS
     if (c >= '0' && c <= '9') {
-        return font5x7[1 + (c - '0')];
+        return font5x7[2 + (c - '0')];
     }
 
     // LETTERS
     if (c >= 'A' && c <= 'Z') {
-        return font5x7[11 + (c - 'A')];
+        return font5x7[12 + (c - 'A')];
     }
+    
+    if (c == '-')
+    	return font5x7[1];
 
     return font5x7[0];
 }
@@ -869,6 +872,12 @@ void transmit_checksum(uint8_t x_in, uint8_t y_in){
 
 } 
 
+void int_to_stringprint(int val, int x, int y)
+{
+ 	sprintf(buffer, "%i", val); // print string to buffer
+ 	DrawString(x, y, buffer);
+}
+
 
 // ----- State machine functions -----
 
@@ -902,10 +911,25 @@ void read_inputs(void) {
 	}	
 	else
 		left_button_pressed = 0;
-	prev_butl = butl;   
+	prev_butl = butl;  
 	
+	// Left Joystick
+	if(!left_joystick_button && ljs_prev) { // Debounced button
+		ljs = 0;
+	}	
+	else
+		ljs = 1;
+	ljs_prev = left_joystick_button;  
 	
+	// Right Joystick
+	if(!right_joystick_button && rjs_prev) { // Debounced button
+		rjs = 0;
+	}	
+	else
+		rjs = 1;
+	rjs_prev = right_joystick_button;  
 	
+	 
 	
 	x_pos = ADC_at_Pin(QFP32_MUX_P2_3);
 	y_pos = ADC_at_Pin(QFP32_MUX_P2_2);
@@ -986,10 +1010,12 @@ void initialization(void) {
 	DrawString(3, 35, "LEFT FOR INSTRUCTIONS");
 	DrawString(3, 55, "RIGHT FOR SELECTION");
 	
-	vibrate = 1; // Turn off the vibrations
-	
-	if(right_button_pressed)
-    	current_state = STATE_SCREEN1; // Move to other screen
+	if(right_button_pressed){
+    	current_state = MODE_SELECT; // Move to other screen
+    	path_val = 1; // Set initial path val to 0
+    	rect_x = 0;
+    	mode = 0;
+    }
     	
     if(left_button_pressed)
     	current_state = INSTRUCTIONS1; // Move to other screen	
@@ -1011,15 +1037,15 @@ void path_selector(void) {
    
     
     if(right_button_pressed) {
-    	current_state = STATE_SCREEN2; // Move to other screen
+    	current_state = CONFIRM_SELECT; // Move to other screen
     //	if(path_val ==2)
     		rect_x = 0; // Move rectangle to the left if it is in the middle
-    		path_val = 0; // Handles screen switching edge cases
+    		path_val = 1; // Handles screen switching edge cases
     		mode = 0;
     }
     
     if(left_button_pressed) {
-    	current_state = STATE_MENU;
+    	current_state = MODE_SELECT;
     }
    // If joystick right
    if(real_x_sec==1){
@@ -1048,7 +1074,7 @@ void path_selector(void) {
    DrawFilledRect(rect_x,40,rect_x+30,43);
    
    	// Check if right joystick button (select) has been pressed
-	if(right_joystick_button==0){
+	if(rjs==0){
 		chosen_path = path_val; // Lock in  a chosen path from the current path value
 	}
 	
@@ -1105,17 +1131,25 @@ void mode_selector(void) {
 
 	// Switch displays when side button pressed
 	if(right_button_pressed) {
-		current_state = STATE_SCREEN3;
-		chosen_confirm = 0;	
+		confirm = 0;	
+		rect_x = 0; // move cursor to the left
+		path_val = 1;
+	
+		if(chosen_mode == 0) { // Automatic
+			current_state=PATH_SELECT;
+		}
+		else {
+			current_state = CONFIRM_SELECT;
+		}
 	}
 	if(left_button_pressed) {
-		current_state = STATE_SCREEN1;
+		current_state = STATE_MENU;
 		path_val = 1;
 		rect_x = 0; // Move cursor to left and fix any edge cases
 	}
 	
 	// Check if right joystick button (select) has been pressed
-	if(right_joystick_button==0){
+	if(rjs==0){
 		chosen_mode = mode; // Lock in  a chosen mode from the current mode value
 	}
 	
@@ -1138,16 +1172,18 @@ void confirmation(void) {
 	
 	// Check if right joystick button (select) has been pressed
 	if(right_joystick_button==0 && left_joystick_button ==0 && confirm == 1){
-		if (chosen_path ==4 || chosen_mode ==4)
+		if (chosen_mode ==4 || (!chosen_mode && chosen_path==4)) // Ensure all options have been selected
 			DrawString(5, 32, "SELECT ALL OPTIONS");
 		else
-			chosen_confirm = confirm; // Lock in  a chosen mode from the current mode value
+			chosen_confirm = confirm; // Lock in a chosen mode from the current mode value
 	}
 		
-  
    	// Print indicator for chosen path
-   	if(chosen_confirm == 1)// Yes
+   	if(chosen_confirm == 1) { // Yes
     	current_state = STATS;
+    	vibrate = 0;
+    	waitms(100);
+    }
     //if(chosen_confirm == 1) // No
  
    
@@ -1180,9 +1216,15 @@ void confirmation(void) {
    DrawFilledRect(rect_x,40,rect_x+40,43);
 
 	if(left_button_pressed) {
-		current_state = STATE_SCREEN2;
+		if(!chosen_mode) {//Automatic
+			current_state = PATH_SELECT;
+		}
+		else { // Manual
+			current_state = MODE_SELECT;
+		}
 		rect_x = 10;
 		mode = 0;
+		path_val = 1;
 	}
 		
 	OLED_Update();
@@ -1191,24 +1233,26 @@ void confirmation(void) {
 
 // Display robot information and enable data sending if automatic mode
 void stats(void) {
-
-	DrawString(0, 10, "STATISTICS");
+	vibrate = 1;
 	
-	vibrate = 0;
-
+	// If in automatic
+	if(chosen_mode==0) {
+		DrawString(5, 15, "MODE AUTOMATIC");
+		//if path == yada yada
+		DrawString(5, 25, "PATH");
+	}
+	else {
+		DrawString(5, 5, "MANUAL MODE");
+		DrawString(5, 15, "X POS");
+		int_to_stringprint(((real_x/23460.0)*100.0-50), 45, 15); // Scale and display x
+		DrawString(5, 25, "Y POS");
+		int_to_stringprint((-1*(real_y/23592.0)*100.0+50), 45, 25); // Scale and display y
+	}
+	
 	// this stuff works more - no more conversion to 8 bits 
-	while(chosen_mode == 0) {
-		// ----- BEGIN IR STUFF WHEN EVERYTHING IS SELECTED
+	if(!right_button_pressed) {
 	
-		//read_inputs(); // Read inputs
-		
-			// Emergency exit to home
-		if(right_button_pressed) {
-			current_state = STATE_MENU;
-		}
-		
-		read_inputs();
-		
+		// ----- BEGIN IR STUFF WHEN EVERYTHING IS SELECTED
 		// map 14 to 8 bits
 		eight_bitx = fourteen_to_eight(real_x);
 		eight_bity = fourteen_to_eight(real_y);
@@ -1218,7 +1262,7 @@ void stats(void) {
 		transmit_byte(eight_bity);
 		transmit_bit(trigl);
 		transmit_bit(trigr);
-		transmit_bit(left_joystick_button);
+		transmit_bit(chosen_mode);
 		transmit_path(chosen_path);
 		transmit_checksum(eight_bitx,eight_bity);
 		end_transmit(1);
@@ -1239,18 +1283,27 @@ void stats(void) {
 		
 		waitms(100); 
 		
-	//	printf("hey, baby");
 	}
 	// original package --> 11100xxxxxxxxyyyyyyyy10000 (26 bits)
-	// current package --> 11100xxxxxxxxyyyyyyyybbbppcccccccc10000 
-	
-		
-//	printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);
-	
-		
+	// current package --> 11100xxxxxxxxyyyyyyyybbbppcccccccc10000 	
+	//	printf("x_pos: %d, y_pos: %d, button: %d\n", real_x, real_y, button);	
 	// ints are 16 bits
+	//	float_to_stringprinty(2, y_pos);
+	
+	else {
+		// Reset all values
+		current_state = STATE_MENU;
+		
+		path_val = 1; // Set path to 1 initially
+		chosen_path = 4;
+		mode = 0; // Set mode initially to zero
+		chosen_mode = 4; // Set random mode so no s appears on display screen initially
+		confirm = 0;
+		chosen_confirm = 4; // Set random mode so it doesn't auto select	
+	
+	//	printf("%d %d\n", path_val, confirm);
 
-//	float_to_stringprinty(2, y_pos);
+	}
 
 	OLED_Update();
 
@@ -1273,6 +1326,11 @@ void main (void)
 	// Initialize everything
 	prev_butl = 1; // Set previous button press to zero to help with debouncing
 	prev_butr = 1; 
+	
+	
+	rjs_prev = 1;
+	ljs_prev = 1;
+	
 	
 	path_val = 1; // Set path to 0 initially
 	chosen_path = 4;
@@ -1310,16 +1368,16 @@ void main (void)
 	    		break;
 	    	
 	    	// Screen 2
-	    	case STATE_SCREEN1:
+	    	case PATH_SELECT:
 	    		path_selector();
 	    		break;
 	    	
 	    	// Screen 3
-	    	case STATE_SCREEN2:
+	    	case MODE_SELECT:
 	    		mode_selector();
 	    		break;		
 	    	
-	    	case STATE_SCREEN3:
+	    	case CONFIRM_SELECT:
 	    		confirmation();
 	    		break;
 	    			
